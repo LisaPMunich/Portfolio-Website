@@ -1,0 +1,158 @@
+/*
+colors used (from visme/co/blog/website-color-schemes/ -->no.16 sleek and futuristic)
+
+White: #FFFFFF;
+Greyish-Black:#2C3531;
+dark turquoise:#116466;
+light turquoise: #D1E8E2;
+Forms border light brown-orange: #D9B08C;
+Forms fill light orange: #FFCB9A;
+ */
+
+body {
+    background-color: #D1E8E2;
+    color: #2C3531;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-transform: lowercase;
+}
+
+header {
+    background-color: #116466;
+    color: #FFCB9A;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2;
+}
+
+footer {
+    background-color: #FFCB9A;
+    color: #116466;
+    /*font-size: 16px;
+    line-height: 1.6;*/
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #116466;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #116466;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #116466;
+}
+
+h4 {
+    color: #D9B08C;
+}
+
+.logo {
+    height: 100px;
+}
+
+a, a:visited {
+    /*color change to light brown-orange when visited*/
+    color: #116466;
+}
+
+a:hover, a:focus {
+    /*No underlining when hovering over a link*/
+    text-decoration: none;
+}
+
+a:active {
+    /*color change to greyish black when selected*/
+    color: #2C3531;
+}
+
+/*
+ * Navigation
+ */
+
+header a {
+    color: #D9B08C;
+    text-decoration:none;
+}
+
+header a:visited {
+    color: #D9B08C;
+}
+
+header a:active{
+    color:#FFCB9A;
+}
+
+/*
+ * layout.. display, float, grid, flex;
+ * padding, margin, border
+ * font
+ */
+button {
+    padding: 10px;
+
+    border: none;
+    border-radius: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+    color: #FFFFFF;
+    background-color: #116466;
+
+    font-family: inherit;
+    text-decoration: none;
+}
+
+button:hover, button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/*
+.button__secondary{
+    background-color:#D9B08C;
+    color:#2C3531;
+}*/
+
+.headline {
+    margin: 20px;
+}
+
+.profile{
+    max-width:700px;
+    margin:0 auto;
+}
+
+.profile__portrait{
+    float:left;
+    width:100%;
+    max-width:300px;
+    height:auto;
+    margin: 20px 40px;
+    border-radius:50%;
+}
+
+.page-footer{
+    clear:both;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+
+.page-footer__logo{
+    width:30px;
+    height:30px;
+}
+
+/*the universal * selector (which will apply the styling to all HTML elements) within your CSS file*/
+*{
+    box-sizing:border-box;
+}
