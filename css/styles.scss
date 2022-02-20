@@ -1,0 +1,414 @@
+/*
+colors used (from visme/co/blog/website-color-schemes/ -->no.16 sleek and futuristic)
+
+White: #FFFFFF;
+Greyish-Black:#2C3531;
+dark turquoise:#116466;
+light turquoise: #D1E8E2;
+Forms border light brown-orange: #D9B08C;
+Forms fill light orange: #FFCB9A;
+ */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    background-color: #D1E8E2;
+    color: #2C3531;
+
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-transform: lowercase;
+
+}
+
+header {
+    background-color: #116466;
+    color: #FFCB9A;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 2;
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    min-width:300px;
+
+    a {
+        color: #D9B08C;
+        text-decoration: none;
+
+        &:visited {
+            color: #D9B08C;
+        }
+
+        &:active {
+            color: #FFCB9A;
+        }
+    }
+
+}
+
+main {
+    /*padding: 20px;*/
+    min-height: 500px;
+    flex: 1;
+    /*this margin: 0 auto makes the element take up the horizontal space in the container*/
+    margin:0 auto;
+    text-align:center;
+}
+
+footer {
+    background-color: #FFCB9A;
+    color: #116466;
+    margin: 0 auto;
+    min-width:300px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #116466;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #116466;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #116466;
+}
+
+h4 {
+    color: #D9B08C;
+}
+
+a, a:visited {
+    /*color change to light brown-orange when visited*/
+    color: #116466;
+    max-width: 100%;
+    text-overflow:ellipsis;
+}
+
+a:hover, a:focus {
+    /*No underlining when hovering over a link*/
+    text-decoration: none;
+}
+
+a:active {
+    /*color change to greyish black when selected*/
+    color: #2C3531;
+}
+
+
+.project-list__item a{
+    color:#FFFFFF;
+}
+
+/*
+ * layout.. display, float, grid, flex;
+ * padding, margin, border
+ * font
+ */
+button,
+.button {
+    display: inline-block;
+    padding: 10px;
+
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    border-radius: 3px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+    color: #FFFFFF;
+    background-color: #116466;
+
+    /* takes the font from the outer container */
+    font-family: inherit;
+    text-decoration: none;
+
+    transition: 1s opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+/*
+.button__secondary{
+    background-color:#D9B08C;
+    color:#2C3531;
+}*/
+
+/*the universal * selector (which will apply the styling to all HTML elements) within your CSS file*/
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 80px;
+}
+
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.page-header__logo-item {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    justify-content: flex-start;
+}
+
+.page-header__nav-item {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.navigation-list {
+    list-style-type: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+.navigation-list__item {
+    padding:10px;
+}
+
+/*.profile {
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.profile__image {
+    flex-direction: column;
+}
+
+.profile__content {
+    flex-direction: column;
+}
+
+.profile__portrait {
+    float: left;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px 40px;
+    border-radius: 50%;
+}*/
+
+/*start fallback-solution for browsers not supporting CSS grids*/
+.project-list__item {
+    display: inline-block;
+    width: 33%;
+}
+
+/*end fallback-solution for browsers not supporting CSS grids*/
+
+@supports (display:grid) {
+    .project-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .project-list__item {
+        background-color: #116466;
+        color: #FFFFFF;
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .project-list__item-title {
+        color: #FFFFFF;
+    }
+
+    .profile{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap:20px;
+        margin: 0 auto;
+    }
+
+    .profile__item {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .profile__portrait {
+        float: left;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 50%;
+        padding:10px;
+    }
+
+}
+
+.fun-activities-list {
+    list-style-type: none;
+}
+
+.page-footer__logo {
+    width: 30px;
+    height: 30px;
+}
+
+.page-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 5px;
+    width: 100%;
+}
+
+.page-footer__call-to-action {
+    grid-column: 1/5;
+    text-align: center;
+}
+
+.page-footer__social-media {
+    grid-column: 1/5;
+    text-align: center;
+}
+
+/*Media query*/
+
+@media all and (max-width: 750px) {
+    .project-list, .profile {
+        grid-gap: 10px;
+    }
+
+    .project-list__item:last-child, .profile__item:last-child {
+        grid-column: auto/auto;
+        grid-row: auto/auto;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .project-list, .profile {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .project-list, .profile {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@keyframes tower-color-change{
+    0%{
+        fill: lightgoldenrodyellow;
+    }
+    50%{
+        fill:#FFCB9A;
+    }
+    100%{
+        fill:#D9B08C;
+    }
+}
+
+#polygon12{
+    animation:4s tower-color-change infinite alternate linear;
+}
+
+@keyframes tower2-color-change {
+    0% {
+        fill: lightgoldenrodyellow;
+    }
+    50% {
+        fill: #FFCB9A;
+    }
+    100% {
+        fill: #D9B08C;
+    }
+}
+
+#polygon14{
+    animation:4s tower2-color-change infinite alternate linear;
+}
+
+
+@keyframes button-scale {
+    from {
+        transform:scale(1);
+    }
+    to {
+        transform:scale(0.8);
+    }
+}
+
+.project-list__item {
+    animation:10s button-scale infinite alternate-reverse linear;
+}
+
+
+.city{
+    width:400px;
+    height:300px;
+    padding: 20px;
+}
+
+
+/*
+@keyframes cloud-move-reverse{
+    from{
+        transform:translate(446px,48px)
+    }
+    to{
+        transform:translate(100px,48px)
+    }
+}
+
+.cloud-back{
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+*/
+
+/*this shrinks the image to fit the space it has, should the viewport be smaller than the image
+img{
+    max-width:100%;
+    display:block;
+}*/
+
