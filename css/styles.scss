@@ -49,7 +49,12 @@ main {
     flex: 1;
     /*this margin: 0 auto makes the element take up the horizontal space in the container*/
     margin: 0 auto;
+    max-width:700px;
     text-align: center;
+}
+
+.main--wideview{
+    max-width:1100px;
 }
 
 footer {
@@ -189,6 +194,10 @@ button:focus,
     padding: 10px;
 }
 
+.skill-set{
+    list-style-type:none;
+}
+
 /*.profile {
     display: flex;
     max-width: 700px;
@@ -252,7 +261,7 @@ button:focus,
     .profile__item {
         float:left;
         width: auto;
-        max-width:500px;
+        max-width:700px;
         min-height: auto;
         justify-content: center;
         text-align: center;
