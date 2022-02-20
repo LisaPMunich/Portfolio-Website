@@ -114,7 +114,7 @@ a:active {
   color: #2C3531;
 }
 
-.project-list__item a {
+.project-list__item a, .project-list__item--disabled a {
   color: #FFFFFF;
 }
 
@@ -224,7 +224,7 @@ button:focus,
     border-radius: 50%;
 }*/
 /*start fallback-solution for browsers not supporting CSS grids*/
-.project-list__item {
+.project-list__item, .project-list__item--disabled {
   display: inline-block;
   width: 33%;
 }
@@ -238,7 +238,7 @@ button:focus,
     margin-bottom: 20px;
   }
 
-  .project-list__item {
+  .project-list__item, .project-list__item--disabled {
     background-color: #116466;
     color: #FFFFFF;
     width: auto;
@@ -269,6 +269,11 @@ button:focus,
     justify-content: center;
     text-align: center;
     padding: 10px;
+  }
+
+  .project-list__item--disabled {
+    background-color: #2C3531;
+    opacity: 0.3;
   }
 
   .profile__portrait {
@@ -312,7 +317,7 @@ button:focus,
     grid-gap: 10px;
   }
 
-  .project-list__item:last-child, .profile__item:last-child {
+  .project-list__item:last-child, .project-list__item--disabled:last-child, .profile__item:last-child {
     grid-column: auto/auto;
     grid-row: auto/auto;
   }
@@ -373,7 +378,7 @@ button:focus,
     transform: scale(0.8);
   }
 }
-.project-list__item {
+.project-list__item, .project-list__item--disabled {
   animation: 10s button-scale infinite alternate-reverse linear;
 }
 
