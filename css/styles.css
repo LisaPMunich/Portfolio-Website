@@ -32,13 +32,16 @@ header {
   margin: 0 auto;
   min-width: 300px;
 }
+
 header a {
   color: #D9B08C;
   text-decoration: none;
 }
+
 header a:visited {
   color: #D9B08C;
 }
+
 header a:active {
   color: #FFCB9A;
 }
@@ -83,14 +86,14 @@ h4 {
   color: #D9B08C;
 }
 
-
-span{
-  font-weight:bold;
-  color:#116466;
+span {
+  font-weight: bold;
+  color: #116466;
 }
 
 a, a:visited {
   /*color change to light brown-orange when visited*/
+  font-weight: bold;
   color: #116466;
   max-width: 100%;
   text-overflow: ellipsis;
@@ -246,11 +249,11 @@ button:focus,
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     margin: 0 auto;
-    padding:0 40px;
+    padding: 0 40px;
   }
 
   .profile__item {
-    float:left;
+    float: left;
     width: auto;
     max-width: 500px;
     min-height: auto;
@@ -390,5 +393,6 @@ img{
     max-width:100%;
     display:block;
 }*/
+/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
