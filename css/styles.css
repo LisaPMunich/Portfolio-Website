@@ -250,7 +250,6 @@ button:focus,
   }
 
   .profile__portrait {
-    float: left;
     width: 100%;
     max-width: 300px;
     height: auto;
