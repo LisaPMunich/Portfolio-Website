@@ -4,29 +4,29 @@
 //colors used (from visme/co/blog/website-color-schemes/ -->no.16 sleek and futuristic
 
 // FONTS
-$font-light:400;
-$font-bold:700;
+$font-light: 400;
+$font-bold: 700;
 
 // COLORS
-$dark-turquoise:#116466;
-$light-turquoise:#D1E8E2;
-$light-orange:#FFCB9A;
-$dark-orange:#D9B08C;
-$white:#FFFFFF;
-$grey:#2C3531;
+$dark-turquoise: #116466;
+$light-turquoise: #D1E8E2;
+$light-orange: #FFCB9A;
+$dark-orange: #D9B08C;
+$white: #FFFFFF;
+$grey: #2C3531;
 
 // SEMANTIC COLOR NAMES
-$shadow-color:$grey;
+$shadow-color: $grey;
 
-$menu-background-color:$dark-turquoise;
-$body-background-color:$light-turquoise;
-$footer-background-color:$light-orange;
+$menu-background-color: $dark-turquoise;
+$body-background-color: $light-turquoise;
+$footer-background-color: $light-orange;
 
-$menu-font-color:$light-orange;
-$main-font-color:$grey;
-$footer-font-color:$dark-turquoise;
+$menu-font-color: $light-orange;
+$main-font-color: $grey;
+$footer-font-color: $dark-turquoise;
 
-$link-color:$dark-turquoise;
+$link-color: $dark-turquoise;
 
 //==========================
 //GENERAL STYLES
@@ -37,7 +37,7 @@ $link-color:$dark-turquoise;
 }
 
 body {
-    background-color:$light-turquoise;
+    background-color: $light-turquoise;
     color: $grey;
     font-family: "Nanum Gothic", sans-serif;
     font-size: 16px;
@@ -45,12 +45,11 @@ body {
     text-transform: lowercase;
     line-height: 1.6;
 
-
     //ist display flex hier notwendig, jetzt wo ich display grid habe?
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 %header-shared {
@@ -80,9 +79,9 @@ h4 {
     text-shadow: 0px 1px rgba(44, 53, 49, 0.3);
 }
 
-span{
+span {
     font-weight: $font-bold;
-    color:$dark-turquoise;
+    color: $dark-turquoise;
 }
 
 //=============================
@@ -90,7 +89,7 @@ span{
 //=============================
 
 header {
-    background-color:$dark-turquoise;
+    background-color: $dark-turquoise;
     color: $light-orange;
     font-weight: $font-bold;
     font-size: 20px;
@@ -101,8 +100,8 @@ header {
     min-width: 300px;
 
     &a {
-    color: $dark-orange;
-    text-decoration: none;
+        color: $dark-orange;
+        text-decoration: none;
 
         &:visited {
             @extend &a;
@@ -152,40 +151,42 @@ header {
     padding: 10px;
 }
 
-
 //===============================
 // MAIN CONTENT AREA
 //===============================
 
 main {
-    /*padding: 20px;*/
+    /* padding: 20px; */
     min-height: 500px;
     flex: 1;
-    /*this margin: 0 auto makes the element take up the horizontal space in the container*/
+
+    /* this margin: 0 auto makes the element take up the horizontal space in the container */
     margin: 0 auto;
-    max-width:700px;
+    max-width: 700px;
     text-align: center;
 }
 
-.main--wideview{
-    max-width:1100px;
+.main--wideview {
+    max-width: 1100px;
 }
 
-a, a:visited {
-    /*color change to light brown-orange when visited*/
-    font-weight:bold;
+a,
+a:visited {
+    /* color change to light brown-orange when visited */
+    font-weight: bold;
     color: $dark-turquoise;
     max-width: 100%;
     text-overflow: ellipsis;
 }
 
-a:hover, a:focus {
-    /*No underlining when hovering over a link*/
+a:hover,
+a:focus {
+    /* No underlining when hovering over a link */
     text-decoration: none;
 }
 
 a:active {
-    /*color change to greyish black when selected*/
+    /* color change to greyish black when selected */
     color: $grey;
 }
 
@@ -193,12 +194,14 @@ button,
 .button {
     display: inline-block;
     padding: 10px;
+
     /* overwrites browser defaults and resets the border */
     border: none;
     border-radius: 3px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     color: $white;
     background-color: $dark-turquoise;
+
     /* takes the font from the outer container */
     font-family: inherit;
     text-decoration: none;
@@ -211,10 +214,10 @@ button:focus,
 .button:focus {
     /* lets the mouse appear as a hand when hovering over the button */
     cursor: pointer;
+
     /* reduces the opacity of the button to 80% */
     opacity: 0.8;
 }
-
 
 //=======================
 // HOMEPAGE
@@ -224,13 +227,13 @@ button:focus,
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     margin: 0 auto;
-    padding:0 40px;
+    padding: 0 40px;
 }
 
 .profile__item {
-    float:left;
+    float: left;
     width: auto;
-    max-width:700px;
+    max-width: 700px;
     min-height: auto;
     justify-content: center;
     text-align: center;
@@ -256,11 +259,13 @@ button:focus,
         font-size: 20px;
     }
 }
+
 @media all and (min-width: 500px) and (max-width: 750px) {
     .profile {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 @media all and (max-width: 500px) {
     .profile {
         grid-template-columns: 1fr;
@@ -286,7 +291,6 @@ button:focus,
     color: $white;
 }
 
-
 //FALLBACK-SOLUTION FOR BROWERS NOT SUPPORTING CSS GRIDS
 .project-list__item {
     display: inline-block;
@@ -303,7 +307,7 @@ button:focus,
     }
 
     .project-list__item {
-        background-color:$dark-turquoise;
+        background-color: $dark-turquoise;
         color: $white;
         width: auto;
         min-height: auto;
@@ -317,13 +321,12 @@ button:focus,
         color: $white;
     }
 
-
-    .project-list__item--disabled{
+    .project-list__item--disabled {
         @extend .project-list__item;
-        background-color:$grey;
-        opacity:0.3;
-    }
 
+        background-color: $grey;
+        opacity: 0.3;
+    }
 }
 
 //MEDIA QUERY
@@ -345,11 +348,13 @@ button:focus,
         font-size: 20px;
     }
 }
+
 @media all and (min-width: 500px) and (max-width: 750px) {
     .project-list {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 @media all and (max-width: 500px) {
     .project-list {
         grid-template-columns: 1fr;
@@ -364,17 +369,17 @@ button:focus,
         transform: scale(0.8);
     }
 }
+
 .project-list__item {
     animation: 10s button-scale infinite alternate-reverse linear;
 }
-
 
 //========================
 // ABOUT PAGE
 //========================
 
-.skill-set{
-    list-style-type:none;
+.skill-set {
+    list-style-type: none;
 }
 
 .fun-activities-list {
@@ -402,7 +407,6 @@ button:focus,
 }
 */
 
-
 @keyframes tower-color-change {
     0% {
         fill: lightgoldenrodyellow;
@@ -414,6 +418,7 @@ button:focus,
         fill: $dark-orange;
     }
 }
+
 #polygon12 {
     animation: 4s tower-color-change infinite alternate linear;
 }
@@ -429,10 +434,10 @@ button:focus,
         fill: $dark-orange;
     }
 }
+
 #polygon14 {
     animation: 4s tower2-color-change infinite alternate linear;
 }
-
 
 //======================
 // FOOTER AREA
@@ -467,8 +472,6 @@ footer {
     grid-column: 1/5;
     text-align: center;
 }
-
-
 
 /*this shrinks the image to fit the space it has, should the viewport be smaller than the image
 img{
