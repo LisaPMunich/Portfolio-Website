@@ -1,3 +1,4 @@
+
 //========================
 // FONTS & COLOR VARIABLES
 //========================
@@ -12,7 +13,7 @@ $dark-turquoise: #116466;
 $light-turquoise: #D1E8E2;
 $light-orange: #FFCB9A;
 $dark-orange: #D9B08C;
-$white: #FFFFFF;
+$white: #FFF;
 $grey: #2C3531;
 
 // SEMANTIC COLOR NAMES
@@ -49,7 +50,6 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 %header-shared {
@@ -59,16 +59,19 @@ body {
 
 h1 {
     font-size: 30px;
+
     @extend %header-shared;
 }
 
 h2 {
     font-size: 25px;
+
     @extend %header-shared;
 }
 
 h3 {
     font-size: 20px;
+
     @extend %header-shared;
 }
 
@@ -76,7 +79,7 @@ h4 {
     font-size: 20px;
     font-weight: $font-bold;
     color: $dark-orange;
-    text-shadow: 0px 1px rgba(44, 53, 49, 0.3);
+    text-shadow: 0 1px rgba(44, 53, 49, 0.3);
 }
 
 span {
@@ -365,6 +368,7 @@ button:focus,
     from {
         transform: scale(1);
     }
+
     to {
         transform: scale(0.8);
     }
@@ -411,9 +415,11 @@ button:focus,
     0% {
         fill: lightgoldenrodyellow;
     }
+
     50% {
         fill: $light-orange;
     }
+
     100% {
         fill: $dark-orange;
     }
@@ -427,9 +433,11 @@ button:focus,
     0% {
         fill: lightgoldenrodyellow;
     }
+
     50% {
         fill: $light-orange;
     }
+
     100% {
         fill: $dark-orange;
     }
@@ -473,10 +481,10 @@ footer {
     text-align: center;
 }
 
-/*this shrinks the image to fit the space it has, should the viewport be smaller than the image
+/* this shrinks the image to fit the space it has, should the viewport be smaller than the image
 img{
     max-width:100%;
     display:block;
-}*/
+} */
 
 /*# sourceMappingURL=styles.css.map */
