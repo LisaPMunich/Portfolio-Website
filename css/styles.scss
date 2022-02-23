@@ -36,6 +36,11 @@ $link-color: $dark-turquoise;
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     background-color: $light-turquoise;
     color: $grey;
@@ -44,6 +49,7 @@ body {
     font-weight: $font-light;
     text-transform: lowercase;
     line-height: 1.6;
+    height: 100vh;
 }
 
 %header-shared {
@@ -151,26 +157,17 @@ header {
     header {
         font-size: 20px;
     }
-
-    .page-header__nav-item {
-        flex-direction: row;
-    }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
     header {
         font-size: 20px;
     }
-
-    .page-header__nav-item {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 }
 
 @media all and (max-width: 500px) {
-    .profile {
-        grid-template-columns: 1fr;
+    header {
+        font-size: 18px;
     }
 }
 
@@ -477,6 +474,8 @@ footer {
     color: $dark-turquoise;
     margin: 0 auto;
     min-width: 300px;
+    position: relative;
+    bottom: -10px;
 }
 
 .page-footer__logo {
