@@ -94,8 +94,6 @@ span {
 header {
     background-color: $dark-turquoise;
     color: $light-orange;
-    height:80px;
-    width:100%;
     font-weight: $font-bold;
     font-size: 20px;
     line-height: 2;
@@ -103,16 +101,11 @@ header {
     top: 0;
     margin: 0 auto;
     min-width: 300px;
-    display: flex;
-    flex-direction: row;
 
-    &a {
+    a,
+    a:visited {
         color: $dark-orange;
         text-decoration: none;
-
-        &:visited {
-            @extend &a;
-        }
 
         &:active {
             color: $light-orange;
@@ -125,19 +118,34 @@ header {
 }
 
 .page-header {
+    display: flex;
+    width: 100%;
     padding: 20px;
 }
 
 .page-header__logo-item {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
     justify-content: flex-start;
 }
 
 .page-header__nav-item {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding:0 50px 0 100px;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    flex-grow: 1;
+    justify-content: flex-end;
     list-style-type: none;
+}
+
+.navigation-list {
+    display: flex;
+}
+
+.navigation-list__item {
+    padding: 20px 10px;
+    flex-wrap: wrap;
 }
 
 //===============================
