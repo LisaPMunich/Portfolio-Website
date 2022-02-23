@@ -146,6 +146,34 @@ header {
     flex-wrap: wrap;
 }
 
+//MEDIA QUERY
+@media all and (max-width: 750px) {
+    header {
+        font-size: 20px;
+    }
+
+    .page-header__nav-item {
+        flex-direction: row;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+    header {
+        font-size: 20px;
+    }
+
+    .page-header__nav-item {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .profile {
+        grid-template-columns: 1fr;
+    }
+}
+
 //===============================
 // MAIN CONTENT AREA
 //===============================
