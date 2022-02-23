@@ -45,11 +45,6 @@ body {
     font-weight: $font-light;
     text-transform: lowercase;
     line-height: 1.6;
-
-    //ist display flex hier notwendig, jetzt wo ich display grid habe?
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
 }
 
 %header-shared {
@@ -97,8 +92,6 @@ header {
     font-weight: $font-bold;
     font-size: 20px;
     line-height: 2;
-    position: sticky;
-    top: 0;
     margin: 0 auto;
     min-width: 300px;
 
@@ -121,6 +114,10 @@ header {
     display: flex;
     width: 100%;
     padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 .page-header__logo-item {
@@ -153,9 +150,10 @@ header {
 //===============================
 
 main {
-    /* padding: 20px; */
-    min-height: 500px;
+    min-height: 600px;
     flex: 1;
+    padding-top: 120px;
+    padding-bottom: 40px;
 
     /* this margin: 0 auto makes the element take up the horizontal space in the container */
     margin: 0 auto;
@@ -283,10 +281,6 @@ button:focus,
 //=======================
 // PORTFOLIO - PROJECTS
 //=======================
-
-section {
-    min-height: 500px;
-}
 
 .project-list__item a {
     color: $white;
@@ -453,6 +447,7 @@ footer {
     background-color: $light-orange;
     color: $dark-turquoise;
     margin: 0 auto;
+    min-height: 5vh;
     min-width: 300px;
 }
 
