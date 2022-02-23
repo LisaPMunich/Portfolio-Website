@@ -215,6 +215,10 @@ button:focus,
     padding: 10px;
   }
 }
+section {
+  min-height: 500px;
+}
+
 .project-list__item a, .project-list__item--disabled a {
   color: #FFF;
 }
@@ -236,7 +240,7 @@ button:focus,
     background-color: #116466;
     color: #FFF;
     width: auto;
-    min-height: auto;
+    min-height: 200px;
     margin: 0;
     justify-content: center;
     text-align: center;

@@ -284,6 +284,10 @@ button:focus,
 // PORTFOLIO - PROJECTS
 //=======================
 
+section {
+    min-height: 500px;
+}
+
 .project-list__item a {
     color: $white;
 }
@@ -307,7 +311,7 @@ button:focus,
         background-color: $dark-turquoise;
         color: $white;
         width: auto;
-        min-height: auto;
+        min-height: 200px;
         margin: 0;
         justify-content: center;
         text-align: center;
