@@ -102,13 +102,10 @@ header {
     margin: 0 auto;
     min-width: 300px;
 
-    &a {
+    a,
+    a:visited {
         color: $dark-orange;
         text-decoration: none;
-
-        &:visited {
-            @extend &a;
-        }
 
         &:active {
             color: $light-orange;
@@ -139,19 +136,16 @@ header {
     height: 80px;
     flex-grow: 1;
     justify-content: flex-end;
-}
-
-.navigation-list {
     list-style-type: none;
 }
 
-.navigation-list li {
-    display: inline-block;
-    flex-wrap: wrap;
+.navigation-list {
+    display: flex;
 }
 
 .navigation-list__item {
-    padding: 10px;
+    padding: 20px 10px;
+    flex-wrap: wrap;
 }
 
 //===============================
