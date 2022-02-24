@@ -5,6 +5,7 @@
 html,
 body {
   height: 100%;
+  margin: 0;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
   font-weight: 400;
   text-transform: lowercase;
   line-height: 1.6;
-  height: 100vh;
 }
 
 h3, h2, h1 {
@@ -121,12 +121,14 @@ header a:visited:active {
   header {
     font-size: 18px;
   }
+
+  .page-header__nav-item {
+    flex-shrink: 2;
+  }
 }
 main {
-  min-height: 600px;
+  min-height: 100%;
   flex: 1;
-  padding-top: 120px;
-  padding-bottom: 40px;
   /* this margin: 0 auto makes the element take up the horizontal space in the container */
   margin: 0 auto;
   max-width: 700px;
@@ -135,6 +137,12 @@ main {
 
 .main--wideview {
   max-width: 1100px;
+}
+
+.content-inside-main {
+  padding: 20px;
+  padding-top: 120px;
+  padding-bottom: 100px;
 }
 
 a,
@@ -171,6 +179,7 @@ button,
   font-family: inherit;
   text-decoration: none;
   transition: 1s opacity;
+  margin-bottom: 10px;
 }
 
 button:hover,
@@ -227,6 +236,14 @@ button:focus,
 @media all and (max-width: 500px) {
   .profile {
     grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 }
 @supports (display: grid) {
@@ -302,6 +319,14 @@ button:focus,
   .project-list {
     grid-template-columns: 1fr;
   }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }
 @keyframes button-scale {
   from {
@@ -376,10 +401,11 @@ button:focus,
 footer {
   background-color: #FFCB9A;
   color: #116466;
-  margin: 0 auto;
   min-width: 300px;
-  position: relative;
-  bottom: -10px;
+  height: 100px;
+  margin: auto;
+  margin-top: -100px;
+  margin-bottom: 0;
 }
 
 .page-footer__logo {
@@ -403,6 +429,9 @@ footer {
 .page-footer__social-media {
   grid-column: 1/5;
   text-align: center;
+}
+.page-footer__social-media a {
+  text-decoration: none;
 }
 
 /* this shrinks the image to fit the space it has, should the viewport be smaller than the image
