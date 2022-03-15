@@ -398,6 +398,16 @@ button:focus,
   animation: 4s tower2-color-change infinite alternate linear;
 }
 
+#email-error {
+  color: #D9B08C;
+  font-weight: 700;
+}
+
+#message-error {
+  color: #D9B08C;
+  font-weight: 700;
+}
+
 footer {
   background-color: #FFCB9A;
   color: #116466;
