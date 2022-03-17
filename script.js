@@ -12,10 +12,22 @@
             emailErrorElement.innerText='An email address is required';
             return false
         }
+
+        if (emailInput.value === 'email') {
+            emailErrorElement.innerText='The email address cannot contain email';
+            return false
+        }
+
+        let mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        if(!emailInput.value.match(mailFormat)){
+            emailErrorElement.innerText ='This is not a valid email format!';
+            return false
+        }
+
         let emailHasAt = (emailInput.value.indexOf('@') !== -1);
         let emailHasDot = (emailInput.value.indexOf('.') !== -1);
         if (!emailHasAt || !emailHasDot) {
-            emailErrorElement.innerText ='Please type in a valid email address';
+            emailErrorElement.innerText ='This is not a valid email address';
             return false
         }
         emailErrorElement.innerText ='';
@@ -32,8 +44,8 @@
     }
 
     function validateTelNumber(){
-        let regExp = /^[0-9- \.]+$/;
-        if(!telNumberInput.value.match(regExp)){
+        let telFormat = /^[0-9- \.]+$/;
+        if(!telNumberInput.value.match(telFormat)){
             telErrorElement.innerText ='Please type in a valid phone number!'
             return false
         }
