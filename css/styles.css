@@ -132,7 +132,7 @@ main {
   /* this margin: 0 auto makes the element take up the horizontal space in the container */
   margin: 0 auto;
   max-width: 700px;
-  text-align: center;
+  text-align: justify-all;
 }
 
 .main--wideview {
@@ -341,11 +341,11 @@ button:focus,
 }
 
 .skill-set {
-  list-style-type: none;
+  list-style-type: circle;
 }
 
 .fun-activities-list {
-  list-style-type: none;
+  list-style-type: circle;
 }
 
 .city {
@@ -398,6 +398,12 @@ button:focus,
   animation: 4s tower2-color-change infinite alternate linear;
 }
 
+#contact-form {
+  width: 400px;
+  position: relative;
+  display: inline-block;
+}
+
 #email-error {
   color: #D9B08C;
   font-weight: 700;
@@ -406,6 +412,20 @@ button:focus,
 #message-error {
   color: #D9B08C;
   font-weight: 700;
+}
+
+.email-wrapper,
+.telephone-wrapper,
+.message-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2px 0;
+  justify-content: space-evenly;
+  justify-items: start;
+}
+
+#contact-form-button {
+  margin-top: 2px;
 }
 
 footer {
