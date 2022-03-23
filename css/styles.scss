@@ -344,7 +344,7 @@ button:focus,
 
 .project-list {
     display: flex;
-    flex-direction: row;
+    //flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
@@ -352,7 +352,22 @@ button:focus,
     margin-bottom: 20px;
     min-width: 800px;
 }
+.project-list > * {
+    flex: 1 1 280px;
+}
 
+.project-list__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(800px * 999 -100% * 999);
+    background-color: $dark-turquoise;
+    color: $white;
+    margin: 0;
+    height: 100%;
+    min-height: 180px;
+    width: 100%;
+    border: 10px solid $dark-turquoise;
+}
 #project1{
     order: 1;
     flex-grow: 1;
@@ -373,17 +388,6 @@ button:focus,
     flex-grow: 1;
 }
 
-.project-list__item {
-    display: flex;
-    background-color: $dark-turquoise;
-    color: $white;
-    margin: 0;
-    height: 100%;
-    min-height: 180px;
-    width: 100%;
-    border: 10px solid $dark-turquoise;
-}
-
 .project-list__item--disabled {
     @extend .project-list__item;
     display: flex;
@@ -393,6 +397,7 @@ button:focus,
 }
 
 .project-list__item-header {
+    display: block;
     flex-grow: 1;
     color: inherit;
     align-self: center;
@@ -405,6 +410,7 @@ button:focus,
 }
 
 .project-list__item-body{
+    display: block;
     color: inherit;
     flex-grow: 2;
     align-self: center;
@@ -431,6 +437,7 @@ button:focus,
 }
 
 .project-list__item-image {
+    display: block;
     flex-grow: 1;
     align-self: center;
     width: 30%;
