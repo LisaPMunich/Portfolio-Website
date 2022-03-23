@@ -44,9 +44,20 @@ h4 {
   text-shadow: 0 1px rgba(44, 53, 49, 0.3);
 }
 
-span {
+h5 {
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.text-highlight-green {
   font-weight: 700;
   color: #116466;
+}
+
+.text-highlight-light {
+  font-weight: 700;
+  color: #FFF;
 }
 
 header {
@@ -133,7 +144,7 @@ main {
   flex: 1;
   /* this margin: 0 auto makes the element take up the horizontal space in the container */
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 800px;
   text-align: justify-all;
 }
 
@@ -205,7 +216,7 @@ button:focus,
 .profile__item {
   float: left;
   width: auto;
-  max-width: 700px;
+  max-width: 800px;
   min-height: auto;
   justify-content: center;
   text-align: center;
@@ -257,91 +268,125 @@ button:focus,
     padding: 10px;
   }
 }
-.project-list__item a, .project-list__item--disabled a {
+.project-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 20px;
+  margin-bottom: 20px;
+  min-width: 800px;
+}
+
+#project1 {
+  order: 1;
+  flex-grow: 1;
+}
+
+#project2 {
+  order: 2;
+  flex-grow: 1;
+}
+
+#project3 {
+  order: 3;
+  flex-grow: 1;
+}
+
+#project4 {
+  order: 4;
+  flex-grow: 1;
+}
+
+.project-list__item, .project-list__item--disabled {
+  display: flex;
+  background-color: #116466;
   color: #FFF;
+  margin: 0;
+  height: 100%;
+  min-height: 180px;
+  width: 100%;
+  border: 10px solid #116466;
 }
 
-.project-list__item, .project-list__item--disabled {
+.project-list__item--disabled {
+  display: flex;
+  background-color: #2C3531;
+  opacity: 0.3;
+  border: 10px solid #2C3531;
+}
+
+.project-list__item-header {
+  flex-grow: 1;
+  color: inherit;
+  align-self: center;
+  text-align: center;
+  width: 20%;
+  height: auto;
+  padding: 10px 10px 10px 20px;
+  margin: 0;
+  border-right: 1px solid #D1E8E2;
+}
+
+.project-list__item-body {
+  color: inherit;
+  flex-grow: 2;
+  align-self: center;
+  text-align: justify;
+  width: 50%;
+  height: 100%;
+  padding: 10px 40px 10px 20px;
+}
+
+.languages {
   display: inline-block;
-  width: 33%;
+  color: #116466;
+  background-color: #D1E8E2;
+  opacity: 0.9;
+  padding: 3px 10px;
 }
 
-@supports (display: grid) {
-  .project-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
-    margin-bottom: 20px;
-  }
-
-  .project-list__item, .project-list__item--disabled {
-    background-color: #116466;
-    color: #FFF;
-    width: auto;
-    min-height: 200px;
-    margin: 0;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .project-list__item-title {
-    color: #FFF;
-  }
-
-  .project-list__item--disabled {
-    background-color: #2C3531;
-    opacity: 0.3;
-  }
+.project-list__item-body a {
+  color: #FFCB9A;
 }
-@media all and (max-width: 750px) {
-  .project-list {
-    grid-gap: 10px;
-  }
 
-  .project-list__item:last-child, .project-list__item--disabled:last-child {
-    grid-column: auto/auto;
-    grid-row: auto/auto;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-
-  h2 {
-    font-size: 25px;
-  }
+.project-list__item-body p {
+  margin: 10px 0;
 }
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .project-list {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media all and (max-width: 500px) {
-  .project-list {
-    grid-template-columns: 1fr;
-  }
 
-  h1 {
-    font-size: 25px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
+.project-list__item-image {
+  flex-grow: 1;
+  align-self: center;
+  width: 30%;
+  height: 100%;
+  padding: 0;
 }
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+/**
 @keyframes button-scale {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.8);
-  }
-}
-.project-list__item, .project-list__item--disabled {
-  animation: 10s button-scale infinite alternate-reverse linear;
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.8);
+    }
 }
 
+.project-list__item {
+    animation: 10s button-scale infinite alternate-reverse linear;
+}
+**/
 .skill-set {
   list-style-type: circle;
 }

@@ -1,7 +1,6 @@
 module.exports = {
     "env": {
-        "browser": true,
-        "es2021": true
+        "browser": true
     },
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -9,4 +8,4 @@ module.exports = {
     },
     "rules": {
     }
-}
+};
