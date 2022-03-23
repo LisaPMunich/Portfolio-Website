@@ -344,7 +344,7 @@ button:focus,
 
 .project-list {
     display: flex;
-    //flex-direction: row;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
@@ -352,14 +352,14 @@ button:focus,
     margin-bottom: 20px;
     min-width: 800px;
 }
-.project-list > * {
-    flex: 1 1 280px;
-}
+//.project-list > * {
+//    flex: 1 1 280px;
+//}
 
 .project-list__item {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc(800px * 999 -100% * 999);
+    //flex-basis: calc(800px * 999 - 100% * 999);
     background-color: $dark-turquoise;
     color: $white;
     margin: 0;
