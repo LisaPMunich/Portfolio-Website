@@ -44,7 +44,7 @@
     }
 
     function validateTelNumber(){
-        let telFormat = /^[0-9- \.]+$/;
+        let telFormat = /^[0-9]+$/;
         if(!telNumberInput.value.match(telFormat)){
             telErrorElement.innerText ='Please type in a valid phone number!'
             return false
@@ -73,10 +73,7 @@
     }
 
     function formHasError() {
-        if (emailErrorElement.innerText.length > 0 || messageErrorElement.innerText.length > 0) {
-            return true
-        }
-        return false
+        return emailErrorElement.innerText.length > 0 || messageErrorElement.innerText.length > 0;
     }
 
     emailInput.addEventListener('input', validateEmail);
