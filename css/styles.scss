@@ -350,7 +350,7 @@ button:focus,
     align-items: stretch;
     gap: 20px;
     margin-bottom: 20px;
-    min-width: 800px;
+    //min-width: 800px;
 }
 //.project-list > * {
 //    flex: 1 1 280px;
@@ -437,21 +437,30 @@ button:focus,
 }
 
 .project-list__item-image {
-    display: block;
-    flex-grow: 1;
-    align-self: center;
+    //display: block;
+    //flex-grow: 1;
+    //align-self: center;
+    //width: 30%;
+    //height: 100%;
+    //padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     width: 30%;
-    height: 100%;
-    padding: 0;
 }
 
 .project-image{
+    //width: 100%;
+    //height: 100%;
+    //object-fit: contain;
+    //margin: 0;
+    //padding: 0;
+    //align-self: center;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-    margin: 0;
-    padding: 0;
-    align-self: center;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 ////FALLBACK-SOLUTION FOR BROWERS NOT SUPPORTING CSS GRIDS
