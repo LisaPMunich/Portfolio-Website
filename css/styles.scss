@@ -306,14 +306,14 @@ button:focus,
         font-size: 25px;
     }
 }
+//
+//@media all and (min-width: 600px) and (max-width: 750px) {
+//    .profile {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
 
-@media all and (min-width: 500px) and (max-width: 750px) {
-    .profile {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media all and (max-width: 500px) {
+@media all and (max-width: 700px) {
     .profile {
         grid-template-columns: 1fr;
     }
@@ -327,14 +327,23 @@ button:focus,
     }
 }
 
+.profile__portrait {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    padding: 20px 10px 0px 10px;
+}
+
+
 //CHECKING IF BROWSER SUPPORTS CSS GRID
 @supports (display: grid) {
     .profile__portrait {
         width: 100%;
-        max-width: 300px;
+        max-width: 500px;
         height: auto;
         border-radius: 50%;
-        padding: 10px;
+        padding: 20px 10px 0px 10px;
     }
 }
 
