@@ -20,87 +20,74 @@
 </head>
 
 <body>
-<header class="page-header">
-  <div class="page-header__logo-item">
-    <img class="logo"
-         src="img/220211_Logo_options_darkgreen_on_lightorange.png"
-         alt="circle-shaped logo with letters L and P">
-  </div>
-  <div class="page-header__nav-item">
-    <nav class="navigation-list">
-      <a href="index.html"
-         target="_self"
-         role="menuitem"
-         class="navigation-list__item navigation-list__item--active"
-      >Home
+<nav class="page-header">
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a class="logo-wrapper" href="./index.html">
+        <img class="logo"
+             src="img/220211_Logo_options_darkgreen_on_lightorange.png"
+             alt="circle-shaped logo with letters L and P">
       </a>
-      <a href="about.html"
-         target="_self"
-         role="menuitem"
-         class="navigation-list__item"
-         aria-label="More information about my experiences and skills"
-      >About
+    </li>
+
+    <li class="nav-item nav-item--active">
+      <a href="index.html" target="_self" role="menuitem">Home
       </a>
-      <a href="work.html"
-         target="_self"
-         role="menuitem"
-         class="navigation-list__item"
-      >Projects
+    </li>
+
+    <li class="nav-item">
+      <a href="about.html" target="_self" role="menuitem">About</a>
+    </li>
+
+    <li class="nav-item">
+      <a href="work.html" target="_self" role="menuitem">Projects
       </a>
-      <a href="contact.html"
-         target="_self"
-         role="menuitem"
-         class="navigation-list__item"
-      >Contact
-      </a>
-    </nav>
-  </div>
-</header>
+    </li>
+
+    <li class="nav-item">
+      <a href="contact.html" target="_self" role="menuitem">Contact</a>
+    </li>
+  </ul>
+  <!--  <div id="menuToggle">-->
+  <!--    <input type="checkbox" />-->
+  <!--    <span></span>-->
+  <!--    <span></span>-->
+  <!--    <span></span>-->
+  <!--    <ul id="menu">-->
+  <!--      <a href="index.html" target="_self" role="menuitem"><li>Home</li></a>-->
+  <!--      <a href="about.html" target="_self" role="menuitem"><li>About</li></a>-->
+  <!--      <a href="work.html" target="_self" role="menuitem"><li>Projects</li></a>-->
+  <!--      <a href="contact.html" target="_self" role="menuitem"><li>Contact</li></a>-->
+  <!--      <a href="" target="_blank"><li>Show me more</li></a>-->
+  <!--    </ul>-->
+  <!--  </div>-->
+</nav>
 
 <main class="main--wideview">
   <section class="content-inside-main">
-    <div class="profile">
-      <div class="profile__item">
-        <img src="img/Profile_portrait_LisaPape_cartoonart_square.jpg"
-             alt="Lisa Pape Portrait"
-             class="profile__portrait">
-      </div>
-      <div class="profile__item">
-        <div>
-          <h1 class="profile__item--title">Hi, I'm lisa.</h1>
-          <h4 class="profile__item--subtitle">full-stack web developer. </h4>
-        </div>
-        <div class="profile__item--content">
-          <p>
-            I'm a <span class="text-highlight-green">web developer</span> from Munich with a background in project and stakeholder management.
-          </p>
-          <p>
-            If you have an interesting project or a passionate tech team to work in, I am happy to <a href="./contact.html">connect</a>.
-          </p>
-          <p class="dev-skills-title">
-            I love to work on projects involving:
-          </p>
-          <section class="dev-skills">
-            <span class="dev-skill-tag">JavaScript</span>
-            <span class="dev-skill-tag">TypeScript</span>
-            <span class="dev-skill-tag">HTML5</span>
-            <span class="dev-skill-tag">CSS3</span>
-            <span class="dev-skill-tag">SASS/SCSS</span>
-            <span class="dev-skill-tag">SQL</span>
-            <span class="dev-skill-tag">jQuery</span>
-            <span class="dev-skill-tag">react</span>
-            <span class="dev-skill-tag">angular</span>
-            <span class="dev-skill-tag">postgreQSL</span>
-            <span class="dev-skill-tag">MongoDB</span>
-          </section>
-          <div class="profile__item--button">
-            <button href="./files/PapeLisa_CV_062022.pdf" class="button" type="button" value="Check out my CV" aria-hidden="true">Check out my CV
+    <div class="profile-wrapper">
+      <img src="./img/PapeLisa_portrait4.jpg"
+           alt="Lisa Pape Portrait"
+           class="profile__portrait"
+      >
+      <div class="profile__content">
+        <h1 class="profile__title">Hi, I'm lisa.</h1>
+        <p>
+          I'm a <span class="profile__underline-effect">full-stack web developer</span> from Munich with a background in
+          project and stakeholder management.
+        </p>
+        <p>
+          If you have an interesting project or a passionate tech team to work in, I am happy to <a
+            href="./contact.html">connect</a>.
+        </p>
+        <div class="profile__button-wrapper">
+          <a href="./files/PapeLisa_CV_062022.pdf">
+            <button class="button" type="button" value="Check out my CV" aria-hidden="true">Check out my CV
             </button>
-          </div>
+          </a>
         </div>
       </div>
     </div>
-
   </section>
 </main>
 

@@ -20,86 +20,77 @@
 </head>
 
 <body>
-<header class="page-header">
-  <div class="page-header__logo-item">
-    <img class="logo"
-         src="img/220211_Logo_options_darkgreen_on_lightorange.png"
-         alt="circle-shaped logo with letters L and P">
-  </div>
-  <div class="page-header__nav-item">
-    <nav class="navigation-list">
-      <a href="index.html"
-         target="_self"
-         role="menuitem"
-         class="navigation-list__item"
-      >Home
+<nav class="page-header">
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a class="logo-wrapper" href="./index.html">
+        <img class="logo"
+             src="img/220211_Logo_options_darkgreen_on_lightorange.png"
+             alt="circle-shaped logo with letters L and P">
       </a>
-      <a href="about.html"
-         target="_self"
-         role="menuitem"
-         class="navigation-list__item"
-         aria-label="More information about my experiences and skills"
-      >About
+    </li>
+
+    <li class="nav-item">
+      <a href="index.html" target="_self" role="menuitem">Home
       </a>
-      <a href="work.html"
-         target="_self"
-         role="menuitem"
-         class="navigation-list__item"
-      >Projects
+    </li>
+
+    <li class="nav-item">
+      <a href="about.html" target="_self" role="menuitem">About</a>
+    </li>
+
+    <li class="nav-item">
+      <a href="work.html" target="_self" role="menuitem">Projects
       </a>
-      <a href="contact.html"
-         target="_self"
-         role="menuitem"
-         class="navigation-list__item navigation-list__item--active"
-      >Contact
-      </a>
-    </nav>
-  </div>
-</header>
+    </li>
+
+    <li class="nav-item nav-item--active">
+      <a href="contact.html" target="_self" role="menuitem">Contact</a>
+    </li>
+  </ul>
+</nav>
 
 <main>
   <section class="content-inside-main">
-        <div>
-          <h1>Reach out.</h1>
-          Lisa Pape<br>
-          Bürgermeister-Rothenfußer-Str. 12f<br>
-          85253 Erdweg<br>
-          Deutschland<br>
-          Tel: <a href="tel:+491733916874" aria-label="phone number to contact me">+491733916874</a><br>
-          <!--Ist das die richtige Art zu meinem Skype Profil zu verlinken?-->
-          Skype: <a href="skype:profile_Lisa%20Pape?userinfo">Lisapmunich@hotmail.com</a><br>
-          Email: <a href="mailto:Lisa.Pape@paneon.de">Lisa.Pape@paneon.de</a><br>
+    <div>
+      <h1>Contact me.</h1>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-details">
+        <span class="contact__underline-effect">Lisa Pape</span><br>
+        85253 Erdweg (Munich)<br>
+        Germany<br>
+        <a href="tel:+491733916874" aria-label="phone number to contact me">+491733916874</a><br>
+        <!--Ist das die richtige Art zu meinem Skype Profil zu verlinken?-->
+        <a href="mailto:lisapapemunich@gmail.com">lisapapemunich@gmail.com</a><br>
+      </div>
+      <form action="#" method="post" class="contact-form"
+            aria-label="You can contact me several ways. Via email, telephone or direct message">
+        <div class="email-wrapper">
+          <label class="standard-label" for="contact-email"></label>
+          <input type="text" id="contact-email" class="contact-email" placeholder="your email">
+          <div class="email-error"></div>
         </div>
 
-        <div>
-          <h1 class="contact__item--call-to-action">
-            Let's work together. <br>
-            Drop me a line.</span>
-          </h1>
-
-          <form action="#" method="post" id="contact-form"
-                aria-label="You can contact me several ways. Via email, telephone or direct message">
-            <div class="email-wrapper">
-              <label class="standard-label" for="contact-email">Email: </label>
-              <input type="text" id="contact-email">
-              <div id="email-error"></div>
-            </div>
-
-            <div class="telephone-wrapper">
-              <label class="standard-label" for="contact-tel">Telephone: </label>
-              <input type="tel" id="contact-tel">
-              <div id="tel-error"></div>
-            </div>
-
-            <div class="message-wrapper">
-              <label class="standard-label" for="contact-message">Message: </label>
-              <textarea maxlength="240" id="contact-message"></textarea>
-              <div id="message-error"></div>
-            </div>
-
-            <button type="submit" value="Send message" class=button id="contact-form-button" aria-hidden="true">Send message</button>
-          </form>
+        <div class="telephone-wrapper">
+          <label class="standard-label" for="contact-tel"></label>
+          <input type="tel" id="contact-tel" class="contact-tel" placeholder="your phonenumber">
+          <div class="tel-error"></div>
         </div>
+
+        <div class="message-wrapper">
+          <label class="standard-label" for="contact-message"></label>
+          <textarea maxlength="240" id="contact-message" class="contact-message" placeholder="message"></textarea>
+          <div class="message-error"></div>
+        </div>
+
+        <div class="contact__button-wrapper">
+          <button type="submit" value="Send message" class=button id="contact-form-button" aria-hidden="true">Send
+            message
+          </button>
+        </div>
+      </form>
+    </div>
   </section>
 </main>
 
