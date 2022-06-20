@@ -1,0 +1,31 @@
+@import "../abstract/variables";
+
+button,
+.button {
+    display: inline-block;
+    padding: 10px;
+
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    border-radius: 3px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    color: $white;
+    background-color: $dark-turquoise;
+
+    /* takes the font from the outer container */
+    font-family: inherit;
+    text-decoration: none;
+    transition: 1s opacity;
+    margin-bottom: 10px;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}

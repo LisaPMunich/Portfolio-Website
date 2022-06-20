@@ -1,0 +1,169 @@
+@import "../abstract/variables";
+
+
+.card-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.card-wrapper * {
+    box-sizing: border-box;
+}
+
+div.card {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+div.card__content p {
+    font-size: 1em;
+    line-height: 1.125; // Default is 1.2, but varies by browser
+    min-height: 9em; // 8 * 1em * 1.125
+    // (number of lines) * (font-size) * (line-height multiplier)
+}
+
+.card__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-top: 2px solid $light-orange;
+    border-right: 2px solid $light-orange;
+    border-left: 2px solid $light-orange;
+}
+
+.card__content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 0 15px 0 15px;
+    background: $white;
+    border-right: 2px solid $light-orange;
+    border-left: 2px solid $light-orange;
+}
+
+.card__content > p:first-of-type {
+    margin-top: 5px;
+}
+
+.card__content > p:last-of-type {
+    margin-bottom: 0;
+}
+
+.card__title{
+    justify-content: left;
+    color: $dark-turquoise;
+    padding: 5px 0;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.card__info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555555;
+    background: $white;
+    font-size: 0.8em;
+    border-bottom: 2px solid $light-orange;
+    border-right: 2px solid $light-orange;
+    border-left: 2px solid $light-orange;
+}
+
+.card__info i{
+    font-size: 0.9em;
+    margin-right: 8px;
+}
+
+.card__link {
+    color: #64968c;
+    text-decoration: none;
+}
+
+.card__link:hover {
+    text-decoration: underline;
+}
+
+.card__link--disabled {
+    color: $white;
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
+}
+
+.card__project-dev-skills{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.project-dev-skill-tag{
+    margin: 0.3em;
+    padding: 0.5em;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    max-width: 6em;
+    background: $light-turquoise;
+    color: $dark-turquoise;
+    font-size: 0.8em;
+    text-align: center;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+
+//
+////FALLBACK-SOLUTION FOR BROWERS NOT SUPPORTING CSS GRIDS
+//.card-wrapper {
+//    display: inline-block;
+//    width: 33%;
+//}
+
+////MEDIA QUERY
+//@media all and (max-width: 750px) {
+//    .card-wrapper {
+//        grid-gap: 10px;
+//    }
+//
+//
+//    h1 {
+//        font-size: 30px;
+//    }
+//
+//    h5 {
+//        font-size: 25px;
+//    }
+//}
+//
+//@media all and (min-width: 500px) and (max-width: 750px) {
+//    .card-wrapper {
+//        grid-template-columns: 1fr 1fr;
+//    }
+//}
+//
+//@media all and (max-width: 500px) {
+//    .card-wrapper {
+//        grid-template-columns: 1fr;
+//    }
+//
+//    h1 {
+//        font-size: 25px;
+//    }
+//
+//    h5 {
+//        font-size: 20px;
+//    }
+//}
+
+

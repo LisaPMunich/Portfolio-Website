@@ -1,0 +1,80 @@
+@import "../abstract/variables";
+
+%header-shared {
+    font-weight: $font-bold;
+    color: $dark-turquoise;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+
+    @extend %header-shared;
+}
+
+h2 {
+    font-size: 30px;
+
+    @extend %header-shared;
+}
+
+h3 {
+    font-size: 20px;
+
+    @extend %header-shared;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: $font-bold;
+    color: $dark-orange;
+    text-shadow: 0 1px rgba(44, 53, 49, 0.3);
+}
+
+h5 {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+a:visited {
+    /* color change to light brown-orange when visited */
+    font-weight: bold;
+    color: $dark-turquoise;
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+
+a:hover,
+a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+}
+
+a:active {
+    /* color change to greyish black when selected */
+    color: $grey;
+}
+
+//=======================
+//MEDIA QUERY
+//=======================
+@media all and (max-width: 800px) {
+    h1{
+        font-size: 40px;
+    }
+}
+
+@media all and (min-width: 450px) and (max-width: 600px) {
+    h1{
+        font-size: 35px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    h1{
+        font-size: 35px;
+    }
+
+}

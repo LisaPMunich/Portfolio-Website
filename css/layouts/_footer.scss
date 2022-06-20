@@ -1,0 +1,39 @@
+@import "../abstract/variables";
+
+
+footer {
+    background-color: $light-orange;
+    color: $dark-turquoise;
+    min-width: 300px;
+    height: 100px;
+    margin: auto;
+    margin-top: -$footer-overlap;
+    margin-bottom: 0;
+}
+
+.page-footer__logo {
+    width: 30px;
+    height: 30px;
+}
+
+.page-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 5px;
+    width: 100%;
+}
+
+.page-footer__call-to-action {
+    grid-column: 1/5;
+    text-align: center;
+}
+
+.page-footer__social-media {
+    grid-column: 1/5;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,20 @@
+@import "../abstract/variables";
+
+main {
+    min-height: 100%;
+    flex: 1;
+
+    /* this margin: 0 auto makes the element take up the horizontal space in the container */
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: justify-all;
+}
+
+.main--wideview {
+    max-width: 1200px;
+}
+
+.content-inside-main {
+    padding-top: 120px;
+    padding-bottom: $footer-overlap;
+}
