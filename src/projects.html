@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lisa Pape - Projects</title>
+  <link rel="icon"
+        type="image/svg"
+        href="../img/220211_Logo_options_darkgreen_on_lightorange.png"
+        sizes="32x32">
+  <link rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap">
+  <link rel="stylesheet"
+        type="text/css"
+        href="../css/styles.css">
+</head>
+
+<body>
+<nav class="page-header">
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a class="logo-wrapper" href="index.html">
+        <img class="logo"
+             src="../img/220211_Logo_options_darkgreen_on_lightorange.png"
+             alt="circle-shaped logo with letters L and P">
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="index.html" target="_self" role="menuitem">Home
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="about.html" target="_self" role="menuitem">About</a>
+    </li>
+
+    <li class="nav-item nav-item--active">
+      <a href="projects.html" target="_self" role="menuitem">Projects
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="contact.html" target="_self" role="menuitem">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<main>
+  <section class="content-inside-main">
+    <div>
+      <h1>My Work.</h1>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">
+        <img class="card__image" src="../img/GreenScreen_ProjectCard_Image_resize2.png" alt="card__image"/>
+        <div class="card__content">
+          <h5 class="card__title">Movie App</h5>
+          <p class="card__text">
+              A full-stack web app, which provides users with information about movies addressing climate change. They can
+              view information about the plot, directors and genres. Also, they can create an account with their personal
+              data and a list of favorite movies.
+            <br>
+            <br>
+            <span class="font-bold">Challenges</span>: Build RESTful API from scratch, implement extensive Redux boilerplate code (using createStore() instead of deprecated Legacy_createStore()), deploy to Netlify (requiring a toml config file), solve peer dependency issues of parcel.
+            <br>
+            <br>
+            <span class="font-bold">Implementation</span>: Developed the server- and client-side using the MERN stack, built RESTful API from scratch, applied MVC, implemented CORS, JWT
+              authentication and basic HTTP authorisation.
+          </p>
+          <section class="card__dev-skill-wrapper">
+            <span class="card__dev-skill-detail">JavaScript</span>
+            <span class="card__dev-skill-detail">MongoDB</span>
+            <span class="card__dev-skill-detail">Mongoose</span>
+            <span class="card__dev-skill-detail">RESTful API</span>
+            <span class="card__dev-skill-detail">Express</span>
+            <span class="card__dev-skill-detail">React</span>
+            <span class="card__dev-skill-detail">Redux</span>
+            <span class="card__dev-skill-detail">Node</span>
+            <span class="card__dev-skill-detail">Bootstrap</span>
+            <span class="card__dev-skill-detail">Postman</span>
+            <span class="card__dev-skill-detail">Swagger</span>
+            <span class="card__dev-skill-detail">Heroku</span>
+          </section>
+        </div>
+        <div class="card__info">
+          <div>
+            <a href="https://github.com/LisaPMunich/Movie-API-client" class="card__link">View Code</a>
+          </div>
+          <div>
+            <a href="https://green-screen-app.herokuapp.com/" class="card__link">View Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__image" src="../img/MeetUpApp_ProjectCart_Image_resize2.png" alt="card__image"/>
+        <div class="card__content">
+          <h5 class="card__title">Meet Up App</h5>
+          <p class="card__text">
+            A serverless, progressive web app (pwa), which gives users access to international frontend meet-ups worldwide and allows filtering by location and number.
+            <br>
+            <br>
+            <span class="font-bold">Challenges</span>: Apply TDD approach, use testing libraries and solve dependency issues with React 18. Integrate Google Calendar API, use AWS lambda, fulfill pwa requirements, implement alerts using onLine/offline state, visualize data with JS chart library.
+            <br>
+            <br>
+            <span class="font-bold">Implementation</span>: Developed using a TDD approach, fetches event list via Meetup API, handles authentication (via Google Calendar API)  and authorization (AWS lambda), visualizes events (chart.js), OOP approach for alerts, is monitored with online APM Atatus.
+          </p>
+          <section class="card__dev-skill-wrapper">
+            <span class="card__dev-skill-detail">JavaScript</span>
+            <span class="card__dev-skill-detail">React</span>
+            <span class="card__dev-skill-detail">Google API</span>
+            <span class="card__dev-skill-detail">Jest</span>
+            <span class="card__dev-skill-detail">Cucumber</span>
+            <span class="card__dev-skill-detail">Puppeteer</span>
+            <span class="card__dev-skill-detail">OAuth2</span>
+            <span class="card__dev-skill-detail">AWS</span>
+            <span class="card__dev-skill-detail">Atatus</span>
+            <span class="card__dev-skill-detail">chart.js</span>
+          </section>
+        </div>
+        <div class="card__info">
+          <div>
+            <a href="https://github.com/LisaPMunich/meet-up-app" class="card__link">View Code</a>
+          </div>
+          <div>
+            <a href="https://meet-up-app-2022.herokuapp.com/" class="card__link">View Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card__image" src="../img/Pokemon_ProjectCard_Image_resize2.png" alt="card__image"/>
+        <div class="card__content">
+          <h5 class="card__title">Pokemon App</h5>
+          <p class="card__text">
+            Client-side pokemon app consuming data from an external API . Users can use a search box to filter the list of pokemon and click on a pokemon to open a modal with detailed information.
+            <br>
+            <br>
+            <span class="font-bold">Challenges</span>: Fetch and consume a third-party API, target the correct endpoints, use the provided HTTP protocols. Navigate within the confinements of Bootstrap.
+            <br>
+            <br>
+            <span class="font-bold">Implementation</span>: connected the app to an external API. Developed the app to be user-friendly, fully-responsive, as well as optimised for all screen sizes and browsers (incl. polyfills for fetch and promise). Rules of accessibility have been followed.
+          </p>
+          <section class="card__dev-skill-wrapper">
+            <span class="card__dev-skill-detail">JavaScript</span>
+            <span class="card__dev-skill-detail">HTML5</span>
+            <span class="card__dev-skill-detail">SCSS</span>
+            <span class="card__dev-skill-detail">Bootstrap</span>
+            <span class="card__dev-skill-detail">Express</span>
+            <span class="card__dev-skill-detail">Google API</span>
+            <span class="card__dev-skill-detail">jQuery</span>
+            <span class="card__dev-skill-detail">ESLint</span>
+            <span class="card__dev-skill-detail">Prettier</span>
+            <span class="card__dev-skill-detail">Stylelint</span>
+          </section>
+        </div>
+        <div class="card__info">
+          <div>
+            <a href="https://github.com/LisaPMunich/Simple-Pokemon-JS-App" class="card__link">View Code</a>
+          </div>
+          <div>
+            <a href="https://lisapmunich.github.io/Simple-Pokemon-JS-App/" class="card__link">View Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card__image" src="../img/ColoringAPI_ProjectCard_Image_resize2_v2.png" alt="card__image"/>
+        <div class="card__content">
+          <h5 class="card__title">Colouring Pic API</h5>
+          <p class="card__text">
+            Backend for an app, which allows users to print out images from children movies for coloring. Therefore, the client-side (to-be-developed) can be designed to display a list of animated movies and filter them.
+            <br>
+            <br>
+            <span class="font-bold">Challenges</span>: build on top of a relational database (postgreSQL) to compare it to the experience of creating a non-relational database (MongoDB, see Movie App project). Implement the concept of foreign and personal keys.
+            <br>
+            <br>
+            <span class="font-bold">Implementation</span>:  Designed database schemas, created database with CRUD in SQL, documented endpoints using Swagger, connecting it to the API using knex.
+          </p>
+          <section class="card__dev-skill-wrapper">
+            <span class="card__dev-skill-detail">JavaScript</span>
+            <span class="card__dev-skill-detail">SCSS</span>
+            <span class="card__dev-skill-detail">Express</span>
+            <span class="card__dev-skill-detail">PostgreSQL</span>
+            <span class="card__dev-skill-detail">REST</span>
+            <span class="card__dev-skill-detail">knex</span>
+            <span class="card__dev-skill-detail">draw.io</span>
+            <span class="card__dev-skill-detail">Swagger</span>
+            <span class="card__dev-skill-detail">Postman</span>
+          </section>
+        </div>
+        <div class="card__info">
+          <div>
+            <a href="https://github.com/LisaPMunich/coloring-pic_api" class="card__link">View Code</a>
+          </div>
+          <div>
+            <a href=" " class="card__link--disabled"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card__image" src="../img/MemeGenerator_ProjectCard_Img_630x413.png" alt="card__image"/>
+        <div class="card__content">
+          <h5 class="card__title">Meme Generator</h5>
+          <p class="card__text">
+            An interactive web app in React using functional programming, where users can load randomly chosen funny images from an external API. When the App first loads, it fetches 100 of the most popular memes from an external API. Then it allows the user to choose a randomly displayed image and add text to it via two input fields.
+            <br>
+            <br>
+            <span class="font-bold">Challenge/Objective</span>: Cement knowledge in React functional programming.
+            <br>
+            <br>
+            <span class="font-bold">Implementation</span>: Recreated a Figma design provided by Scrimba, worked with state, event listeners, controlled components, conditional rendering, forms in React, css flexbox and grids. Built following a tutorial on Scrimba.
+          </p>
+          <section class="card__dev-skill-wrapper">
+            <span class="card__dev-skill-detail">JavaScript</span>
+            <span class="card__dev-skill-detail">ES6 ++</span>
+            <span class="card__dev-skill-detail">React</span>
+            <span class="card__dev-skill-detail">HTML5</span>
+            <span class="card__dev-skill-detail">SCSS</span>
+            <span class="card__dev-skill-detail">BEM</span>
+            <span class="card__dev-skill-detail">JSON API</span>
+            <span class="card__dev-skill-detail">FIGMA</span>
+          </section>
+        </div>
+        <div class="card__info">
+          <div>
+            <a href="https://github.com/LisaPMunich/meme_generator" class="card__link">View Code</a>
+          </div>
+          <div>
+            <a href="https://meme-generator-lisapmunich.herokuapp.com/" class="card__link">View Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__image" src="../img/SlackEvent_ProjectCard_Image_resize2.png" alt="card__image"/>
+        <div class="card__content">
+          <h5 class="card__title">Slack Event App</h5>
+          <p class="card__text">
+            Customization of an app boilerplate developed by Slack, written in Node.js using Express. The purpose of the slack app is to facilitate the organisation of a company's internal events.
+            <br>
+            <br>
+            <span class="font-bold">Challenges</span>: navigate within the parameters set by Slack, e.g. figuring out channel IDs through logging in order to be able to post information in either the guest or the admin channel.
+            <br>
+            <br>
+            <span class="font-bold">Implementation</span>: The customization included applying event listeners for the event that fires, when a team member joins a particular channel, configuring a dialog modal asking event guests to fill out a form, posting the form data to a separate channel for the admins of the event.
+          </p>
+          <section class="card__dev-skill-wrapper">
+            <span class="card__dev-skill-detail">Slack</span>
+            <span class="card__dev-skill-detail">Node</span>
+            <span class="card__dev-skill-detail">Express</span>
+          </section>
+        </div>
+        <div class="card__info">
+          <div>
+            <a href="https://github.com/LisaPMunich/Slack_Event_App" class="card__link">View Code</a>
+          </div>
+          <div>
+            <a href=" " class="card__link--disabled"></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__image" src="../img/AirBnB_ProjectCard_Img_630x413.png" alt="card__image"/>
+        <div class="card__content">
+          <h5 class="card__title">AirBnB clone</h5>
+          <p class="card__text">
+            Web app with static and reusable data-driven React components,  to practice the setup of a React project.
+            <br>
+            <br>
+            <span class="font-bold">Challenges</span>: Cement React syntax, iterate through the different forms of props (receiving, destructuring, passing in non-string props, pass object as props vs. spread object as props)
+            <br>
+            <br>
+            <span class="font-bold">Implementation</span>: Recreated a Figma design provided by Scrimba and created different components using React. Built following a tutorial on Scrimba.
+          </p>
+          <section class="card__dev-skill-wrapper">
+            <span class="card__dev-skill-detail">JavaScript</span>
+            <span class="card__dev-skill-detail">ES6 ++</span>
+            <span class="card__dev-skill-detail">CSS</span>
+            <span class="card__dev-skill-detail">React</span>
+            <span class="card__dev-skill-detail">Figma</span>
+          </section>
+        </div>
+        <div class="card__info">
+          <div>
+            <a href="https://github.com/LisaPMunich/AirBnb-Experience-clone" class="card__link">View Code</a>
+          </div>
+          <div>
+            <a href=" " class="card__link--disabled"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__call-to-action">
+    <h3>Find me on.</h3>
+  </div>
+  <div class="page-footer__social-media">
+    <a href="https://github.com/LisaPMunich"
+       target="_blank">
+      <img src="../img/291716_github_logo_social_network_social_icon.svg"
+           alt="Github logo"
+           class="page-footer__logo">
+    </a>
+    <a href="https://www.instagram.com/the_momster_sleepometer/" target="_blank">
+      <img src="../img/3225191_app_instagram_logo_media_popular_icon.svg"
+           alt="Instagram logo"
+           class="page-footer__logo">
+    </a>
+    <a href="https://www.linkedin.com/in/lisa-pape-329b7a22/" target="_blank">
+      <img src="../img/3225190_app_linkedin_logo_media_popular_icon.svg"
+           alt="LinkedIn logo"
+           class="page-footer__logo">
+    </a>
+  </div>
+</footer>
+
+<script src="../dist/tota11y.min.js"></script>
+</body>
+
+</html>
