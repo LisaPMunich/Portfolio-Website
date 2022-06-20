@@ -116,36 +116,44 @@ button:focus,
 }
 
 .nav-list {
+  width: 100%;
+  background: #116466;
   display: flex;
-  padding: 1rem 0;
   margin: 0 0 20px 0;
+  padding: 10px;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
   position: fixed;
   height: 100px;
-  background-color: #116466;
-  color: #FFCB9A;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 2;
+  box-shadow: 0 0 10px #FFCB9A;
+  align-items: center;
+}
+
+.ham-items {
+  display: flex;
+  flex: 3;
   justify-content: flex-end;
   align-items: center;
-  box-shadow: 0 0 10px #FFCB9A;
 }
-.nav-list a {
+
+.ham-items a {
+  position: relative;
+  flex-basis: 1;
+  flex-wrap: wrap;
+  padding: 10px 20px;
   color: #D9B08C;
   text-decoration: none;
   text-transform: lowercase;
+  text-align: center;
   letter-spacing: 0.15em;
-  display: inline-block;
-  padding: 20px;
-  position: relative;
-  flex-wrap: wrap;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 2;
   transition: all 200ms ease-in;
 }
-.nav-list a::after {
+.ham-items a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -157,28 +165,21 @@ button:focus,
   background: #FFCB9A;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
-.nav-list a:hover::after {
+.ham-items a:hover::after {
   width: 100%;
   left: 0;
   color: #FFCB9A;
+  background: #116466;
 }
-.nav-list a:visited {
+.ham-items a:visited {
   color: #D9B08C;
   text-decoration: none;
 }
-.nav-list a:visited:active {
+.ham-items a:visited:active {
   color: #FFCB9A;
 }
 
-.nav-item {
-  list-style: none;
-  margin-right: 2rem;
-  color: #D9B08C;
-  align-items: center;
-  line-height: 0;
-}
-
-.nav-item:first-child {
+.ham-items:first-child {
   margin-right: auto;
   margin-left: 2rem;
 }
@@ -186,6 +187,9 @@ button:focus,
 a.logo-wrapper {
   transition: none;
   background: none;
+  flex-basis: 0;
+  align-items: center;
+  line-height: 0;
 }
 a.logo-wrapper::after, a.logo-wrapper:hover::after {
   background: none;
@@ -193,13 +197,39 @@ a.logo-wrapper::after, a.logo-wrapper:hover::after {
 }
 
 .logo {
-  height: 4em;
-  position: relative;
+  height: 80px;
 }
 
-@media all and (max-width: 800px) {
+.nav-list label, #hamburger {
+  display: none;
+}
+
+@media all and (max-width: 600px) {
   .page-header {
     font-size: 20px;
+  }
+  .ham-items a {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+  .nav-list label {
+    display: inline-block;
+    color: #FFCB9A;
+    background: #116466;
+    font-style: normal;
+    font-size: 2.5em;
+    padding: 10px;
+    margin-left: auto;
+    text-align: right;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  .ham-items {
+    display: none;
+  }
+  .nav-list input:checked ~ .ham-items {
+    display: block;
   }
 }
 @media all and (min-width: 500px) and (max-width: 800px) {
