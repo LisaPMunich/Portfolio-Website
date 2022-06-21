@@ -301,7 +301,7 @@ footer {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  box-shadow: 0 0 10px #FFCB9A;
+  box-shadow: 10px #FFCB9A;
   /* this shrinks the image to fit the space it has, should the viewport be smaller than the image
   } */
   max-width: 100%;
@@ -352,12 +352,12 @@ footer {
     padding: 20px 10px 0px 10px;
   }
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 620px) {
   .profile__portrait {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    box-shadow: 0 0 10px #FFCB9A;
+    box-shadow: 10px #FFCB9A;
   }
   .profile-wrapper {
     display: flex;
@@ -374,7 +374,7 @@ footer {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    box-shadow: 0 0 10px #FFCB9A;
+    box-shadow: 10px #FFCB9A;
   }
   .profile-wrapper {
     display: flex;
