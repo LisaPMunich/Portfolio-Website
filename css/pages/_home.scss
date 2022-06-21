@@ -14,7 +14,7 @@
 
 .profile__portrait{
     width: 300px;
-    height: 300px;
+    height: auto;
     border-radius: 50%;
     box-shadow: 10px $light-orange;
 
@@ -83,7 +83,7 @@
 
     .profile__portrait{
         width: 200px;
-        height: 200px;
+        height: auto;
         border-radius: 50%;
         box-shadow: 10px $light-orange;
     }
@@ -104,7 +104,7 @@
 
     .profile__portrait{
         width: 200px;
-        height: 200px;
+        height: auto;
         border-radius: 50%;
         box-shadow: 10px $light-orange;
     }
