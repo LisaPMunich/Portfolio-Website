@@ -27,6 +27,7 @@
 
 }
 
+
 .ham-items {
     a{
         position: relative;
@@ -38,14 +39,14 @@
         text-transform: lowercase;
         text-align: center;
         letter-spacing: 0.15em;
+        display: inline-block;
         font-weight: $font-bold;
         font-size: 1.2rem;
         line-height: 2;
-
         transition: all 200ms ease-in;
 
     }
-    a::after {
+    a:after{
         content: "";
         position: absolute;
         bottom: 0;
@@ -57,11 +58,12 @@
         background: $light-orange;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
     }
+
+
     a:hover::after {
         width: 100%;
         left: 0;
         color: $light-orange;
-        background: $dark-turquoise;
     }
 
     a:visited {
@@ -107,7 +109,7 @@ a.logo-wrapper {
 //===================
 //MEDIA QUERY
 //===================
-@media all and (max-width: 600px) {
+@media all and (max-width: 620px) {
     .page-header {
         font-size: 20px;
     }
@@ -117,15 +119,33 @@ a.logo-wrapper {
         a {
             display: block;
             width: 100%;
-            border-top: 1px solid #333;
+            border-top: 1px solid $light-turquoise;
+            border-bottom: 1px solid $light-turquoise;
         }
+
+        a:after{
+            display: block;
+            background: none;
+            color: $dark-turquoise;
+            transition: none;
+        }
+        a:hover{
+            color: $light-turquoise;
+        }
+        a:first-child{
+            border-top: 2px solid $light-turquoise;
+        }
+        a:last-child{
+            border-bottom: 2px solid $light-turquoise;
+        }
+
+
     }
 
     //show hamburger icon
     .nav-list label {
         display: inline-block;
         color: $light-orange;
-        background: $dark-turquoise;
         font-style: normal;
         font-size: 2.5em;
         padding: 10px;
@@ -141,7 +161,12 @@ a.logo-wrapper {
     }
     .nav-list input:checked ~ .ham-items {
         display: block;
-        
+        position: absolute;
+        margin-top: 340px;
+        background: $dark-turquoise;
+        width: 100%;
+        left: 0;
+        right: 0;
     }
 }
 

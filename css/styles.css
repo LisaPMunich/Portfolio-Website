@@ -148,12 +148,13 @@ button:focus,
   text-transform: lowercase;
   text-align: center;
   letter-spacing: 0.15em;
+  display: inline-block;
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 2;
   transition: all 200ms ease-in;
 }
-.ham-items a::after {
+.ham-items a:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -169,7 +170,6 @@ button:focus,
   width: 100%;
   left: 0;
   color: #FFCB9A;
-  background: #116466;
 }
 .ham-items a:visited {
   color: #D9B08C;
@@ -204,19 +204,34 @@ a.logo-wrapper::after, a.logo-wrapper:hover::after {
   display: none;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 620px) {
   .page-header {
     font-size: 20px;
   }
   .ham-items a {
     display: block;
     width: 100%;
-    border-top: 1px solid #333;
+    border-top: 1px solid #D1E8E2;
+    border-bottom: 1px solid #D1E8E2;
+  }
+  .ham-items a:after {
+    display: block;
+    background: none;
+    color: #116466;
+    transition: none;
+  }
+  .ham-items a:hover {
+    color: #D1E8E2;
+  }
+  .ham-items a:first-child {
+    border-top: 2px solid #D1E8E2;
+  }
+  .ham-items a:last-child {
+    border-bottom: 2px solid #D1E8E2;
   }
   .nav-list label {
     display: inline-block;
     color: #FFCB9A;
-    background: #116466;
     font-style: normal;
     font-size: 2.5em;
     padding: 10px;
@@ -230,6 +245,12 @@ a.logo-wrapper::after, a.logo-wrapper:hover::after {
   }
   .nav-list input:checked ~ .ham-items {
     display: block;
+    position: absolute;
+    margin-top: 340px;
+    background: #116466;
+    width: 100%;
+    left: 0;
+    right: 0;
   }
 }
 @media all and (min-width: 500px) and (max-width: 800px) {
