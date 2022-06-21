@@ -14,6 +14,7 @@
 
 .profile__portrait{
     border-radius: 50%;
+    height: 300px;
     box-shadow: 0 0 10px $light-orange;
 
     /* this shrinks the image to fit the space it has, should the viewport be smaller than the image
@@ -64,6 +65,7 @@
 //=================
 @supports (display: grid) {
     .profile__portrait {
+        height: 300px;
         border-radius: 50%;
     }
 }
@@ -96,6 +98,12 @@
         align-items: center;
         right: 0;
         left: 0;
+    }
+
+    .profile__portrait {
+        border-radius: 50%;
+        height: 200px;
+        box-shadow: 0 0 10px $light-orange;
     }
 }
 
