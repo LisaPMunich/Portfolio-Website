@@ -21,33 +21,37 @@
 
 <body>
 <nav class="page-header">
-  <ul class="nav-list">
-    <li class="nav-item">
-      <a class="logo-wrapper" href="index.html">
-        <img class="logo"
-             src="../img/220211_Logo_options_darkgreen_on_lightorange.png"
-             alt="circle-shaped logo with letters L and P">
+  <div class="nav-list">
+    <a  href="./index.html" class="logo-wrapper">
+      <img class="logo"
+           src="../img/220211_Logo_options_darkgreen_on_lightorange.png"
+           alt="circle-shaped logo with letters L and P">
+    </a>
+
+    <label for="hamburger">
+      &#9776;
+    </label>
+    <input type="checkbox" id="hamburger"/>
+
+    <div class="ham-items">
+
+      <a href="index.html" class="nav-item" target="_self" role="menuitem">
+        Home
       </a>
-    </li>
 
-    <li class="nav-item">
-      <a href="index.html" target="_self" role="menuitem">Home
+      <a href="about.html" class="nav-item" target="_self" role="menuitem">
+        About
       </a>
-    </li>
 
-    <li class="nav-item">
-      <a href="about.html" target="_self" role="menuitem">About</a>
-    </li>
-
-    <li class="nav-item nav-item--active">
-      <a href="projects.html" target="_self" role="menuitem">Projects
+      <a href="projects.html" class="nav-item nav-item--active" target="_self" role="menuitem">
+        Projects
       </a>
-    </li>
 
-    <li class="nav-item">
-      <a href="contact.html" target="_self" role="menuitem">Contact</a>
-    </li>
-  </ul>
+      <a href="contact.html" class="nav-item" target="_self" role="menuitem">
+        Contact
+      </a>
+    </div>
+  </div>
 </nav>
 
 <main>
@@ -137,7 +141,7 @@
         <div class="card__content">
           <h5 class="card__title">Pokemon App</h5>
           <p class="card__text">
-            Client-side pokemon app consuming data from an external API . Users can use a search box to filter the list of pokemon and click on a pokemon to open a modal with detailed information.
+            Client-side pokemon app consuming data from an external API. Users can use a search box to filter the list of pokemon and click on a pokemon to open a modal with detailed information.
             <br>
             <br>
             <span class="font-bold">Challenges</span>: Fetch and consume a third-party API, target the correct endpoints, use the provided HTTP protocols. Navigate within the confinements of Bootstrap.
@@ -176,7 +180,7 @@
             Backend for an app, which allows users to print out images from children movies for coloring. Therefore, the client-side (to-be-developed) can be designed to display a list of animated movies and filter them.
             <br>
             <br>
-            <span class="font-bold">Challenges</span>: build on top of a relational database (postgreSQL) to compare it to the experience of creating a non-relational database (MongoDB, see Movie App project). Implement the concept of foreign and personal keys.
+            <span class="font-bold">Challenges</span>: build on top of a relational database (postgreSQL) to compare it to the experience of creating a non-relational database (MongoDB, see Movie App project). Implement the concept of foreign and primary keys.
             <br>
             <br>
             <span class="font-bold">Implementation</span>:  Designed database schemas, created database with CRUD in SQL, documented endpoints using Swagger, connecting it to the API using knex.

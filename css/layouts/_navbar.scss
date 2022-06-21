@@ -107,8 +107,9 @@ a.logo-wrapper {
 
 
 //===================
-//MEDIA QUERY
+//MEDIA QUERIES
 //===================
+
 @media all and (max-width: 620px) {
     .page-header {
         font-size: 20px;
@@ -167,22 +168,5 @@ a.logo-wrapper {
         width: 100%;
         left: 0;
         right: 0;
-    }
-}
-
-
-@media all and (min-width: 500px) and (max-width: 800px) {
-    .page-header {
-        font-size: 20px;
-    }
-}
-
-@media all and (max-width: 500px) {
-    .page-header {
-        font-size: 18px;
-    }
-
-    .profile__content {
-        flex-shrink: 2;
     }
 }

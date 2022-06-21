@@ -89,7 +89,10 @@
     margin-top: 2px;
 }
 
-//MEDIA QUERY
+//===================
+//MEDIA QUERIES
+//===================
+
 @media all and (max-width: 800px) {
     .contact-details{
         padding: 20px;
@@ -106,7 +109,7 @@
     }
 }
 
-@media all and (min-width: 450px) and (max-width: 600px) {
+@media all and (min-width: 450px) and (max-width: 620px) {
     .contact-wrapper{
         display: flex;
         flex-direction: column;

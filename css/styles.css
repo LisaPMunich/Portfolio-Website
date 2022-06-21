@@ -22,7 +22,7 @@ body {
   line-height: 1.6;
 }
 
-.about__underline-effect, h3, h2, h1 {
+h3, h2, h1 {
   font-weight: 700;
   color: #116466;
 }
@@ -78,7 +78,7 @@ a:active {
     font-size: 40px;
   }
 }
-@media all and (min-width: 450px) and (max-width: 600px) {
+@media all and (min-width: 450px) and (max-width: 620px) {
   h1 {
     font-size: 35px;
   }
@@ -253,19 +253,6 @@ a.logo-wrapper::after, a.logo-wrapper:hover::after {
     right: 0;
   }
 }
-@media all and (min-width: 500px) and (max-width: 800px) {
-  .page-header {
-    font-size: 20px;
-  }
-}
-@media all and (max-width: 500px) {
-  .page-header {
-    font-size: 18px;
-  }
-  .profile__content {
-    flex-shrink: 2;
-  }
-}
 main {
   min-height: 100%;
   flex: 1;
@@ -378,6 +365,15 @@ footer {
   margin-top: 14px;
 }
 
+@supports (display: grid) {
+  .profile__portrait {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 50%;
+    padding: 20px 10px 0px 10px;
+  }
+}
 @media all and (max-width: 600px) {
   .profile__portrait {
     width: 300px;
@@ -429,6 +425,8 @@ footer {
   margin: 5px 0;
   padding: 15px 0;
   position: relative;
+  font-weight: 700;
+  color: #116466;
 }
 
 .about__underline-effect::before {
@@ -604,10 +602,27 @@ div.card__content p {
   pointer-events: none;
 }
 
+@supports (display: flex) and (not (display: grid)) {
+  .card-wrapper {
+    display: flex;
+    justify-items: center;
+    width: 500px;
+    height: 200px;
+    border: 1px solid #d3d3d3;
+  }
+  .card-wrapper > div {
+    width: auto;
+  }
+}
 @supports (display: inline-block) and (not (display: flex)) {
   .card-wrapper {
     display: inline-block;
     width: 33%;
+  }
+}
+@media all and (max-width: 500px) {
+  .profile__content {
+    flex-shrink: 2;
   }
 }
 .contact-wrapper {
@@ -715,7 +730,7 @@ div.card__content p {
     text-align: left;
   }
 }
-@media all and (min-width: 450px) and (max-width: 600px) {
+@media all and (min-width: 450px) and (max-width: 620px) {
   .contact-wrapper {
     display: flex;
     flex-direction: column;

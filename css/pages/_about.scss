@@ -8,9 +8,10 @@
 .about__underline-effect{
     font-size: 20px;
     margin: 5px 0;
-    @extend %header-shared;
     padding: 15px 0;
     position: relative;
+    font-weight: $font-bold;
+    color: $dark-turquoise;
 }
 
 .about__underline-effect::before {

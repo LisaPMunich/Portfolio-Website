@@ -135,22 +135,23 @@ div.card__content p {
 }
 
 
+//=================
+//FEATURE QUERIES
+//=================
 
-////FALLBACK-SOLUTION FOR BROWERS NOT SUPPORTING CSS GRIDS
+@supports (display: flex) and (not (display: grid)) {
+    .card-wrapper {
+        display: flex;
+        justify-items: center;
+        width: 500px;
+        height: 200px;
+        border: 1px solid $light-grey;
+    }
 
-//@supports (display: flex) and (not (display: grid)) {
-//    .card-wrapper {
-//        display: flex;
-//        justify-items: center;
-//        width: 500px;
-//        height: 200px;
-//        border: 1px solid $light-grey;
-//    }
-//
-//    .card-wrapper > div {
-//        width: auto;
-//    }
-//}
+    .card-wrapper > div {
+        width: auto;
+    }
+}
 
 @supports (display: inline-block) and (not (display: flex)) {
     .card-wrapper {
@@ -159,41 +160,16 @@ div.card__content p {
     }
 }
 
+//===============
+//MEDIA QUERY
+//===============
 
-////MEDIA QUERY
-//@media all and (max-width: 750px) {
-//    .card-wrapper {
-//        grid-gap: 10px;
-//    }
-//
-//
-//    h1 {
-//        font-size: 30px;
-//    }
-//
-//    h5 {
-//        font-size: 25px;
-//    }
-//}
-//
-//@media all and (min-width: 500px) and (max-width: 750px) {
-//    .card-wrapper {
-//        grid-template-columns: 1fr 1fr;
-//    }
-//}
-//
-//@media all and (max-width: 500px) {
-//    .card-wrapper {
-//        grid-template-columns: 1fr;
-//    }
-//
-//    h1 {
-//        font-size: 25px;
-//    }
-//
-//    h5 {
-//        font-size: 20px;
-//    }
-//}
+@media all and (max-width: 500px) {
+
+    .profile__content {
+        flex-shrink: 2;
+    }
+}
+
 
 

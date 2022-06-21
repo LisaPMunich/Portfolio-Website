@@ -21,33 +21,37 @@
 
 <body>
 <nav class="page-header">
-  <ul class="nav-list">
-    <li class="nav-item">
-      <a class="logo-wrapper" href="index.html">
-        <img class="logo"
-             src="../img/220211_Logo_options_darkgreen_on_lightorange.png"
-             alt="circle-shaped logo with letters L and P">
+  <div class="nav-list">
+    <a  href="./index.html" class="logo-wrapper">
+      <img class="logo"
+           src="../img/220211_Logo_options_darkgreen_on_lightorange.png"
+           alt="circle-shaped logo with letters L and P">
+    </a>
+
+    <label for="hamburger">
+      &#9776;
+    </label>
+    <input type="checkbox" id="hamburger"/>
+
+    <div class="ham-items">
+
+      <a href="index.html" class="nav-item" target="_self" role="menuitem">
+        Home
       </a>
-    </li>
 
-    <li class="nav-item">
-      <a href="index.html" target="_self" role="menuitem">Home
+      <a href="about.html" class="nav-item" target="_self" role="menuitem">
+        About
       </a>
-    </li>
 
-    <li class="nav-item">
-      <a href="about.html" target="_self" role="menuitem">About</a>
-    </li>
-
-    <li class="nav-item">
-      <a href="projects.html" target="_self" role="menuitem">Projects
+      <a href="projects.html" class="nav-item" target="_self" role="menuitem">
+        Projects
       </a>
-    </li>
 
-    <li class="nav-item nav-item--active">
-      <a href="contact.html" target="_self" role="menuitem">Contact</a>
-    </li>
-  </ul>
+      <a href="contact.html" class="nav-item nav-item--active" target="_self" role="menuitem">
+        Contact
+      </a>
+    </div>
+  </div>
 </nav>
 
 <main>

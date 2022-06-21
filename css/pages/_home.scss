@@ -61,68 +61,24 @@
     text-align: center;
     margin-top: 14px;
 }
-//
-////MEDIA QUERY
-//@media all and (max-width: 750px) {
-//    .profile {
-//        grid-gap: 10px;
-//    }
-//
-//    .profile__item:last-child {
-//        grid-column: auto/auto;
-//        grid-row: auto/auto;
-//    }
-//
-//    h1 {
-//        font-size: 30px;
-//    }
-//
-//    h2 {
-//        font-size: 25px;
-//    }
-//}
-////
-////@media all and (min-width: 600px) and (max-width: 750px) {
-////    .profile {
-////        grid-template-columns: 1fr 1fr;
-////    }
-////}
-//
-//@media all and (max-width: 700px) {
-//    .profile {
-//        grid-template-columns: 1fr;
-//    }
-//
-//    h1 {
-//        font-size: 25px;
-//    }
-//
-//    h2 {
-//        font-size: 20px;
-//    }
-//}
-//
-//.profile__portrait {
-//    width: 100%;
-//    max-width: 200px;
-//    height: auto;
-//    border-radius: 50%;
-//    padding: 20px 10px 0px 10px;
-//}
-//
-//
-//CHECKING IF BROWSER SUPPORTS CSS GRID
-//@supports (display: grid) {
-//    .profile__portrait {
-//        width: 100%;
-//        max-width: 500px;
-//        height: auto;
-//        border-radius: 50%;
-//        padding: 20px 10px 0px 10px;
-//    }
-//}
 
-//MEDIA QUERY
+
+//=================
+//FEATURE QUERY
+//=================
+@supports (display: grid) {
+    .profile__portrait {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 50%;
+        padding: 20px 10px 0px 10px;
+    }
+}
+
+//=================
+//MEDIA QUERIES
+//=================
 
 @media all and (max-width: 600px) {
 
