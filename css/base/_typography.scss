@@ -56,25 +56,3 @@ a:active {
     /* color change to greyish black when selected */
     color: $grey;
 }
-
-//=======================
-//MEDIA QUERIES
-//=======================
-@media all and (max-width: 800px) {
-    h1{
-        font-size: 40px;
-    }
-}
-
-@media all and (min-width: 450px) and (max-width: 620px) {
-    h1{
-        font-size: 35px;
-    }
-}
-
-@media all and (max-width: 450px) {
-    h1{
-        font-size: 35px;
-    }
-
-}

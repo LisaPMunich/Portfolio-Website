@@ -73,21 +73,6 @@ a:active {
   color: #2C3531;
 }
 
-@media all and (max-width: 800px) {
-  h1 {
-    font-size: 40px;
-  }
-}
-@media all and (min-width: 450px) and (max-width: 620px) {
-  h1 {
-    font-size: 35px;
-  }
-}
-@media all and (max-width: 450px) {
-  h1 {
-    font-size: 35px;
-  }
-}
 button,
 .button {
   display: inline-block;
@@ -391,9 +376,6 @@ footer {
     right: 0;
     left: 0;
   }
-  h1 {
-    font-size: 40px;
-  }
 }
 @media all and (max-width: 400px) {
   .profile__portrait {
@@ -411,9 +393,6 @@ footer {
     align-items: center;
     right: 0;
     left: 0;
-  }
-  h1 {
-    font-size: 35px;
   }
 }
 .about-wrapper {
