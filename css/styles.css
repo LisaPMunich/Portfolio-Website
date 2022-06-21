@@ -55,7 +55,6 @@ h5 {
 
 a,
 a:visited {
-  /* color change to light brown-orange when visited */
   font-weight: bold;
   color: #116466;
   max-width: 100%;
@@ -66,11 +65,6 @@ a:hover,
 a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
-}
-
-a:active {
-  /* color change to greyish black when selected */
-  color: #2C3531;
 }
 
 button,
@@ -157,7 +151,7 @@ button:focus,
   color: #FFCB9A;
 }
 .ham-items a:visited {
-  color: #D9B08C;
+  color: #FFCB9A;
   text-decoration: none;
 }
 .ham-items a:visited:active {
@@ -308,7 +302,6 @@ footer {
   height: 300px;
   border-radius: 50%;
   box-shadow: 0 0 10px #FFCB9A;
-  shape-outside: circle(50%);
   /* this shrinks the image to fit the space it has, should the viewport be smaller than the image
   } */
   max-width: 100%;
@@ -353,7 +346,7 @@ footer {
 @supports (display: grid) {
   .profile__portrait {
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
     height: auto;
     border-radius: 50%;
     padding: 20px 10px 0px 10px;
@@ -365,7 +358,6 @@ footer {
     height: 300px;
     border-radius: 50%;
     box-shadow: 0 0 10px #FFCB9A;
-    shape-outside: circle(50%);
   }
   .profile-wrapper {
     display: flex;
@@ -383,7 +375,6 @@ footer {
     height: 200px;
     border-radius: 50%;
     box-shadow: 0 0 10px #FFCB9A;
-    shape-outside: circle(50%);
   }
   .profile-wrapper {
     display: flex;

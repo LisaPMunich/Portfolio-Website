@@ -17,7 +17,6 @@
     height: 300px;
     border-radius: 50%;
     box-shadow: 0 0 10px $light-orange;
-    shape-outside: circle(50%);
 
     /* this shrinks the image to fit the space it has, should the viewport be smaller than the image
 } */
@@ -69,7 +68,7 @@
 @supports (display: grid) {
     .profile__portrait {
         width: 100%;
-        max-width: 500px;
+        max-width: 300px;
         height: auto;
         border-radius: 50%;
         padding: 20px 10px 0px 10px;
@@ -87,7 +86,6 @@
         height: 300px;
         border-radius: 50%;
         box-shadow: 0 0 10px $light-orange;
-        shape-outside: circle(50%);
     }
 
     .profile-wrapper{
@@ -109,7 +107,6 @@
         height: 200px;
         border-radius: 50%;
         box-shadow: 0 0 10px $light-orange;
-        shape-outside: circle(50%);
     }
 
     .profile-wrapper{

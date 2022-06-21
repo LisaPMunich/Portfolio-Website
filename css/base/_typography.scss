@@ -39,7 +39,6 @@ h5 {
 
 a,
 a:visited {
-    /* color change to light brown-orange when visited */
     font-weight: bold;
     color: $dark-turquoise;
     max-width: 100%;
@@ -50,9 +49,4 @@ a:hover,
 a:focus {
     /* No underlining when hovering over a link */
     text-decoration: none;
-}
-
-a:active {
-    /* color change to greyish black when selected */
-    color: $grey;
 }
