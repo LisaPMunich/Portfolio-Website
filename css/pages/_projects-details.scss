@@ -1,0 +1,294 @@
+@import "../abstract/variables";
+@import "../components/tags";
+@import "../components/links";
+@import "../components/speech-bubble";
+
+
+.study__underline-effect {
+    font-size: 20px;
+    margin: 5px 0;
+    padding: 15px 0;
+    position: relative;
+    font-weight: $font-bold;
+    color: $dark-turquoise;
+}
+
+.study__underline-effect::before {
+    content: "";
+    position: absolute;
+    left: 35%;
+    bottom: 16px;
+    width: 50px;
+    height: 14px;
+    transform: skew(-6deg) translateX(-50%);
+    background: $light-orange;
+    z-index: -1;
+}
+
+.study-wrapper {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    h2, h3 {
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+}
+
+//================
+// MEDIA QUERY
+//================
+
+@media screen and (max-width: 900px) {
+    .study-wrapper {
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        h2{
+            margin-top: 40px;
+            margin-bottom: 0;
+        }
+        h3{
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+//==================
+
+.study-section {
+    display: flex;
+    align-items: flex-start;
+
+    &--row {
+        flex-direction: row;
+    }
+    &--column {
+        flex-direction: column;
+    }
+}
+
+.study-section__content {
+    flex: 2;
+    margin: 2rem;
+
+    h3{
+        margin-top: 10px;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &--center {
+        margin: 16px 0;
+    }
+
+    &--right {
+        margin-right: 0;
+    }
+
+    &--left {
+        margin-left: 0;
+    }
+}
+
+
+.study-section__image {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    object-fit: contain;
+    margin: 2rem;
+    max-width: 50%;
+
+    &--right {
+        margin-right: 0;
+    }
+
+    &--left {
+        margin-left: 0;
+    }
+}
+
+//==================
+// MEDIA QUERY
+//==================
+
+@media screen and (max-width: 900px) {
+    .study-section {
+        display: flex;
+        align-items: flex-start;
+
+        &--row {
+            flex-direction: column;
+        }
+        &--column {
+            flex-direction: column;
+        }
+    }
+    .study-section__content {
+        flex: 1;
+        margin: 2rem;
+
+        h3{
+            margin-top: 10px;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        &--center {
+            margin: 16px 0;
+        }
+
+        &--right {
+            margin: 16px 0;
+        }
+
+        &--left {
+            margin: 16px 0;
+        }
+    }
+    .study-section__image {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        object-fit: contain;
+        margin: 2rem;
+        max-width: 100%;
+
+        &--right {
+            margin: 16px 0;
+        }
+
+        &--left {
+            margin: 16px 0;
+        }
+    }
+}
+
+//====================
+
+
+.user-story__section {
+    display: flex;
+
+    flex-direction: row;
+    margin: 16px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-story__icon {
+    flex: 1;
+    align-self: center;
+    object-fit: contain;
+    &--left{
+        align-items: flex-start;
+    }
+    &--right{
+        align-items: flex-end;
+    }
+}
+
+//==================
+// MEDIA QUERY
+//==================
+
+@media screen and (max-width: 600px) {
+    .user-story__section {
+        display: flex;
+
+        flex-direction: column;
+        margin: 16px 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .user-story__icon {
+        flex: 1;
+        align-self: center;
+        object-fit: contain;
+        &--left{
+            align-items: center;
+        }
+        &--right{
+            align-items: center;
+        }
+    }
+}
+//=====================
+
+/*kudos to W3school for this masonry-like layout with css flexbox*/
+    .study-section__image-masonry--row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Create four equal columns that sits next to each other */
+    .study-section__image-masonry--column {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 4px;
+    }
+
+    .study-section__image-masonry--column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+//==================
+// MEDIA QUERY
+//==================
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .study-section__image-masonry--column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+//===================
+
+
+.shadowed-image {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.tool-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.tool-list__item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+}
+
+
+.icon {
+    padding-right: 10px;
+}
+
+.circle-icon {
+    border-radius: 50%;
+    transform: scale(0.9);
+}
+
+.rounded-icon {
+    border-radius: 8px;
+    transform: scale(0.8);
+}
