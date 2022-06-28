@@ -1,4 +1,5 @@
 @import "../abstract/variables";
+@import "../components/tags";
 
 
 .about-wrapper{
@@ -24,33 +25,6 @@
     transform: skew(-6deg) translateX(-50%);
     background: $light-orange;
     z-index: -1;
-}
-
-.dev-skills{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-flow: row wrap;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: center;
-    padding: 0 0 1.5em 0;
-}
-
-.dev-skill-tag{
-    margin: 0.3em;
-    padding: 0.5em;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    max-width: 6em;
-    background: $light-orange;
-    color: $dark-turquoise;
-    font-size: 0.9em;
-    text-align: center;
-    border-top-left-radius: 40%;
-    border-bottom-right-radius: 40%;
 }
 
 .fun-activities-list {

@@ -1,0 +1,19 @@
+@import "../abstract/variables";
+
+.back__link {
+    font-family: sans-serif;
+    font-size: 0.9em;
+    text-decoration: none;
+    transform: scale(0.7);
+}
+
+.back__link:hover {
+    text-decoration: underline;
+}
+
+.back__link--disabled {
+    color: $white;
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
+}
