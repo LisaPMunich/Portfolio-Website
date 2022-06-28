@@ -111,11 +111,11 @@
 
         <div class="study-section__content study-section__content--right">
           <p>
-            I started out to I built a RESTful API with Node.js and Express. The data are stored in the non-relational database MongoDB.
+            I started out by building a RESTful API with Node.js and Express. The data are stored in the non-relational database MongoDB.
             <br>
             I created the database with CRUD operations. The database holds two collections, "movies" and "users", which
             can be accessed via commonly used HTTP methods (GET, POST, PUT, DELETE). I documented the endpoints using
-            Swagger. Finally, I deployed the database to MongoDBAtlas (DBaaS) and HEROKU (PaaS).
+            Swagger. Finally, I deployed the database to MongoDBAtlas (DBaaS - Database as a Service) and HEROKU (PaaS Platform as a Service).
           </p>
         </div>
       </div>
@@ -125,7 +125,7 @@
         <h3>Creation of the database</h3>
         <div class="study-section__content study-section__content--center">
           <p>After deciding on movies I wanted to showcase in my database, I built and populated the database MongoDB.
-            First I created a database schema diagram to sketch the structure of the database. I decided on two
+            I created a database schema diagram to sketch the structure of the database. I decided on two
             collections (movies and users), which contained ten movies documents and five user documents. I also
             included embedded documents for the keys "genre" and "director" (to display information on genre and
             director of the movie on the client-side).
@@ -147,7 +147,7 @@
             <li class="tool-list__item"><span class="icon"><img src="./img/mongodb_icon.png" width="50" height="50"/></span> Mongo Shell - to create the database with CRUD operations</li>
             <li class="tool-list__item"><span class="icon"><img class="rounded-icon" src="./img/studio3T_brandlogo.png" width="50" height="50"/></span>Studio3T - to facilitate in the creation of the database</li>
             <li class="tool-list__item"><span class="icon"><img src="./img/postman_icon.png" width="50" height="50"/></span> Postman - to test the correct implementation of the endpoints</li>
-            <li class="tool-list__item"><span class="icon"><img class="rounded-icon" src="./img/Mongoose_brandlogo.png" height="50" height="50"/></span> Mongoose - to define and build database models and connect MongoDB with REST API</li>
+            <li class="tool-list__item"><span class="icon"><img class="rounded-icon" src="./img/Mongoose_brandlogo.png" height="50" height="50"/></span> Mongoose - to define and build database models and connect MongoDB with the REST API</li>
           </ul>
         </div>
       </div>
@@ -175,8 +175,10 @@
             <li class="tool-list__item"><span class="icon"><img class="rounded-icon" src="./img/express-validator_brandlogo.png" width="50" height="50"/></span> Express-Validator - for data input validation</li>
           </ul>
           <h3>other security measures</span></h3>
-          <p class="tool-list__item">Adjust Environment variable to hide Connection URI</p>
-          <p class="tool-list__item">implement CORS, set to allow for all origins</p>
+          <ul class="tool-list">
+            <li class="tool-list__item">Adjust Environment variable to hide Connection URI</li>
+            <li class="tool-list__item">implement CORS, set to allow for all origins</li>
+          </ul>
         </div>
       </div>
 
@@ -185,7 +187,7 @@
       <div class="study-section study-section--column">
         <div class="study-section__content study-section__content--center">
           <p>
-            Afterwards I built the client-side using React, Redux and Bootstrap to complement the existing server-side code. The single-page-application is a responsive website with routing, interactions and several interface views.<br>
+            Afterwards I built the client-side using React, Redux and Bootstrap to complement the existing server-side code. <br>The single-page-application is a responsive website with routing, interactions and several interface views. <br>
             The interface views were developed based on user stories.
           </p>
         </div>
@@ -205,7 +207,7 @@
       <div class="study-section study-section--column">
         <div class="study-section__content study-section__content--center">
           <p>
-            The users can register and are then redirected to a login page. If successful, they see a list of movies, which they can filter by movie title and then click to see more details (full plot, link to genre definition and director biography). The user can save individual movies to a favorites list in his personal profile
+            The users can register and are then redirected to a login page. If successful, they see a list of movies, which they can filter by movie title and then click to see more details (full plot, link to genre definition and director biography). The user can save individual movies to a favorites list in his personal profile.
           </p>
         </div>
       </div>
@@ -253,7 +255,7 @@
 
         <div class="study-section__content study-section__content--right">
           <p>
-            Before starting with the implementation of Redux I created an architectural diagram to visualize which states I wanted to manage from a central container. I decided on the state of the movie list as well as the filtering of the movies by title, since that otherwise required the data to be loaded from the database at every request and would have slowed down performance.<br> My resume: It is a lot of boilerplate code for an application, which would not necessarily have needed it for the current complexity. Since Redux was the first library to introduce this store-system, it was good to try it out.
+            Before starting with the implementation of Redux I created an architectural diagram to visualize which states I wanted to manage from a central container. I decided on the state of the movie list as well as the filtering of the movies by title, since that otherwise required the data to be loaded from the database at every request and would have slowed down performance.<br> My conclusion: It is a lot of boilerplate code for an application, which would not have needed it for the current complexity. Since Redux was the first library to introduce this store-system, it was good to try it out.
           </p>
         </div>
       </div>
@@ -263,8 +265,8 @@
 
         <div class="study-section__content study-section__content--left">
           <p>
-            Since Netlify and Heroku are both Platform as a Service (PaaS) provider, I wanted to see how the deployment process would differ. Netlify is focused on hosting static websites, Heroku hosting dynamic, server side rendered websites and apps.<br>
-            After deployment to Netlify the Profile View did not open at all, reloading of other pages lead to a 404 error.
+            Since Netlify and Heroku are both PaaS provider, I wanted to see how the deployment process would differ. Netlify is focused on hosting static websites, Heroku on hosting dynamic, server side rendered websites and apps.
+            After deployment to Netlify the Profile View did not open from the beginning, while the other pages only got a 404 error when reloading the page.
             Following a lengthy trial-and-error, I wrote a netlify.toml file and specified build command, publish folder and wrote redirects for all routes. It finally worked.
             My learning is that parcel and netlify lead to conflicts. Also, deployment on Heroku is more straightforward - I also deployed there, just to check, if it would work.
           </p>
@@ -278,12 +280,12 @@
 
       <h2>Challenges and Learnings</h2>
       <div class="study-section__content study-section__content--center">
-        <p>Creating the movie application from backend to frontend from scratch was quite a task. But I enjoyed to not just consume a third-party API and start with the frontend like in previous projects (<a href="https://github.com/LisaPMunich/Simple-Pokemon-JS-App">Pokemon App</a>), but to experience the process and challenges of creating everything from scratch.<br>
+        <p>Creating the movie application from backend to frontend from scratch was quite a task. But I enjoyed to not just consume a third-party API and start with the frontend like in previous projects (<a href="https://github.com/LisaPMunich/Simple-Pokemon-JS-App">Pokemon App</a>), but to experience the process and challenges of creating everything from scratch and see how it fits together.<br>
           I have learned an immense amount in this project. It starts with the fact that it helps to be familiar with the basic design principles like separation of concerns, YAGNI etc., especially for such large projects. Otherwise, you quickly get bogged down.
         </p>
 
         <h3>... from using middleware to aid in the development process</h3>
-        <p>Even though not a requirement of the project, I installed an error handler to aid me in realizing errors during development. Also, I installed nodemon, in order to eliminate the step of having to restart node everytime I change the code. Thus making the development process a little more fluent.</p>
+        <p>Even though not a requirement of the project, I installed an error handler to aid me in realizing errors during development. I also installed nodemon, in order to eliminate the step of having to restart node everytime I change the code. Thus making the development process a little more fluent.</p>
 
         <h3>... from using React</h3>
         <p>Since this was the first project I implemented using React, I - at first - did not feel as confident with the concepts of components, passing of props and state. That's why parallel to working on this Project I worked through an 11-hour-course on React on Scrimba, to better understand the basics. It helped me immensely and even gave me some nice ideas on custom CSS I wanted to implement - like a badge to display the movie genre on each movie poster.</p>
