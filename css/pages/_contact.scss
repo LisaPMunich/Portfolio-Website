@@ -66,6 +66,7 @@
 .contact-tel,
 .contact-message{
     padding: 2px 3px;
+    border: 1px solid $dark-orange;
 
     ::-webkit-input-placeholder { /* Edge */
         color: $placeholder-color;

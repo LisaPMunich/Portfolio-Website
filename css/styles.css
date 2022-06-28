@@ -1009,6 +1009,7 @@ div.card__content p {
 .contact-tel,
 .contact-message {
   padding: 2px 3px;
+  border: 1px solid #D9B08C;
 }
 .contact-email ::-webkit-input-placeholder,
 .contact-tel ::-webkit-input-placeholder,
