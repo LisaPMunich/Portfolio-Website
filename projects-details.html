@@ -247,23 +247,29 @@
       <h3>State management with Redux</h3>
       <div class="study-section study-section--row">
 
-        <div class="study-section__image study-section__image--left">
+        <div class="study-section__content study-section__content--left">
+          <p>
+            Before starting with the implementation of Redux I created an architectural diagram to visualize which states I wanted to manage from a central container. I decided on the state of the movie list as well as the filtering of the movies by title, since that otherwise required the data to be loaded from the database at every request and would have slowed down performance.<br> My conclusion: It is a lot of boilerplate code for an application, which would not have needed it for the current complexity. Since Redux was the first library to introduce this store-system, it was good to try it out.
+          </p>
+        </div>
+
+        <div class="study-section__image study-section__image--right">
           <img class="shadowed-image"
                src="https://user-images.githubusercontent.com/99111208/168394065-c3b6fc50-9f48-4b31-9391-af263209037e.png"
                alt="Architectural diagram for Redux">
         </div>
 
-        <div class="study-section__content study-section__content--right">
-          <p>
-            Before starting with the implementation of Redux I created an architectural diagram to visualize which states I wanted to manage from a central container. I decided on the state of the movie list as well as the filtering of the movies by title, since that otherwise required the data to be loaded from the database at every request and would have slowed down performance.<br> My conclusion: It is a lot of boilerplate code for an application, which would not have needed it for the current complexity. Since Redux was the first library to introduce this store-system, it was good to try it out.
-          </p>
-        </div>
+
       </div>
 
       <h3>Deployment to Netlify and Heroku</h3>
       <div class="study-section study-section--row">
 
-        <div class="study-section__content study-section__content--left">
+        <div class="study-section__image study-section__image--left">
+          <img class="shadowed-image" src="./img/netlify-vs-heroku.png" alt="Heroku and Netlify icon">
+        </div>
+
+        <div class="study-section__content study-section__content--right">
           <p>
             Since Netlify and Heroku are both PaaS provider, I wanted to see how the deployment process would differ. Netlify is focused on hosting static websites, Heroku on hosting dynamic, server side rendered websites and apps.
             After deployment to Netlify the Profile View did not open from the beginning, while the other pages only got a 404 error when reloading the page.
@@ -272,9 +278,7 @@
           </p>
         </div>
 
-        <div class="study-section__image study-section__image--right">
-          <img class="shadowed-image" src="./img/netlify-vs-heroku.png" alt="Heroku and Netlify icon">
-        </div>
+
       </div>
 
 
