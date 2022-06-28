@@ -1,0 +1,19 @@
+@import "../abstract/variables";
+@import "../components/tags";
+
+
+.impressum-wrapper{
+    padding: 20px;
+}
+
+.impressum-generator{
+    color: $dark-orange;
+
+}
+
+.impressum-link-wrapper{
+    position: absolute;
+    float: right;
+    bottom: 13px;
+    right: 30px;
+}
