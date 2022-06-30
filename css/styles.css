@@ -461,7 +461,7 @@ div.card__content p {
 
 .card__image {
   width: 100%;
-  height: 250px;
+  height: 280px;
   display: block;
   justify-self: flex-start;
   border-top: 2px solid #FFCB9A;
