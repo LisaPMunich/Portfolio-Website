@@ -71,8 +71,9 @@
 }
 
 .study-section__content {
-    flex: 2;
+    flex: 1;
     margin: 2rem;
+    width: 50%;
 
     h3{
         margin-top: 10px;
@@ -82,11 +83,6 @@
         margin-top: 0;
         margin-bottom: 0;
     }
-
-    &--center {
-        margin: 16px 0;
-    }
-
     &--right {
         margin-right: 0;
     }
@@ -94,6 +90,12 @@
     &--left {
         margin-left: 0;
     }
+
+    &--center {
+        margin: 16px 0;
+        width: 100%;
+    }
+
 }
 
 
@@ -103,7 +105,7 @@
     flex: 1;
     object-fit: contain;
     margin: 2rem;
-    max-width: 50%;
+    width: 50%;
 
     &--right {
         margin-right: 0;
@@ -111,6 +113,10 @@
 
     &--left {
         margin-left: 0;
+    }
+
+    img {
+        width: 100%;
     }
 }
 
@@ -133,6 +139,7 @@
     .study-section__content {
         flex: 1;
         margin: 2rem;
+        width: 100%;
 
         h3{
             margin-top: 10px;
@@ -161,7 +168,7 @@
         flex: 1;
         object-fit: contain;
         margin: 2rem;
-        max-width: 100%;
+        width: 100%;
 
         &--right {
             margin: 16px 0;

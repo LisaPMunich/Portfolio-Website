@@ -8,13 +8,14 @@
 h1 {
     font-size: 40px;
     text-align: center;
+    text-transform: lowercase;
 
     @extend %header-shared;
 }
 
 h2 {
     font-size: 30px;
-
+    text-transform: lowercase;
     @extend %header-shared;
 }
 
