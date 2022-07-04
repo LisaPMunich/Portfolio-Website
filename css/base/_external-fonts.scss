@@ -3,7 +3,9 @@
 
 @font-face {
     font-family: 'ATTRACTMOREWOMEN';
-    src: url('../../fonts/ATTRACTMOREWOMEN.ttf') format('truetype');
+    src: url('../../fonts/ATTRACTMOREWOMEN.woff2') format('woff2'),
+    url('../../fonts/ATTRACTMOREWOMEN.woff') format('woff'),
+            url('../../fonts/ATTRACTMOREWOMEN.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
