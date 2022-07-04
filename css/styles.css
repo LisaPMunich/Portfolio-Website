@@ -130,18 +130,18 @@
   }
 }
 @font-face {
-  font-family: "tomhand";
-  src: url("../../fonts/tomhand.woff2") format("woff2"), url("../../fonts/tomhand.woff") format("woff"), url("../../fonts/tomhand.ttf") format("truetype");
+  font-family: "ATTRACTMOREWOMEN";
+  src: url("../../fonts/ATTRACTMOREWOMEN.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 .logo {
-  font-family: tomhand, serif;
+  font-family: ATTRACTMOREWOMEN, serif;
 }
 
 h1 {
-  font-family: tomhand, serif;
+  font-family: ATTRACTMOREWOMEN, serif;
   color: #116466;
 }
 
