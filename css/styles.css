@@ -1,3 +1,150 @@
+.nav-list {
+  width: 100%;
+  background: #116466;
+  display: flex;
+  margin: 0 0 20px 0;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  position: fixed;
+  height: 100px;
+  box-shadow: 0 0 10px #FFCB9A;
+  align-items: center;
+}
+
+.ham-items {
+  display: flex;
+  flex: 3;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ham-items a {
+  position: relative;
+  flex-basis: 1;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  color: #FFCB9A;
+  text-decoration: none;
+  text-transform: lowercase;
+  text-align: center;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 2;
+  transition: all 200ms ease-in;
+}
+.ham-items a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: #FFCB9A;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.ham-items a:hover::after {
+  width: 100%;
+  left: 0;
+  color: #FFCB9A;
+}
+.ham-items a:visited {
+  color: #FFCB9A;
+  text-decoration: none;
+}
+.ham-items a:visited:active {
+  color: #FFCB9A;
+}
+
+.ham-items:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+.logo {
+  color: #FFCB9A;
+  font-size: 50px;
+  padding-left: 20px;
+}
+
+.nav-list label, #hamburger {
+  display: none;
+}
+
+@media all and (max-width: 620px) {
+  .page-header {
+    font-size: 20px;
+  }
+  .ham-items a {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #D1E8E2;
+    border-bottom: 1px solid #D1E8E2;
+  }
+  .ham-items a:after {
+    display: block;
+    background: none;
+    color: #116466;
+    transition: none;
+  }
+  .ham-items a:hover {
+    color: #D1E8E2;
+  }
+  .ham-items a:first-child {
+    border-top: 2px solid #D1E8E2;
+  }
+  .ham-items a:last-child {
+    border-bottom: 2px solid #D1E8E2;
+  }
+  .nav-list label {
+    display: inline-block;
+    color: #FFCB9A;
+    font-style: normal;
+    font-size: 2.5em;
+    padding: 10px;
+    margin-left: auto;
+    text-align: right;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  .ham-items {
+    display: none;
+    transition: 0.5ms;
+  }
+  .nav-list input:checked ~ .ham-items {
+    display: block;
+    position: absolute;
+    top: 100px;
+    background: #116466;
+    width: 100%;
+    height: -100px;
+    left: 0;
+    right: 0;
+    transition: 0.5ms;
+  }
+}
+@font-face {
+  font-family: "tomhand";
+  src: url("../../fonts/tomhand.woff2") format("woff2"), url("../../fonts/tomhand.woff") format("woff"), url("../../fonts/tomhand.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.logo {
+  font-family: tomhand, sans-serif;
+}
+
+h1 {
+  font-family: tomhand, sans-serif;
+  color: #116466;
+}
+
 *,
 *:before,
 *:after {
@@ -164,20 +311,10 @@ button:focus,
   margin-left: 2rem;
 }
 
-a.logo-wrapper {
-  transition: none;
-  background: none;
-  flex-basis: 0;
-  align-items: center;
-  line-height: 0;
-}
-a.logo-wrapper::after, a.logo-wrapper:hover::after {
-  background: none;
-  transition: none;
-}
-
 .logo {
-  height: 80px;
+  color: #FFCB9A;
+  font-size: 50px;
+  padding-left: 20px;
 }
 
 .nav-list label, #hamburger {

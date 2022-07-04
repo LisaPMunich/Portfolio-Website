@@ -81,22 +81,28 @@
     margin-left: 2rem;
 }
 
-a.logo-wrapper {
-    transition: none;
-    background: none;
-    flex-basis: 0;
-    align-items: center;
-    line-height: 0;
+//a.logo-wrapper {
+//    transition: none;
+//    background: none;
+//    flex-basis: 0;
+//    align-items: center;
+//    line-height: 0;
+//
+//    &::after, &:hover::after {
+//        background: none;
+//        transition: none;
+//    }
+//}
 
-    &::after, &:hover::after {
-        background: none;
-        transition: none;
-    }
-}
+//.logo {
+//    height: 80px;
+//
+//}
 
-.logo {
-    height: 80px;
-
+.logo{
+    color: $light-orange;
+    font-size: 50px;
+    padding-left: 20px;
 }
 
 // HAMBURGER MENU
