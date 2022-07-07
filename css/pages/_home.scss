@@ -1,5 +1,26 @@
 @import "../abstract/variables";
 
+.body {
+    background: $body-background-home;
+    color: $main-font-color-home;
+
+}
+
+.main--wideview-home {
+    background: $body-background-home;
+    color: $main-font-color-home;
+}
+
+.content-inside-main-home {
+    background: $body-background-home;
+    color: $main-font-color-home;
+    padding-top: 140px;
+    padding-bottom: $footer-overlap;
+}
+
+.brand-name-wrapper {
+    text-decoration: none;
+}
 
 .profile-wrapper {
     display: flex;
@@ -12,51 +33,119 @@
     left: 0;
 }
 
-.profile__portrait{
+.profile__portrait {
     border-radius: 50%;
     height: 300px;
-    box-shadow: 0 0 10px $light-orange;
+    box-shadow: 0 0 20px $box-shadow-home;
 
     /* this shrinks the image to fit the space it has, should the viewport be smaller than the image
 } */
-    display:block;
+    display: block;
 }
 
 
-
-.profile__content{
-    padding: 20px;
-    width: 370px;
+.profile__content {
+    margin: 30px;
+    width: 400px;
 }
 
-.profile-title > h1{
+.profile__title > h1 {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
 }
 
-.profile__underline-effect{
-    margin: 5px 0;
-    color: $dark-turquoise;
-    padding: 15px 0;
+.profile__text {
+    text-align: justify;
+}
+
+.loader{
     position: relative;
-}
-
-.profile__underline-effect::before {
-    content: "";
-    position: absolute;
-    left: 48%;
-    bottom: 14px;
-    width: 180px;
-    height: 14px;
-    transform: skew(-6deg) translateX(-50%);
-    background: $light-orange;
-    z-index: -1;
-}
-
-.profile__button-wrapper{
+    background: $light-green;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: -16px;
+    margin-top: 1px;
+    margin-left: 62px;
+    width: 70%;
+    font-weight: 700;
+    color: $dark-blue;
     text-align: center;
-    margin-top: 14px;
+    a{
+        text-decoration: none;
+        color: $dark-blue;
+    }
+}
+
+
+@keyframes blink {50% { color: transparent }}
+.loader__dot {
+    animation: 2s blink infinite;
+    transform: scale(4);
+}
+.loader__dot:nth-child(2) {
+    animation-delay: 250ms;
+    transform: scale(4);
+}
+.loader__dot:nth-child(3) {
+    animation-delay: 500ms;
+    transform: scale(4);
+}
+
+//.profile__button-wrapper {
+//    text-align: center;
+//    margin-top: 25px;
+//}
+
+.reference-icon-wrapper{
+    text-align: center;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        text-decoration: none;
+        margin: 0 5px;
+    }
+}
+
+
+.icon-1{
+    content: url("../../img/icon_github_dark-blue.png");
+    width: 80px;
+    height: 80px;
+}
+
+.icon-1:hover{
+    content: url("../../img/icon_github_green.png");
+    width: 80px;
+    height: 80px;
+}
+
+.icon-2{
+    content: url("../../img/icon_linkedin.png");
+    width: 80px;
+    height: 80px;
+}
+
+.icon-2:hover{
+    content: url("../../img/icon_linkedin_green.png");
+    width: 80px;
+    height: 80px;
+}
+
+.icon-3{
+    content: url("../../img/icon_resume_dark-blue.png");
+    width: 80px;
+    height: 60px;
+    transform: scale(1.06);
+}
+
+.icon-3:hover{
+    content: url("../../img/icon_resume.png");
+    width: 80px;
+    height: 60px;
 }
 
 
@@ -76,7 +165,7 @@
 
 @media all and (max-width: 620px) {
 
-    .profile-wrapper{
+    .profile-wrapper {
         display: flex;
         flex-direction: column;
         flex-flow: column;
@@ -88,9 +177,9 @@
 
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 430px) {
 
-    .profile-wrapper{
+    .profile-wrapper {
         display: flex;
         flex-direction: column;
         flex-flow: column;
@@ -103,7 +192,53 @@
     .profile__portrait {
         border-radius: 50%;
         height: 200px;
-        box-shadow: 0 0 10px $light-orange;
+        box-shadow: 0 0 10px $box-shadow-home;
+    }
+
+    .profile__content {
+        margin: 20px;
+        width: 390px;
     }
 }
 
+@media all and (max-width: 375px) {
+
+    .profile-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        left: 0;
+    }
+
+    .profile__portrait {
+        border-radius: 50%;
+        height: 200px;
+        box-shadow: 0 0 10px $box-shadow-home;
+    }
+
+    .profile__content {
+        margin: 20px;
+        width: 335px;
+    }
+}
+
+@media all and (max-width: 320px) {
+
+    .content-inside-main-home {
+        padding-top: 100px;
+    }
+
+    .profile__content {
+        margin: 20px;
+        width: 280px;
+    }
+
+    .profile__title > h1 {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+    }
+}

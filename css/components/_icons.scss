@@ -1,0 +1,70 @@
+@import "../abstract/variables";
+
+.icon_arrow-back{
+    width:50px;
+    height: 50px;
+    margin-left: -17px;
+    margin-right: 10px;
+    top: 15px;
+    position: relative;
+}
+
+.icon_arrow-right{
+    width:50px;
+    height: 50px;
+    padding-left: 2px;
+    position: relative;
+}
+
+.icon_arrow-download{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-left: 175px;
+    margin-top: -10px;
+    margin-bottom: -43px;
+}
+
+
+// FOOTER (EXCEPT HOME)
+
+.icon-github{
+    content: url("../../img/icon_github_dark-blue.png");
+    width: 60px;
+    height: 60px;
+}
+
+.icon-github:hover{
+    content: url("../../img/icon_github_green.png");
+    width: 60px;
+    height: 60px;
+}
+
+.icon-linkedin{
+    content: url("../../img/icon_linkedin.png");
+    width: 60px;
+    height: 60px;
+}
+
+.icon-linkedin:hover{
+    content: url("../../img/icon_linkedin_green.png");
+    width: 60px;
+    height: 60px;
+}
+
+// PROJECTS-DETAIL
+
+
+.icon {
+    padding-right: 10px;
+}
+
+.circle-icon {
+    border-radius: 50%;
+    transform: scale(0.9);
+}
+
+.rounded-icon {
+    border-radius: 8px;
+    transform: scale(0.8);
+}

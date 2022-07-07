@@ -8,27 +8,77 @@ $font-light: 400;
 $font-bold: 700;
 
 // COLORS
-$dark-turquoise: #116466;
-$light-turquoise: #D1E8E2;
-$light-orange: #FFCB9A;
-$dark-orange: #D9B08C;
+//$dark-turquoise: #116466;
+//$light-turquoise: #D1E8E2;
+//$light-orange: #FFCB9A;
+//$dark-orange: #D9B08C;
 $white: #FFF;
 $grey: #2C3531;
 $light-grey: #d3d3d3;
+$dark-green: #379683;
+$neon-green: #5CDB95;
+$light-green: #8EE4AF;
+$beige: #EDF5E1;
+$dark-blue: #05386B;
 
 // SEMANTIC COLOR NAMES
+
+$brand-name: $dark-blue;
+
+$icon: $neon-green;
+
+$nav-background-color: $beige;
+$nav-font-color: $dark-blue;
+$nav-font-color-after: $neon-green;
+$ham-border: $neon-green;
+
+$body-background-home: $beige;
+$main-font-color-home: $dark-blue;
+$box-shadow-home: $light-green
+;
+$highlight-font-home: $white;
+$highlight-home: $dark-blue;
+$footer-background-home: $beige;
+
+$body-background-color: $beige;
+$main-font-color: $dark-blue;
+
+$footer-background-color: $beige;
+$footer-font-color: $dark-blue;
+
+$link: $dark-blue;
+$link-discreet: $neon-green;
+
+$placeholder-color: $light-grey;
+
+$tag-background-color: $light-green;
+$tag-font-color: $dark-blue;
+
+$speech-bubble-background: $white;
+$speech-bubble-font-color: $dark-blue;
+
+$border: $beige;
+$border-highlight: $neon-green;
+$box-shadow: $light-green;
 $shadow-color: $grey;
 
-$menu-background-color: $dark-turquoise;
-$body-background-color: $light-turquoise;
-$footer-background-color: $light-orange;
+$highlight-font: $dark-blue;
+$highlight: $light-green;
 
-$menu-font-color: $light-orange;
-$main-font-color: $grey;
-$footer-font-color: $dark-turquoise;
+$error: $dark-green;
 
-$link-color: $dark-turquoise;
-$placeholder-color: $light-grey;
+$card-title: $dark-blue;
+$card-background: $beige;
+$card-text: $dark-blue;
+$card-border: $neon-green;
+$card-link: $dark-green;
+$card-link--disabled: $beige;
+
+$font-discreet: $light-green;
+
+$button: $dark-blue;
+$button-text: $white;
+$button-border: $light-green;
 
 // SEMANTIC VARIABLES
 

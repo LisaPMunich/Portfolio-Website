@@ -12,9 +12,13 @@ main {
 
 .main--wideview {
     max-width: 1200px;
+    background: $body-background-color;
+    color: $main-font-color;
 }
 
 .content-inside-main {
     padding-top: 120px;
     padding-bottom: $footer-overlap;
+    background: $body-background-color;
+    color: $main-font-color;
 }

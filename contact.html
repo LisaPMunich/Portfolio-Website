@@ -22,11 +22,8 @@
 <body>
 <nav class="page-header">
   <div class="nav-list">
-    <a  href="./index.html" class="logo-wrapper">
-      <h2 class="logo">Lisa Pape</h2>
-      <!--      <img class="logo"-->
-      <!--           src="img/220211_Logo_options_darkgreen_on_lightorange.png"-->
-      <!--           alt="circle-shaped logo with letters L and P">-->
+    <a  href="./index.html" class="brand-name-wrapper">
+      <h2 class="brand-name">Lisa Pape</h2>
     </a>
 
     <label for="hamburger">
@@ -55,19 +52,19 @@
   </div>
 </nav>
 
-<main>
+<main class="main--wideview">
   <section class="content-inside-main">
     <div>
       <h1>Contact me.</h1>
     </div>
     <div class="contact-wrapper">
       <div class="contact-details">
-        <span class="contact__underline-effect">Lisa Pape</span><br>
+        Lisa Pape<br>
         85253 Erdweg (Munich)<br>
         Germany<br>
-        <a href="tel:+491733916874" aria-label="phone number to contact me">+491733916874</a><br>
+        <a href="tel:+49 (0)1733 916874" aria-label="phone number to contact me" class="link--inherit-sized">+491733916874</a><br>
         <!--Ist das die richtige Art zu meinem Skype Profil zu verlinken?-->
-        <a href="mailto:lisapapemunich@gmail.com">lisapapemunich@gmail.com</a><br>
+        <a href="mailto:lisapapemunich@gmail.com" class="link--inherit-sized">lisapapemunich@gmail.com</a><br>
       </div>
       <form action="#" method="post" class="contact-form"
             aria-label="You can contact me several ways. Via email, telephone or direct message">
@@ -99,37 +96,29 @@
   </section>
 </main>
 
-<footer class="page-footer">
-
-  <div class="page-footer__call-to-action">
-    <h3>Find me on.</h3>
-  </div>
-  <div class="page-footer__social-media">
+<footer class="footer">
+  <div class="footer__content-wrapper"
+  <div class="footer__social-media">
+    <span class="call-to-action">Visit me?</span>
     <a href="https://github.com/LisaPMunich"
        target="_blank">
-      <img src="img/291716_github_logo_social_network_social_icon.svg"
-           alt="Github logo"
-           class="page-footer__logo">
+      <img class="icon-github">
     </a>
-    <!--    <a href="https://www.instagram.com/the_momster_sleepometer/" target="_blank">-->
-    <!--      <img src="../img/3225191_app_instagram_logo_media_popular_icon.svg"-->
-    <!--           alt="Instagram logo"-->
-    <!--           class="page-footer__logo">-->
-    <!--    </a>-->
     <a href="https://www.linkedin.com/in/lisa-pape-329b7a22/" target="_blank">
-      <img src="img/3225190_app_linkedin_logo_media_popular_icon.svg"
-           alt="LinkedIn logo"
-           class="page-footer__logo">
+      <img class="icon-linkedin">
     </a>
   </div>
   <div class="impressum-link-wrapper">
-    <a href="./impressum.html" class="link--inherit-sized" target="_self">Impressum</a>
+    <span class="call-to-action">Legal issues?</span>
+    <img src="./img/icon_arrow-right.png" class="icon_arrow-right"/>
+    <a href="./impressum.html" class="impressum-link" target="_self">Impressum</a>
+  </div>
   </div>
 
 </footer>
 
 <script src="dist/script.min.js"></script>
-<script src="dist/tota11y.min.js"></script>
+<!--<script src="dist/tota11y.min.js"></script>-->
 </body>
 
 </html>

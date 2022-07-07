@@ -12,21 +12,37 @@
 }
 
 .link--disabled {
-    color: $white;
+    color: $beige;
     text-decoration: none;
     cursor: default;
     pointer-events: none;
 }
 
 .link--discreet{
-    color: $dark-orange;
+    color: $link-discreet;
 }
 
 .link--inherit-sized{
     font-family: Nanum Gothic, sans-serif;
     text-decoration: none;
+    border-bottom: 2px solid $dark-blue;
+    padding-bottom: 1px;
 }
 
 .link--inherit-sized:hover {
-    text-decoration: underline;
+    color: $neon-green;
+    text-decoration: none;
+    border-bottom: 2px solid $neon-green;
+    padding-bottom: 1px;
 }
+
+//.link--inherit-underline{
+//    font-family: Nanum Gothic, sans-serif;
+//    text-decoration: underline;
+//}
+//
+//.link--inherit-sized-underline{
+//    font-family: Nanum Gothic, sans-serif;
+//    text-decoration: underline;
+//    color: $neon-green;
+//}

@@ -22,10 +22,8 @@
 <body>
 <nav class="page-header">
   <div class="nav-list">
-    <a  href="./index.html" class="logo-wrapper">
-      <img class="logo"
-           src="img/220211_Logo_options_darkgreen_on_lightorange.png"
-           alt="circle-shaped logo with letters L and P">
+    <a  href="./index.html" class="brand-name-wrapper">
+      <h2 class="brand-name">Lisa Pape</h2>
     </a>
 
     <label for="hamburger">
@@ -93,7 +91,7 @@
         Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br>
       </p>
       <p class="impressum-generator">
-        Website Impressum erstellt durch <a class="link--discreet" href="https://www.impressum-generator.de">impressum-generator.de</a> von der <a class="link--discreet"  href="https://www.kanzlei-hasselbach.de/" rel="nofollow">Kanzlei Hasselbach</a>
+        Website Impressum erstellt durch <a class="link--inherit-sized" href="https://www.impressum-generator.de">impressum-generator.de</a> von der <a class="link--inherit-sized" href="https://www.kanzlei-hasselbach.de/" rel="nofollow">Kanzlei Hasselbach</a>
       </p>
 
     </div>
@@ -105,34 +103,29 @@
 
 </main>
 
-<footer class="page-footer">
-
-  <div class="page-footer__call-to-action">
-    <h3>Find me on.</h3>
-  </div>
-  <div class="page-footer__social-media">
+<footer class="footer">
+  <div class="footer__content-wrapper"
+  <div class="footer__social-media">
+    <span class="call-to-action">Visit me?</span>
     <a href="https://github.com/LisaPMunich"
        target="_blank">
-      <img src="img/291716_github_logo_social_network_social_icon.svg"
-           alt="Github logo"
-           class="page-footer__logo">
+      <img class="icon-github">
     </a>
-    <!--    <a href="https://www.instagram.com/the_momster_sleepometer/" target="_blank">-->
-    <!--      <img src="../img/3225191_app_instagram_logo_media_popular_icon.svg"-->
-    <!--           alt="Instagram logo"-->
-    <!--           class="page-footer__logo">-->
-    <!--    </a>-->
     <a href="https://www.linkedin.com/in/lisa-pape-329b7a22/" target="_blank">
-      <img src="img/3225190_app_linkedin_logo_media_popular_icon.svg"
-           alt="LinkedIn logo"
-           class="page-footer__logo">
+      <img class="icon-linkedin">
     </a>
+  </div>
+  <div class="impressum-link-wrapper--disabled">
+    <span class="call-to-action">Legal issues?</span>
+    <img src="./img/icon_arrow-right.png" class="icon_arrow-right"/>
+    <a href="./impressum.html" class="impressum-link" target="_self">Impressum</a>
+  </div>
   </div>
 
 </footer>
 
 <script src="dist/script.min.js"></script>
-<script src="dist/tota11y.min.js"></script>
+<!--<script src="dist/tota11y.min.js"></script>-->
 </body>
 
 </html>

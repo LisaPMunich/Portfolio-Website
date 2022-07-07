@@ -32,13 +32,13 @@ div.card__content p {
 
 .card__image{
     width: 100%;
-    height: 280px;
+    height: 250px;
     //object-fit: cover;
     display: block;
     justify-self: flex-start;
-    border-top: 2px solid $light-orange;
-    border-right: 2px solid $light-orange;
-    border-left: 2px solid $light-orange;
+    border-top: 2px solid $card-border;
+    border-right: 2px solid $card-border;
+    border-left: 2px solid $card-border;
 }
 
 
@@ -47,9 +47,9 @@ div.card__content p {
     line-height: 1.5;
     font-size: 0.9em;
     padding: 0 15px 0 15px;
-    background: $white;
-    border-right: 2px solid $light-orange;
-    border-left: 2px solid $light-orange;
+    background: $card-background;
+    border-right: 2px solid $card-border;
+    border-left: 2px solid $card-border;
 }
 
 .card__content > p:first-of-type {
@@ -68,7 +68,7 @@ div.card__content p {
 
 .card__title{
     justify-content: left;
-    color: $dark-turquoise;
+    color: $card-title;
     padding: 10px 0 5px 0;
     display: -webkit-box !important;
     -webkit-line-clamp: 1;
@@ -92,8 +92,8 @@ div.card__content p {
     -webkit-box-flex: 1;
     flex-grow: 1;
     max-width: 7em;
-    background: $light-turquoise;
-    color: $dark-turquoise;
+    background: $tag-background-color;
+    color: $tag-font-color;
     font-size: 0.8em;
     text-align: center;
     border-top-left-radius: 40%;
@@ -105,12 +105,12 @@ div.card__content p {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    color: #555555;
-    background: $white;
+    color: $card-link;
+    background: $card-background;
     font-size: 0.8em;
-    border-bottom: 2px solid $light-orange;
-    border-right: 2px solid $light-orange;
-    border-left: 2px solid $light-orange;
+    border-bottom: 2px solid $border-highlight;
+    border-right: 2px solid $border-highlight;
+    border-left: 2px solid $border-highlight;
 }
 
 .card__info i{
@@ -119,7 +119,7 @@ div.card__content p {
 }
 
 .card__link {
-    color: #64968c;
+    color: $card-link;
     text-decoration: none;
 }
 
@@ -128,18 +128,18 @@ div.card__content p {
 }
 
 .card__link--disabled {
-    color: $white;
+    color: $card-link--disabled;
     text-decoration: none;
     cursor: default;
     pointer-events: none;
 }
 
 .work-in-progress{
-    color: $white;
+    color: $card-link--disabled;
 }
 
-.greyed-out{
-    color: #DCDCDC;
+.discreet{
+    color: $font-discreet;
 }
 
 
@@ -153,7 +153,7 @@ div.card__content p {
         justify-items: center;
         width: 500px;
         height: 200px;
-        border: 1px solid $light-grey;
+        border: 1px solid $border-highlight;
     }
 
     .card-wrapper > div {
@@ -179,5 +179,28 @@ div.card__content p {
     }
 }
 
+@media all and (max-width: 320px) {
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-auto-rows: auto;
+        grid-auto-flow: dense;
+        gap: 20px;
+        margin: 0 auto;
+        padding: 10px;
+        max-width: 320px;
+        font-family: sans-serif;
+    }
 
+    .card__image{
+        width: 100%;
+        height: 200px;
+        //object-fit: cover;
+        display: block;
+        justify-self: flex-start;
+        border-top: 2px solid $card-border;
+        border-right: 2px solid $card-border;
+        border-left: 2px solid $card-border;
+    }
+}
 

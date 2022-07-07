@@ -4,8 +4,8 @@
     flex: 3;
     flex-flow: wrap;
     position: relative;
-    background: $white;
-    color: $dark-turquoise;
+    background: $speech-bubble-background;
+    color: $speech-bubble-font-color;
     font-size: 1.1rem;
     line-height: 1.5rem;
     font-family: 'Indie Flower', cursive;
@@ -21,7 +21,7 @@
     width: 0;
     z-index: 1;
     border-style: solid;
-    border-color: transparent $white;
+    border-color: transparent $speech-bubble-background;
     border-width: 11px 52px 11px 0;
     top: 52%;
     left: -52px;
@@ -35,7 +35,7 @@
     width: 0;
     z-index: 1;
     border-style: solid;
-    border-color: transparent $white;
+    border-color: transparent $speech-bubble-background;
     border-width: 11px 0 11px 52px;
     top: 52%;
     right: -52px;
@@ -51,8 +51,8 @@
         flex: 3;
         flex-flow: wrap;
         position: relative;
-        background: $white;
-        color: $dark-turquoise;
+        background: $speech-bubble-background;
+        color: $speech-bubble-font-color;
         font-size: 1.1rem;
         line-height: 1.5rem;
         font-family: 'Indie Flower', cursive;

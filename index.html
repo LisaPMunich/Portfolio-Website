@@ -19,14 +19,11 @@
         href="css/styles.css">
 </head>
 
-<body>
+<body class="body">
 <nav class="page-header">
   <div class="nav-list">
-    <a  href="./index.html" class="logo-wrapper">
-      <h2 class="logo">Lisa Pape</h2>
-<!--      <img class="logo"-->
-<!--           src="img/220211_Logo_options_darkgreen_on_lightorange.png"-->
-<!--           alt="circle-shaped logo with letters L and P">-->
+    <a  href="./index.html" class="brand-name-wrapper">
+      <div class="brand-name">Lisa Pape</div>
     </a>
 
     <label for="hamburger">
@@ -55,8 +52,8 @@
   </div>
 </nav>
 
-<main class="main--wideview">
-  <section class="content-inside-main">
+<main class="main--wideview main--wideview-home">
+  <section class="content-inside-main content-inside-main-home content-inside-main-home--without-headline">
     <div>
       <h1></h1>
     </div>
@@ -67,20 +64,44 @@
       >
       <div class="profile__content">
         <h1 class="profile__title">Hi, I'm Lisa.</h1>
-        <p>
-          I'm a <span class="profile__underline-effect">full-stack web developer</span> from Munich with a background in
-          project and stakeholder management.
+        <p class="profile__text">
+          Full-stack web developer with a background in project and stakeholder management.
         </p>
-        <p>
-          If you have a passionate tech team to work in, I am happy to <a
-            href="contact.html">connect</a>.
+        <p class="profile__text">
+          If you have a passionate tech team to work in, feel free to check out my CV and my code. I am happy to connect.
         </p>
-        <div class="profile__button-wrapper">
-          <a href="files/PapeLisa_CV_062022.pdf">
-            <button class="button" type="button" value="Check out my CV" aria-label="Click here to open my CV in a separate window">Check out my CV
-            </button>
+        <div class="loader">
+          <a href="files/PapeLisa_CV_072022.pdf"
+             target="_blank">
+            CV download starting
           </a>
+          <span class="loader__dot">.</span>
+          <span class="loader__dot">.</span>
+          <span class="loader__dot">.</span>
         </div>
+        <img src="./img/icon_arrow-down.png" class="icon_arrow-download"/>
+
+        <div class="reference-icon-wrapper">
+          <a href="https://github.com/LisaPMunich"
+             target="_blank">
+            <img class="icon-1"/>
+          </a>
+          <a href="files/PapeLisa_CV_072022.pdf"
+             target="_blank">
+            <img class="icon-3"/>
+          <a href="https://www.linkedin.com/in/lisa-pape-329b7a22/"
+             target="_blank">
+            <img class="icon-2"/>
+          </a>
+
+        </div>
+
+<!--        <div class="profile__button-wrapper">-->
+<!--          <a href="files/PapeLisa_CV_072022.pdf" target="_blank">-->
+<!--            <button class="button" type="button" value="Check out my CV" aria-label="Click here to open my CV in a separate window">Check out my CV-->
+<!--            </button>-->
+<!--          </a>-->
+<!--        </div>-->
       </div>
     </div>
 
@@ -91,33 +112,10 @@
 
 </main>
 
-<footer class="page-footer">
-
-  <div class="page-footer__call-to-action">
-    <h3>Find me on.</h3>
-  </div>
-  <div class="page-footer__social-media">
-    <a href="https://github.com/LisaPMunich"
-       target="_blank">
-      <img src="img/291716_github_logo_social_network_social_icon.svg"
-           alt="Github logo"
-           class="page-footer__logo">
-    </a>
-<!--    <a href="https://www.instagram.com/the_momster_sleepometer/" target="_blank">-->
-<!--      <img src="../img/3225191_app_instagram_logo_media_popular_icon.svg"-->
-<!--           alt="Instagram logo"-->
-<!--           class="page-footer__logo">-->
-<!--    </a>-->
-    <a href="https://www.linkedin.com/in/lisa-pape-329b7a22/" target="_blank">
-      <img src="img/3225190_app_linkedin_logo_media_popular_icon.svg"
-           alt="LinkedIn logo"
-           class="page-footer__logo">
-    </a>
-  </div>
+<footer class="footer">
   <div class="impressum-link-wrapper">
-    <a href="./impressum.html" class="link--inherit-sized" target="_self">Impressum</a>
+    <a href="./impressum.html" class="impressum-link-home" target="_self">Impressum</a>
   </div>
-
 </footer>
 
 <script src="dist/script.min.js"></script>

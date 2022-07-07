@@ -12,44 +12,44 @@
 .contact-details{
     padding: 20px;
     text-align: end;
+    font-size: 1.2rem;
 }
 
 
 .contact-form {
     display: inline-block;
     padding: 20px;
-    border-left: 2px solid $light-orange;
+    border-left: 4px solid $border-highlight;
     text-align: start;
 }
 
-.contact__underline-effect{
-    margin: 5px 0;
-    padding: 15px 0;
-    position: relative;
-    color: $dark-turquoise;
-    font-weight: $font-bold;
-    font-size: 1.2em;
-}
-
-.contact__underline-effect::before {
-    content: "";
-    position: absolute;
-    left: 40%;
-    bottom: 14px;
-    width: 85px;
-    height: 14px;
-    transform: skew(-6deg) translateX(-50%);
-    background: $light-orange;
-    z-index: -1;
-}
+//.contact__underline-effect{
+//    margin: 5px 0;
+//    padding: 15px 0;
+//    position: relative;
+//    color: $main-font-color;
+//    font-size: 1.2em;
+//}
+//
+//.contact__underline-effect::before {
+//    content: "";
+//    position: absolute;
+//    left: 40%;
+//    bottom: 14px;
+//    width: 85px;
+//    height: 14px;
+//    transform: skew(-6deg) translateX(-50%);
+//    background: $highlight;
+//    z-index: -1;
+//}
 
 .email-error {
-    color: $light-orange;
+    color: $error;
     font-weight: $font-bold;
 }
 
 .message-error {
-    color: $light-orange;
+    color: $error;
     font-weight: $font-bold;
 }
 
@@ -57,7 +57,7 @@
 .email-wrapper,
 .telephone-wrapper,
 .message-wrapper {
-    padding: 2px 0;
+    padding: 5px 0;
     justify-content: space-evenly;
     justify-items: start;
 }
@@ -65,8 +65,8 @@
 .contact-email,
 .contact-tel,
 .contact-message{
-    padding: 2px 3px;
-    border: 1px solid $dark-orange;
+    padding: 4px 5px;
+    border: 1px solid $border;
 
     ::-webkit-input-placeholder { /* Edge */
         color: $placeholder-color;
@@ -88,6 +88,7 @@
 .button {
     text-align: center;
     margin-top: 2px;
+    font-size: 1rem;
 }
 
 //===================
@@ -102,7 +103,7 @@
     .contact-form {
         display: inline-block;
         padding: 20px;
-        border-left: 2px solid $light-orange;
+        border-left: 2px solid $border-highlight;
         text-align: start;
     }
     .contact__button-wrapper{
@@ -127,7 +128,7 @@
     .contact-form {
         display: inline-block;
         padding: 20px;
-        border-top: 2px solid $light-orange;
+        border-top: 2px solid $border-highlight;
         border-left: none;
         text-align: center;
     }
@@ -152,7 +153,7 @@
     .contact-form {
         display: inline-block;
         padding: 20px;
-        border-top: 2px solid $light-orange;
+        border-top: 2px solid $border-highlight;
         border-left: none;
         text-align: center;
     }

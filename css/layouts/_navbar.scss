@@ -4,7 +4,7 @@
 // Wrapper
 .nav-list {
     width: 100%;
-    background: $dark-turquoise;
+    background: $nav-background-color;
     display: flex;
     margin: 0 0 20px 0;
     padding: 10px;
@@ -14,9 +14,29 @@
     z-index: 2;
     position: fixed;
     height: 100px;
-    box-shadow: 0 0 10px $light-orange;
+    box-shadow: 0 0 10px $box-shadow;
     align-items: center;
 }
+
+.nav-list:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-bottom: solid 2px $highlight;
+    animation: border_anim 3s linear forwards;
+}
+
+@keyframes border_anim {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 
 // Horizontal Menu items
 .ham-items {
@@ -29,50 +49,28 @@
 
 
 .ham-items {
-    a{
+    a {
         position: relative;
         flex-basis: 1;
         flex-wrap: wrap;
-        padding: 10px 20px;
-        color: $light-orange;
+        padding: 5px 20px;
+        color: $nav-font-color;
         text-decoration: none;
-        text-transform: lowercase;
+        text-transform: uppercase;
         text-align: center;
         letter-spacing: 0.15em;
         display: inline-block;
         font-weight: $font-bold;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         line-height: 2;
-        transition: all 200ms ease-in;
-
-    }
-    a:after{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        display: block;
-        background: none repeat scroll 0 0 transparent;
-        height: 2px;
-        width: 0;
-        background: $light-orange;
-        transition: width 0.3s ease 0s, left 0.3s ease 0s;
     }
 
 
-    a:hover::after {
-        width: 100%;
-        left: 0;
-        color: $light-orange;
-    }
-
-    a:visited {
-        color: $light-orange;
-        text-decoration: none;
-
-        &:active {
-            color: $light-orange;
-        }
+    a:hover {
+        color: $white;
+        background: $dark-blue;
+        transition: 0.5s;
+        border-radius: 5px;
     }
 }
 
@@ -81,42 +79,30 @@
     margin-left: 2rem;
 }
 
-//a.logo-wrapper {
-//    transition: none;
-//    background: none;
-//    flex-basis: 0;
-//    align-items: center;
-//    line-height: 0;
-//
-//    &::after, &:hover::after {
-//        background: none;
-//        transition: none;
-//    }
-//}
+.brand-name-wrapper {
+    text-decoration: none;
+}
 
-//.logo {
-//    height: 80px;
-//
-//}
-
-.logo{
-    color: $light-orange;
+.brand-name {
+    color: $brand-name;
     font-size: 50px;
     padding-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 // HAMBURGER MENU
 //HIDE HAMBURGER
-.nav-list label, #hamburger { display: none; }
-
-
+.nav-list label, #hamburger {
+    display: none;
+}
 
 
 //===================
 //MEDIA QUERIES
 //===================
 
-@media all and (max-width: 720px) {
+@media all and (max-width: 780px) {
     .page-header {
         font-size: 20px;
     }
@@ -126,24 +112,27 @@
         a {
             display: block;
             width: 100%;
-            border-top: 1px solid $light-turquoise;
-            border-bottom: 1px solid $light-turquoise;
+            border-top: 1px solid $ham-border;
+            border-bottom: 1px solid $ham-border;
         }
 
-        a:after{
+        a:after {
             display: block;
             background: none;
-            color: $dark-turquoise;
+            color: $link;
             transition: none;
         }
-        a:hover{
-            color: $light-turquoise;
+
+        a:hover {
+            color: $link-discreet;
         }
-        a:first-child{
-            border-top: 2px solid $light-turquoise;
+
+        a:first-child {
+            border-top: 2px solid $ham-border;
         }
-        a:last-child{
-            border-bottom: 2px solid $light-turquoise;
+
+        a:last-child {
+            border-bottom: 2px solid $ham-border;
         }
 
 
@@ -152,13 +141,13 @@
     //show hamburger icon
     .nav-list label {
         display: inline-block;
-        color: $light-orange;
+        color: $link;
         font-style: normal;
         font-size: 2.5em;
         padding: 10px;
         margin-left: auto;
         text-align: right;
-        justify-content:flex-end;
+        justify-content: flex-end;
         cursor: pointer;
     }
 
@@ -171,11 +160,20 @@
         display: block;
         position: absolute;
         top: 100px;
-        background: $dark-turquoise;
+        background: $nav-background-color;
         width: 100%;
         height: -100px;
         left: 0;
         right: 0;
         transition: 0.5ms;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .brand-name {
+        color: $brand-name;
+        font-size: 40px;
+        padding-left: 20px;
+        text-decoration: none;
     }
 }

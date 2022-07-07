@@ -4,23 +4,18 @@
 
 .impressum-wrapper{
     padding: 20px;
+
 }
 
 .impressum-generator{
-    color: $dark-orange;
-
-}
-
-.impressum-link-wrapper{
-    position: absolute;
-    float: right;
-    bottom: 10px;
-    right: 30px;
+    color: $dark-green;
+    font-family: Nanum Gothic, sans-serif;
+    font-size: 0.9em;
 
     a{
-        color: $dark-turquoise;
-        font-size: 16px;
-        font-weight: 700;
+        color: $dark-green;
     }
 }
+
+
 

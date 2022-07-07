@@ -2,18 +2,61 @@
 @import "../layouts/navbar";
 
 @font-face {
-    font-family: 'tomhand';
-    src: url('../../Portfolio-Website/fonts/tomhand.ttf') format('truetype');
+    font-family: 'MyolivinBold-gxR6q';
+    src: url('../../fonts/MyolivinBold-gxR6q.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-.logo{
-    font-family: tomhand, serif;
+.brand-name{
+    font-family: MyolivinBold-gxR6q, serif;
 }
 
 h1 {
-    font-family: tomhand, serif;
-    color: $dark-turquoise;
+    font-family: MyolivinBold-gxR6q, serif;
+    color: $main-font-color;
+}
+
+h2 {
+    font-family: MyolivinBold-gxR6q, serif;
+    color: $main-font-color;
+}
+
+
+h3 {
+    font-family: MyolivinBold-gxR6q, serif;
+    color: $main-font-color;
+}
+
+h4 {
+    font-family: MyolivinBold-gxR6q, serif;
+    color: $main-font-color;
+}
+
+.ham-items {
+    a {
+        font-family: MyolivinBold-gxR6q, serif;
+        color: $main-font-color;
+    }
+}
+
+h5 {
+    font-family: MyolivinBold-gxR6q, serif;
+    color: $main-font-color;
+}
+
+.call-to-action{
+    font-family: MyolivinBold-gxR6q, serif;
+    color: $main-font-color;
+}
+
+.impressum-link {
+    font-family: MyolivinBold-gxR6q, serif;
+    text-transform: uppercase;
+}
+
+.impressum-link-home {
+    font-family: MyolivinBold-gxR6q, serif;
+    text-transform: uppercase;
 }

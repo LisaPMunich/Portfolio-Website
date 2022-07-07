@@ -4,26 +4,41 @@
 @import "../components/speech-bubble";
 
 
-.study__underline-effect {
-    font-size: 20px;
-    margin: 5px 0;
-    padding: 15px 0;
-    position: relative;
-    font-weight: $font-bold;
-    color: $dark-turquoise;
+//.study__underline-effect {
+//    font-size: 20px;
+//    margin: 5px 0;
+//    padding: 15px 0;
+//    position: relative;
+//    font-weight: $font-bold;
+//    color: $highlight;
+//}
+//
+//.study__underline-effect::before {
+//    content: "";
+//    position: absolute;
+//    left: 35%;
+//    bottom: 16px;
+//    width: 50px;
+//    height: 14px;
+//    transform: skew(-6deg) translateX(-50%);
+//    background: $highlight;
+//    z-index: -1;
+//}
+
+.back-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .back-link-text {
+        font-size: 1.7rem;
+        left: 0px;
+    }
+
 }
 
-.study__underline-effect::before {
-    content: "";
-    position: absolute;
-    left: 35%;
-    bottom: 16px;
-    width: 50px;
-    height: 14px;
-    transform: skew(-6deg) translateX(-50%);
-    background: $light-orange;
-    z-index: -1;
-}
+
+
 
 .study-wrapper {
     margin-left: 2rem;
@@ -269,7 +284,6 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 .tool-list {
     display: flex;
     flex-direction: row;
@@ -285,16 +299,3 @@
 }
 
 
-.icon {
-    padding-right: 10px;
-}
-
-.circle-icon {
-    border-radius: 50%;
-    transform: scale(0.9);
-}
-
-.rounded-icon {
-    border-radius: 8px;
-    transform: scale(0.8);
-}

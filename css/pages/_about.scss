@@ -6,26 +6,27 @@
     padding: 20px;
 }
 
-.about__underline-effect{
+.about__underline-effect {
     margin: 5px 0;
     padding: 15px 0;
     position: relative;
     font-weight: $font-bold;
-    color: $dark-turquoise;
 }
 
 .about__underline-effect::before {
     content: "";
     position: absolute;
     left: 10%;
-    bottom: 16px;
+    bottom: 23px;
     width: 200px;
     height: 14px;
     transform: skew(-6deg) translateX(-50%);
-    background: $light-orange;
+    background: $highlight;
     z-index: -1;
 }
 
 .fun-activities-list {
-    list-style-type: disc;
+    list-style-type: square;
+    list-style-position: outside;
+    margin-left: -20px;
 }

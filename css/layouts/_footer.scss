@@ -1,43 +1,80 @@
 @import "../abstract/variables";
 
 
-footer {
-    background-color: $light-orange;
-    color: $dark-turquoise;
+.footer {
+    background-color: $footer-background-color;
+    color: $footer-font-color;
     min-width: 300px;
     height: 100px;
     margin: auto;
     margin-top: -$footer-overlap;
+    margin-bottom: 20px;
     left: 0;
     right: 0;
     bottom: 0;
-}
-
-.page-footer__logo {
-    width: 30px;
-    height: 30px;
-}
-
-
-.page-footer {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
-    grid-row-gap: 5px;
     width: 100%;
+
 }
 
-.page-footer__call-to-action {
-    grid-column: 1/5;
-    text-align: center;
+
+.footer__content-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.page-footer__social-media {
-    grid-column: 1/5;
-    text-align: center;
-
+.footer__social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     a {
         text-decoration: none;
     }
+}
+
+.call-to-action{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.impressum-link-wrapper{
+    color: $dark-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    a{
+        color: $footer-font-color;
+        font-weight: 700;
+    }
+}
+
+.impressum-link-wrapper--disabled{
+    opacity: 0;
+}
+
+.impressum-link{
+    text-decoration: none;
+    padding-left: 5px;
+    font-size: 1.4rem;
+    letter-spacing: 0.15em;
+}
+
+.impressum-link:hover {
+    color: $neon-green;
+}
+
+.impressum-link-home{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    text-decoration: none;
+    padding-left: 5px;
+    font-size: 1.4rem;
+    letter-spacing: 0.15em;
+}
+
+.impressum-link-home:hover {
+    color: $neon-green;
 }

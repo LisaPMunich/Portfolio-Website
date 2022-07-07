@@ -8,9 +8,9 @@ button,
     /* overwrites browser defaults and resets the border */
     border: none;
     border-radius: 3px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    color: $white;
-    background-color: $dark-turquoise;
+    border-bottom: 1px solid $dark-green;
+    color: $button-text;
+    background-color: $button;
 
     /* takes the font from the outer container */
     font-family: inherit;
