@@ -3,19 +3,20 @@
 button,
 .button {
     display: inline-block;
-    padding: 10px;
+    padding: 12px 15px;
+    text-align: center;
+    margin-top: 2px;
+    font-size: 1.2rem;
 
     /* overwrites browser defaults and resets the border */
-    border: none;
-    border-radius: 3px;
-    border-bottom: 1px solid $dark-green;
     color: $button-text;
     background-color: $button;
+    border: 1px solid $button-border;
+    border-radius: 5px;
 
     /* takes the font from the outer container */
     font-family: inherit;
     text-decoration: none;
-    transition: 1s opacity;
     margin-bottom: 10px;
 }
 
@@ -27,5 +28,50 @@ button:focus,
     cursor: pointer;
 
     /* reduces the opacity of the button to 80% */
-    opacity: 0.8;
+    background: $light-green;
+    color: $white;
+    border: 1px solid $beige;
+    transition: all 0.2s;
 }
+
+// PROJECT PAGE
+
+.card__button{
+    display: inline-block;
+    padding: 5px 8px;
+    text-align: center;
+    //margin-top: 2px;
+    font-size: 0.9rem;
+
+    /* overwrites browser defaults and resets the border */
+    color: $button-text;
+    background-color: $button;
+    border: 1px solid $button-border;
+    border-radius: 5px;
+
+    /* takes the font from the outer container */
+    font-family: inherit;
+    text-decoration: none;
+}
+
+.card__button:hover,
+.card__button:focus{
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+
+    /* reduces the opacity of the button to 80% */
+    background: $light-green;
+    color: $white;
+    border: 1px solid $beige;
+    transition: all 0.2s;
+}
+
+.card__button:disabled{
+    color: $card-link--disabled;
+    cursor: default;
+    pointer-events: none;
+}
+
+
+
+

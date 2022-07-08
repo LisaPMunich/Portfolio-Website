@@ -118,22 +118,6 @@ div.card__content p {
     margin-right: 8px;
 }
 
-.card__link {
-    color: $card-link;
-    text-decoration: none;
-}
-
-.card__link:hover {
-    text-decoration: underline;
-}
-
-.card__link--disabled {
-    color: $card-link--disabled;
-    text-decoration: none;
-    cursor: default;
-    pointer-events: none;
-}
-
 .work-in-progress{
     color: $card-link--disabled;
 }

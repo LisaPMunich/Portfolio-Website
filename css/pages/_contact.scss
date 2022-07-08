@@ -65,8 +65,9 @@
 .contact-email,
 .contact-tel,
 .contact-message{
-    padding: 4px 5px;
+    padding: 4px 10px;
     border: 1px solid $border;
+    border-radius: 5px;
 
     ::-webkit-input-placeholder { /* Edge */
         color: $placeholder-color;
@@ -83,12 +84,6 @@
 
 .contact__button-wrapper{
     text-align: left;
-}
-
-.button {
-    text-align: center;
-    margin-top: 2px;
-    font-size: 1rem;
 }
 
 //===================

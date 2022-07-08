@@ -291,17 +291,18 @@ a:focus {
 button,
 .button {
   display: inline-block;
-  padding: 10px;
+  padding: 12px 15px;
+  text-align: center;
+  margin-top: 2px;
+  font-size: 1.2rem;
   /* overwrites browser defaults and resets the border */
-  border: none;
-  border-radius: 3px;
-  border-bottom: 1px solid #379683;
-  color: #FFF;
-  background-color: #05386B;
+  color: #05386B;
+  background-color: #EDF5E1;
+  border: 1px solid #05386B;
+  border-radius: 5px;
   /* takes the font from the outer container */
   font-family: inherit;
   text-decoration: none;
-  transition: 1s opacity;
   margin-bottom: 10px;
 }
 
@@ -312,7 +313,42 @@ button:focus,
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
+  background: #8EE4AF;
+  color: #FFF;
+  border: 1px solid #EDF5E1;
+  transition: all 0.2s;
+}
+
+.card__button {
+  display: inline-block;
+  padding: 5px 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  /* overwrites browser defaults and resets the border */
+  color: #05386B;
+  background-color: #EDF5E1;
+  border: 1px solid #05386B;
+  border-radius: 5px;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.card__button:hover,
+.card__button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  background: #8EE4AF;
+  color: #FFF;
+  border: 1px solid #EDF5E1;
+  transition: all 0.2s;
+}
+
+.card__button:disabled {
+  color: #EDF5E1;
+  cursor: default;
+  pointer-events: none;
 }
 
 .bubble {
@@ -400,7 +436,7 @@ button:focus,
   -webkit-box-flex: 1;
   flex-grow: 1;
   max-width: 7em;
-  background: #8EE4AF;
+  background: #5CDB95;
   color: #05386B;
   font-size: 0.8em;
   text-align: center;
@@ -431,6 +467,16 @@ button:focus,
   margin-left: 175px;
   margin-top: -10px;
   margin-bottom: -43px;
+}
+
+.icon_arrow-straight-back {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  padding-right: 2px;
+  margin-left: -17px;
+  margin-right: 10px;
+  top: 15px;
 }
 
 .icon-github {
@@ -769,45 +815,6 @@ main {
   text-align: justify;
 }
 
-.loader {
-  position: relative;
-  background: #8EE4AF;
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 8px 15px;
-  margin-bottom: -16px;
-  margin-top: 1px;
-  margin-left: 62px;
-  width: 70%;
-  font-weight: 700;
-  color: #05386B;
-  text-align: center;
-}
-.loader a {
-  text-decoration: none;
-  color: #05386B;
-}
-
-@keyframes blink {
-  50% {
-    color: transparent;
-  }
-}
-.loader__dot {
-  animation: 2s blink infinite;
-  transform: scale(4);
-}
-
-.loader__dot:nth-child(2) {
-  animation-delay: 250ms;
-  transform: scale(4);
-}
-
-.loader__dot:nth-child(3) {
-  animation-delay: 500ms;
-  transform: scale(4);
-}
-
 .reference-icon-wrapper {
   text-align: center;
   margin-top: 25px;
@@ -818,43 +825,67 @@ main {
 .reference-icon-wrapper a {
   text-decoration: none;
   margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reference-icon-wrapper a:hover {
+  cursor: pointer;
+  color: #FFF;
 }
 
-.icon-1 {
+.Github-button, .CV-button, .LinkedIn-button {
+  border-radius: 5px;
+  color: #05386B;
+  background: #EDF5E1;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 3px 8px 3px 1px;
+  margin: 5px;
+  height: 55px;
+  width: 150px;
+  transition: all 0.2s;
+}
+.Github-button .icon-1, .CV-button .icon-1, .LinkedIn-button .icon-1 {
   content: url("../../img/icon_github_dark-blue.png");
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 }
-
-.icon-1:hover {
-  content: url("../../img/icon_github_green.png");
-  width: 80px;
-  height: 80px;
-}
-
-.icon-2 {
+.Github-button .icon-2, .CV-button .icon-2, .LinkedIn-button .icon-2 {
   content: url("../../img/icon_linkedin.png");
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 }
-
-.icon-2:hover {
-  content: url("../../img/icon_linkedin_green.png");
-  width: 80px;
-  height: 80px;
-}
-
-.icon-3 {
+.Github-button .icon-3, .CV-button .icon-3, .LinkedIn-button .icon-3 {
   content: url("../../img/icon_resume_dark-blue.png");
-  width: 80px;
-  height: 60px;
-  transform: scale(1.06);
+  width: 60px;
+  height: 48px;
 }
 
-.icon-3:hover {
-  content: url("../../img/icon_resume.png");
-  width: 80px;
+.Github-button:hover, .CV-button:hover, .LinkedIn-button:hover,
+.Github-button:focus, .CV-button:focus, .LinkedIn-button:focus {
+  background: #8EE4AF;
+  cursor: pointer;
+  color: #FFF;
+  border: none;
+}
+.Github-button:hover .icon-1, .CV-button:hover .icon-1, .LinkedIn-button:hover .icon-1,
+.Github-button:focus .icon-1, .CV-button:focus .icon-1, .LinkedIn-button:focus .icon-1 {
+  content: url("../../img/icon_Github_white.png");
+  width: 60px;
   height: 60px;
+}
+.Github-button:hover .icon-2, .CV-button:hover .icon-2, .LinkedIn-button:hover .icon-2,
+.Github-button:focus .icon-2, .CV-button:focus .icon-2, .LinkedIn-button:focus .icon-2 {
+  content: url("../../img/icon_linkedin_white.png");
+  width: 60px;
+  height: 60px;
+}
+.Github-button:hover .icon-3, .CV-button:hover .icon-3, .LinkedIn-button:hover .icon-3,
+.Github-button:focus .icon-3, .CV-button:focus .icon-3, .LinkedIn-button:focus .icon-3 {
+  content: url("../../img/icon_resume_white.png");
+  width: 60px;
+  height: 48px;
 }
 
 @supports (display: grid) {
@@ -894,7 +925,7 @@ main {
     width: 390px;
   }
 }
-@media all and (max-width: 375px) {
+@media all and (max-width: 390px) {
   .profile-wrapper {
     display: flex;
     flex-direction: column;
@@ -913,6 +944,14 @@ main {
     margin: 20px;
     width: 335px;
   }
+  .reference-icon-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .reference-icon-wrapper a {
+    justify-content: flex-start;
+  }
 }
 @media all and (max-width: 320px) {
   .content-inside-main-home {
@@ -926,6 +965,14 @@ main {
     font-size: 35px;
     font-weight: bold;
     text-align: center;
+  }
+  .reference-icon-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .reference-icon-wrapper a {
+    justify-content: flex-start;
   }
 }
 .dev-skills {
@@ -947,7 +994,7 @@ main {
   -webkit-box-flex: 1;
   flex-grow: 1;
   max-width: 7em;
-  background: #8EE4AF;
+  background: #5CDB95;
   color: #05386B;
   font-size: 0.8em;
   text-align: center;
@@ -1070,7 +1117,7 @@ div.card__content p {
   -webkit-box-flex: 1;
   flex-grow: 1;
   max-width: 7em;
-  background: #8EE4AF;
+  background: #5CDB95;
   color: #05386B;
   font-size: 0.8em;
   text-align: center;
@@ -1094,22 +1141,6 @@ div.card__content p {
 .card__info i {
   font-size: 0.9em;
   margin-right: 8px;
-}
-
-.card__link {
-  color: #379683;
-  text-decoration: none;
-}
-
-.card__link:hover {
-  text-decoration: underline;
-}
-
-.card__link--disabled {
-  color: #EDF5E1;
-  text-decoration: none;
-  cursor: default;
-  pointer-events: none;
 }
 
 .work-in-progress {
@@ -1184,7 +1215,7 @@ div.card__content p {
   -webkit-box-flex: 1;
   flex-grow: 1;
   max-width: 7em;
-  background: #8EE4AF;
+  background: #5CDB95;
   color: #05386B;
   font-size: 0.8em;
   text-align: center;
@@ -1301,7 +1332,7 @@ div.card__content p {
 }
 .back-link .back-link-text {
   font-size: 1.7rem;
-  left: 0px;
+  left: 0;
 }
 
 .study-wrapper {
@@ -1554,8 +1585,9 @@ div.card__content p {
 .contact-email,
 .contact-tel,
 .contact-message {
-  padding: 4px 5px;
+  padding: 4px 10px;
   border: 1px solid #EDF5E1;
+  border-radius: 5px;
 }
 .contact-email ::-webkit-input-placeholder,
 .contact-tel ::-webkit-input-placeholder,
@@ -1575,12 +1607,6 @@ div.card__content p {
 
 .contact__button-wrapper {
   text-align: left;
-}
-
-.button {
-  text-align: center;
-  margin-top: 2px;
-  font-size: 1rem;
 }
 
 @media all and (max-width: 800px) {
@@ -1663,7 +1689,7 @@ div.card__content p {
   -webkit-box-flex: 1;
   flex-grow: 1;
   max-width: 7em;
-  background: #8EE4AF;
+  background: #5CDB95;
   color: #05386B;
   font-size: 0.8em;
   text-align: center;

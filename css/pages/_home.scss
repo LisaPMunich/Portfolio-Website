@@ -59,39 +59,44 @@
     text-align: justify;
 }
 
-.loader{
-    position: relative;
-    background: $light-green;
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 8px 15px;
-    margin-bottom: -16px;
-    margin-top: 1px;
-    margin-left: 62px;
-    width: 70%;
-    font-weight: 700;
-    color: $dark-blue;
-    text-align: center;
-    a{
-        text-decoration: none;
-        color: $dark-blue;
-    }
-}
+//.loader{
+//    position: relative;
+//    background: $light-green;
+//    border: 1px solid;
+//    border-radius: 5px;
+//    padding: 0 15px;
+//    margin-bottom: -16px;
+//    margin-top: 1px;
+//    margin-left: 62px;
+//    width: 70%;
+//    font-weight: 700;
+//    color: $dark-blue;
+//    text-align: justify;
+//    align-self: center;
+//    a{
+//        text-decoration: none;
+//        color: $dark-blue;
+//    }
+//}
+//
 
 
-@keyframes blink {50% { color: transparent }}
-.loader__dot {
-    animation: 2s blink infinite;
-    transform: scale(4);
-}
-.loader__dot:nth-child(2) {
-    animation-delay: 250ms;
-    transform: scale(4);
-}
-.loader__dot:nth-child(3) {
-    animation-delay: 500ms;
-    transform: scale(4);
-}
+//@keyframes blink {50% { color: transparent }}
+//.loader__dot {
+//    animation: 2s blink infinite;
+//    font-size: 2rem;
+//    font-weight: 700;
+//}
+//.loader__dot:nth-child(2) {
+//    animation-delay: 250ms;
+//    font-size: 2rem;
+//    font-weight: 700;
+//}
+//.loader__dot:nth-child(3) {
+//    animation-delay: 500ms;
+//    font-size: 2rem;
+//    font-weight: 700;
+//}
 
 //.profile__button-wrapper {
 //    text-align: center;
@@ -107,46 +112,70 @@
     a {
         text-decoration: none;
         margin: 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    a:hover{
+        cursor: pointer;
+        color: $white;
     }
 }
 
-
-.icon-1{
-    content: url("../../img/icon_github_dark-blue.png");
-    width: 80px;
-    height: 80px;
+.Github-button, .CV-button, .LinkedIn-button{
+    border-radius: 5px;
+    color: $dark-blue;
+    background: $beige;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 3px 8px 3px 1px;
+    margin: 5px;
+    height: 55px;
+    width: 150px;
+    transition: all 0.2s;
+    .icon-1{
+        content: url("../../img/icon_github_dark-blue.png");
+        width: 60px;
+        height: 60px;
+    }
+    .icon-2{
+        content: url("../../img/icon_linkedin.png");
+        width: 60px;
+        height: 60px;
+    }
+    .icon-3{
+        content: url("../../img/icon_resume_dark-blue.png");
+        width: 60px;
+        height: 48px;
+    }
 }
 
-.icon-1:hover{
-    content: url("../../img/icon_github_green.png");
-    width: 80px;
-    height: 80px;
+.Github-button:hover, .CV-button:hover, .LinkedIn-button:hover,
+.Github-button:focus, .CV-button:focus, .LinkedIn-button:focus,
+{
+    background: $light-green;
+    cursor: pointer;
+    color: $white;
+    border: none;
+
+    .icon-1 {
+        content: url("../../img/icon_Github_white.png");
+        width: 60px;
+        height: 60px;
+    }
+    .icon-2{
+        content: url("../../img/icon_linkedin_white.png");
+        width: 60px;
+        height: 60px;
+    }
+    .icon-3{
+        content: url("../../img/icon_resume_white.png");
+        width: 60px;
+        height: 48px;
+    }
+
 }
 
-.icon-2{
-    content: url("../../img/icon_linkedin.png");
-    width: 80px;
-    height: 80px;
-}
-
-.icon-2:hover{
-    content: url("../../img/icon_linkedin_green.png");
-    width: 80px;
-    height: 80px;
-}
-
-.icon-3{
-    content: url("../../img/icon_resume_dark-blue.png");
-    width: 80px;
-    height: 60px;
-    transform: scale(1.06);
-}
-
-.icon-3:hover{
-    content: url("../../img/icon_resume.png");
-    width: 80px;
-    height: 60px;
-}
 
 
 //=================
@@ -201,7 +230,7 @@
     }
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 390px) {
 
     .profile-wrapper {
         display: flex;
@@ -223,6 +252,15 @@
         margin: 20px;
         width: 335px;
     }
+
+    .reference-icon-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        a {
+            justify-content: flex-start;
+        }
+    }
 }
 
 @media all and (max-width: 320px) {
@@ -240,5 +278,14 @@
         font-size: 35px;
         font-weight: bold;
         text-align: center;
+    }
+
+    .reference-icon-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        a {
+            justify-content: flex-start;
+        }
     }
 }
