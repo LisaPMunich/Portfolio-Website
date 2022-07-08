@@ -144,7 +144,7 @@
 }
 @font-face {
   font-family: "MyolivinBold-gxR6q";
-  src: url("../../fonts/MyolivinBold-gxR6q.otf") format("opentype");
+  src: url("../../Portfolio-Website/fonts/MyolivinBold-gxR6q.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -480,25 +480,25 @@ button:focus,
 }
 
 .icon-github {
-  content: url("../../img/icon_github_dark-blue.png");
+  content: url("../../Portfolio-Website/img/icon_github_dark-blue.png");
   width: 60px;
   height: 60px;
 }
 
 .icon-github:hover {
-  content: url("../../img/icon_github_green.png");
+  content: url("../../Portfolio-Website/img/icon_github_green.png");
   width: 60px;
   height: 60px;
 }
 
 .icon-linkedin {
-  content: url("../../img/icon_linkedin.png");
+  content: url("../../Portfolio-Website/img/icon_linkedin.png");
   width: 60px;
   height: 60px;
 }
 
 .icon-linkedin:hover {
-  content: url("../../img/icon_linkedin_green.png");
+  content: url("../../Portfolio-Website/img/icon_linkedin_green.png");
   width: 60px;
   height: 60px;
 }
@@ -847,17 +847,17 @@ main {
   transition: all 0.2s;
 }
 .Github-button .icon-1, .CV-button .icon-1, .LinkedIn-button .icon-1 {
-  content: url("../../img/icon_github_dark-blue.png");
+  content: url("../../Portfolio-Website/img/icon_github_dark-blue.png");
   width: 60px;
   height: 60px;
 }
 .Github-button .icon-2, .CV-button .icon-2, .LinkedIn-button .icon-2 {
-  content: url("../../img/icon_linkedin.png");
+  content: url("../../Portfolio-Website/img/icon_linkedin.png");
   width: 60px;
   height: 60px;
 }
 .Github-button .icon-3, .CV-button .icon-3, .LinkedIn-button .icon-3 {
-  content: url("../../img/icon_resume_dark-blue.png");
+  content: url("../../Portfolio-Website/img/icon_resume_dark-blue.png");
   width: 60px;
   height: 48px;
 }
@@ -871,19 +871,19 @@ main {
 }
 .Github-button:hover .icon-1, .CV-button:hover .icon-1, .LinkedIn-button:hover .icon-1,
 .Github-button:focus .icon-1, .CV-button:focus .icon-1, .LinkedIn-button:focus .icon-1 {
-  content: url("../../img/icon_Github_white.png");
+  content: url("../../Portfolio-Website/img/icon_Github_white.png");
   width: 60px;
   height: 60px;
 }
 .Github-button:hover .icon-2, .CV-button:hover .icon-2, .LinkedIn-button:hover .icon-2,
 .Github-button:focus .icon-2, .CV-button:focus .icon-2, .LinkedIn-button:focus .icon-2 {
-  content: url("../../img/icon_linkedin_white.png");
+  content: url("../../Portfolio-Website/img/icon_linkedin_white.png");
   width: 60px;
   height: 60px;
 }
 .Github-button:hover .icon-3, .CV-button:hover .icon-3, .LinkedIn-button:hover .icon-3,
 .Github-button:focus .icon-3, .CV-button:focus .icon-3, .LinkedIn-button:focus .icon-3 {
-  content: url("../../img/icon_resume_white.png");
+  content: url("../../Portfolio-Website/img/icon_resume_white.png");
   width: 60px;
   height: 48px;
 }
