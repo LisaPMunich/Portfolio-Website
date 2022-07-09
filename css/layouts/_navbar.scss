@@ -66,7 +66,7 @@
     }
 
 
-    a:hover {
+    a:hover, a:focus {
         color: $white;
         background: $dark-blue;
         transition: 0.5s;
@@ -123,7 +123,7 @@
             transition: none;
         }
 
-        a:hover {
+        a:hover, a:focus {
             color: $link-discreet;
         }
 

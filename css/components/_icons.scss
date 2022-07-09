@@ -78,3 +78,17 @@
     border-radius: 8px;
     transform: scale(0.8);
 }
+
+//=========================
+// MEDIA QUERIES
+//=========================
+
+@media all and (max-width: 360px) {
+
+    .icon_arrow-right{
+        width:40px;
+        height: 40px;
+        padding-left: 2px;
+        position: relative;
+    }
+}

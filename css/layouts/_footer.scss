@@ -78,3 +78,46 @@
 .impressum-link-home:hover {
     color: $neon-green;
 }
+
+
+//=========================
+// MEDIA QUERIES
+//=========================
+
+@media all and (max-width: 360px) {
+
+    .call-to-action{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .impressum-link-wrapper{
+        color: $dark-blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 30px;
+        a{
+            color: $footer-font-color;
+            font-weight: 700;
+        }
+    }
+
+    .impressum-link-home{
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        text-decoration: none;
+        padding-left: 5px;
+        font-size: 1.2rem;
+        letter-spacing: 0.15em;
+    }
+
+    .impressum-link{
+        text-decoration: none;
+        padding-left: 5px;
+        font-size: 1.2rem;
+        letter-spacing: 0.15em;
+    }
+
+}

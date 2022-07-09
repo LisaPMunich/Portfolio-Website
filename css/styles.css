@@ -54,7 +54,7 @@
   font-size: 1.4rem;
   line-height: 2;
 }
-.ham-items a:hover {
+.ham-items a:hover, .ham-items a:focus {
   color: #FFF;
   background: #05386B;
   transition: 0.5s;
@@ -98,7 +98,7 @@
     color: #05386B;
     transition: none;
   }
-  .ham-items a:hover {
+  .ham-items a:hover, .ham-items a:focus {
     color: #5CDB95;
   }
   .ham-items a:first-child {
@@ -517,6 +517,14 @@ button:focus,
   transform: scale(0.8);
 }
 
+@media all and (max-width: 360px) {
+  .icon_arrow-right {
+    width: 40px;
+    height: 40px;
+    padding-left: 2px;
+    position: relative;
+  }
+}
 .nav-list {
   width: 100%;
   background: #EDF5E1;
@@ -573,7 +581,7 @@ button:focus,
   font-size: 1.4rem;
   line-height: 2;
 }
-.ham-items a:hover {
+.ham-items a:hover, .ham-items a:focus {
   color: #FFF;
   background: #05386B;
   transition: 0.5s;
@@ -617,7 +625,7 @@ button:focus,
     color: #05386B;
     transition: none;
   }
-  .ham-items a:hover {
+  .ham-items a:hover, .ham-items a:focus {
     color: #5CDB95;
   }
   .ham-items a:first-child {
@@ -759,6 +767,38 @@ main {
   color: #5CDB95;
 }
 
+@media all and (max-width: 360px) {
+  .call-to-action {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .impressum-link-wrapper {
+    color: #05386B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  .impressum-link-wrapper a {
+    color: #05386B;
+    font-weight: 700;
+  }
+  .impressum-link-home {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    text-decoration: none;
+    padding-left: 5px;
+    font-size: 1.2rem;
+    letter-spacing: 0.15em;
+  }
+  .impressum-link {
+    text-decoration: none;
+    padding-left: 5px;
+    font-size: 1.2rem;
+    letter-spacing: 0.15em;
+  }
+}
 .body {
   background: #EDF5E1;
   color: #05386B;
@@ -1542,134 +1582,13 @@ div.card__content p {
   width: 100%;
 }
 
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
 .contact-details {
+  margin-top: 50px;
   padding: 20px;
-  text-align: end;
+  text-align: center;
   font-size: 1.2rem;
 }
 
-.contact-form {
-  display: inline-block;
-  padding: 20px;
-  border-left: 4px solid #5CDB95;
-  text-align: start;
-}
-
-.email-error {
-  color: #379683;
-  font-weight: 700;
-}
-
-.message-error {
-  color: #379683;
-  font-weight: 700;
-}
-
-.email-wrapper,
-.telephone-wrapper,
-.message-wrapper {
-  padding: 5px 0;
-  justify-content: space-evenly;
-  justify-items: start;
-}
-
-.contact-email,
-.contact-tel,
-.contact-message {
-  padding: 4px 10px;
-  border: 1px solid #EDF5E1;
-  border-radius: 5px;
-}
-.contact-email ::-webkit-input-placeholder,
-.contact-tel ::-webkit-input-placeholder,
-.contact-message ::-webkit-input-placeholder { /* Edge */
-  color: #d3d3d3;
-}
-.contact-email :-ms-input-placeholder,
-.contact-tel :-ms-input-placeholder,
-.contact-message :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #d3d3d3;
-}
-.contact-email ::placeholder,
-.contact-tel ::placeholder,
-.contact-message ::placeholder {
-  color: #d3d3d3;
-}
-
-.contact__button-wrapper {
-  text-align: left;
-}
-
-@media all and (max-width: 800px) {
-  .contact-details {
-    padding: 20px;
-    text-align: end;
-  }
-  .contact-form {
-    display: inline-block;
-    padding: 20px;
-    border-left: 2px solid #5CDB95;
-    text-align: start;
-  }
-  .contact__button-wrapper {
-    text-align: left;
-  }
-}
-@media all and (min-width: 450px) and (max-width: 620px) {
-  .contact-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .contact-details {
-    padding: 20px;
-    text-align: center;
-  }
-  .contact-form {
-    display: inline-block;
-    padding: 20px;
-    border-top: 2px solid #5CDB95;
-    border-left: none;
-    text-align: center;
-  }
-  .contact__button-wrapper {
-    text-align: center;
-  }
-}
-@media all and (max-width: 450px) {
-  .contact-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .contact-details {
-    padding: 20px;
-    text-align: center;
-  }
-  .contact-form {
-    display: inline-block;
-    padding: 20px;
-    border-top: 2px solid #5CDB95;
-    border-left: none;
-    text-align: center;
-  }
-  .contact__button-wrapper {
-    text-align: center;
-  }
-}
 .dev-skills {
   display: -webkit-box;
   display: -ms-flexbox;
