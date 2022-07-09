@@ -40,26 +40,28 @@
 
 .icon-github{
     content: url("../../Portfolio-Website/img/icon_github_dark-blue.png");
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    transform: scale(0.98);
 }
 
 .icon-github:hover{
     content: url("../../Portfolio-Website/img/icon_github_green.png");
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    transform: scale(0.98);
 }
 
 .icon-linkedin{
     content: url("../../Portfolio-Website/img/icon_linkedin.png");
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 .icon-linkedin:hover{
     content: url("../../Portfolio-Website/img/icon_linkedin_green.png");
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 // PROJECTS-DETAIL
@@ -91,4 +93,31 @@
         padding-left: 2px;
         position: relative;
     }
+
+    .icon-github{
+        content: url("../../Portfolio-Website/img/icon_github_dark-blue.png");
+        width: 40px;
+        height: 40px;
+        transform: scale(0.98);
+    }
+
+    .icon-github:hover{
+        content: url("../../Portfolio-Website/img/icon_github_green.png");
+        width: 40px;
+        height: 40px;
+        transform: scale(0.98);
+    }
+
+    .icon-linkedin{
+        content: url("../../Portfolio-Website/img/icon_linkedin.png");
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-linkedin:hover{
+        content: url("../../Portfolio-Website/img/icon_linkedin_green.png");
+        width: 40px;
+        height: 40px;
+    }
+
 }
