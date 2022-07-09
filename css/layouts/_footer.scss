@@ -17,9 +17,9 @@
 
 }
 
-
 .footer__content-wrapper{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -89,18 +89,6 @@
     .call-to-action{
         text-align: center;
         font-size: 1.6rem;
-    }
-
-    .impressum-link-wrapper{
-        color: $dark-blue;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 30px;
-        a{
-            color: $footer-font-color;
-            font-weight: 700;
-        }
     }
 
     .impressum-link-home{
