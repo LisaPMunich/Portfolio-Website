@@ -15,6 +15,7 @@ h1 {
 h2 {
     font-size: 35px;
     text-transform: uppercase;
+    line-height: normal;
     @extend %header-shared;
 }
 
