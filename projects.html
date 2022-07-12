@@ -306,13 +306,13 @@
         <div class="card__content">
           <h5 class="card__title">Chat App</h5>
           <p class="card__text">
-            This chat app for mobile devices was developed using React Native. It provides users with a chat interface and options to take and share pictures and the user's location on a Google map view.
+            This chat app for mobile devices provides users with a chat interface and options to take and share pictures and the user's location on a Google map view.
             <br>
             <br>
-            <span class="font-bold">Challenges</span>: During development I had a few bugs caused by outdated combinations of packages or dependency issues (e.g. build upload crashing when trying to store images in firebase cloud storage)
+            <span class="font-bold">Challenges</span>: During development the combination of expo, react-native and firebase resulted in many bugs. In order to pinpoint the problem, I had to place console.logs all over the application.
             <br>
             <br>
-            <span class="font-bold">Implementation</span>: The app is developed with Expo.io, interfaces and functions are implemented with the help of Gifted Chat library. Firebase was used to store messages, images and for anonymous authentication. The chat content is also made available when offline with asyncStorage from react native. Furthermore, the app has been designed following accessibility considerations.
+            <span class="font-bold">Implementation</span>: The React Native app was developed with Expo.io. Gifted Chat library was used to implement interfaces and navigation. Firebase was used to store messages, images and for anonymous authentication. The chat content can be viewed in offline mode with asyncStorage from react native. The app follows accessibility considerations.
           </p>
           <section class="card__dev-skill-wrapper" aria-label="I utilized these skills and tools in the project">
             <span class="card__dev-skill-detail">JavaScript</span>
