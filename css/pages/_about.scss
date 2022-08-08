@@ -6,27 +6,64 @@
     padding: 20px;
 }
 
-.about__underline-effect {
-    margin: 5px 0;
-    padding: 15px 0;
-    position: relative;
-    font-weight: $font-bold;
+.soft-skills, .work-goals, .hobbies{
+    margin: 60px 0;
 }
 
-.about__underline-effect::before {
-    content: "";
-    position: absolute;
-    left: 10%;
-    bottom: 23px;
-    width: 200px;
-    height: 14px;
-    transform: skew(-6deg) translateX(-50%);
-    background: $highlight;
-    z-index: -1;
+.soft-skill-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: center;
 }
+
+.skill-detail__card{
+    //border: 2px solid $light-green;
+    padding: 10px;
+    margin: 10px;
+    flex-grow: 1;
+    min-width: 300px;
+    max-width: 350px;
+    justify-content: center;
+}
+
+.skill-detail__icon {
+    display: block;
+    margin: auto;
+}
+
+.skill-detail__header{
+
+}
+
+.skill-detail__content{
+    font-size: 0.9em;
+}
+
 
 .fun-activities-list {
     list-style-type: square;
     list-style-position: outside;
     margin-left: -20px;
 }
+
+
+//.about__underline-effect {
+//    margin: 5px 0;
+//    padding: 15px 0;
+//    position: relative;
+//    font-weight: $font-bold;
+//}
+//
+//.about__underline-effect::before {
+//    content: "";
+//    position: absolute;
+//    left: 10%;
+//    bottom: 23px;
+//    width: 200px;
+//    height: 14px;
+//    transform: skew(-6deg) translateX(-50%);
+//    background: $highlight;
+//    z-index: -1;
+//}
