@@ -2,11 +2,13 @@
   "name": "portfolio-website",
   "version": "1.0.0",
   "description": "",
-  "main": ".eslintrc.js",
+  "main": "./src/index.js",
   "scripts": {
+    "start": "webpack serve --open",
     "lint:scss": "stylelint css/**/*.scss",
-    "build:dev": "sass --watch --update --style=expanded css:css",
-    "build:prod": "sass --no-source-map --style=compressed css:css"
+    "build": "npx webpack",
+    "build:scss:dev": "sass --watch --update --style=expanded css:css",
+    "build:scss:prod": "sass --no-source-map --style=compressed css:css"
   },
   "repository": {
     "type": "git",
@@ -19,10 +21,16 @@
   },
   "homepage": "https://github.com/LisaPMunich/Portfolio-Website#readme",
   "devDependencies": {
+    "css-loader": "^6.7.1",
     "sass": "^1.54.3",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
     "stylelint": "^14.9.1",
     "stylelint-config-standard": "^26.0.0",
     "stylelint-config-standard-scss": "^5.0.0",
-    "stylelint-scss": "^4.3.0"
+    "stylelint-scss": "^4.3.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
   }
 }
