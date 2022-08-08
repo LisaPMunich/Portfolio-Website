@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "lint:scss": "stylelint css/**/*.scss",
+    "build:dev": "sass --watch --update --style=expanded css:css",
+    "build:prod": "sass --no-source-map --style=compressed css:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LisaPMunich/Portfolio-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LisaPMunich/Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/LisaPMunich/Portfolio-Website#readme",
+  "devDependencies": {
+    "sass": "^1.54.3",
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-scss": "^4.3.0"
+  }
+}
