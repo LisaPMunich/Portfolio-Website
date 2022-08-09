@@ -1,7 +1,8 @@
 
 # My Portfolio Website
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=LisaPMunich.visitor-badge)
 
-##Description
+## Description
 This is the website exhibiting my projects as a web developer.
 
 ## Version History
@@ -38,9 +39,9 @@ For the **third version** in August - prior to finishing my CareerFoundry bootca
 ![Screenshot 2022-08-09 at 19 40 16](https://user-images.githubusercontent.com/99111208/183722601-2b65fb81-00e6-4dcf-9450-5c2f4bfba9d7.png)
 ## Roadmap
 
+- add Google analytics or some similar tool
 - Add a blog section
 - Link to articles on medium or dev.to
-
 
 
 ## Tech Stack
