@@ -91,7 +91,7 @@
     margin: 5px;
     height: 55px;
     width: 150px;
-    transition: all 0.2s;
+
     .icon-1{
         content: url("../../Portfolio-Website/img/icon_github_dark-blue.png");
         width: 60px;
@@ -116,6 +116,7 @@
     cursor: pointer;
     color: $white;
     border: none;
+    transition: all 0.2s;
 
     .icon-1 {
         content: url("../../Portfolio-Website/img/icon_Github_white.png");

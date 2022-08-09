@@ -7,7 +7,7 @@
 }
 
 .soft-skills, .work-goals, .hobbies{
-    margin: 60px 0;
+    margin: 80px 0;
 }
 
 .soft-skill-wrapper{
@@ -19,12 +19,11 @@
 }
 
 .skill-detail__card{
-    //border: 2px solid $light-green;
     padding: 10px;
     margin: 10px;
     flex-grow: 1;
-    min-width: 300px;
-    max-width: 350px;
+    min-width: 200px;
+    max-width: 250px;
     justify-content: center;
 }
 
@@ -34,36 +33,84 @@
 }
 
 .skill-detail__header{
-
 }
 
 .skill-detail__content{
-    font-size: 0.9em;
+    font-size: 1rem;
+}
+
+.employer-attributes{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.employer-attributes-item{
+    flex: 1;
+    padding: 10px;
+    margin: 0 auto;
+
+}
+
+.checkmark-container{
+    height: 100%;
+    display: inline-block;
+}
+
+.checkmark {
+    position: relative;
+    top: 7px;
+    padding-right: 10px;
+    width: 40px;
+    height: 40px;
+    stroke-width: 2;
+    stroke: $neon-green;
 }
 
 
-.fun-activities-list {
-    list-style-type: square;
-    list-style-position: outside;
-    margin-left: -20px;
+//=====================
+
+/*kudos to W3school for this masonry-like layout with css flexbox*/
+.hobbies__image-masonry--row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
+/* Create four equal columns that sits next to each other */
+.hobbies__image-masonry--column {
+    flex: 33%;
+    max-width: 30%;
+    padding: 0 4px;
+}
 
-//.about__underline-effect {
-//    margin: 5px 0;
-//    padding: 15px 0;
-//    position: relative;
-//    font-weight: $font-bold;
-//}
-//
-//.about__underline-effect::before {
-//    content: "";
-//    position: absolute;
-//    left: 10%;
-//    bottom: 23px;
-//    width: 200px;
-//    height: 14px;
-//    transform: skew(-6deg) translateX(-50%);
-//    background: $highlight;
-//    z-index: -1;
-//}
+.hobbies__image-masonry--column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.hobbies__image-masonry--column img:last-child {
+    margin-top: 8px;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+//==================
+// MEDIA QUERY
+//==================
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .hobbies__image-masonry--column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+//===================
+
+.shadowed-image {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
