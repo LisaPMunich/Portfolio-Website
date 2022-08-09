@@ -4,18 +4,30 @@
 
 .impressum-wrapper{
     padding: 20px;
+}
 
+.impressum__address, .impressum__contact-details{
+    text-align: center;
+}
+
+.attribution__list{
+    list-style-type: none;
+    padding-inline-start: 0;
+    text-align: center;
 }
 
 .impressum-generator{
-    color: $dark-green;
+    margin-top: 50px;
+    color: $dark-blue;
     font-family: Nanum Gothic, sans-serif;
     font-size: 0.9em;
+    text-align: center;
 
     a{
-        color: $dark-green;
+        color: $dark-blue;
     }
 }
+
 
 
 
