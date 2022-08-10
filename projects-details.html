@@ -13,14 +13,6 @@
   <link rel="stylesheet"
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@400;600;700&family=M+PLUS+Rounded+1c:wght@100;300&display=swap" rel="stylesheet">
-<!--  <link rel="stylesheet"-->
-<!--        type="text/css"-->
-<!--        href="css/styles.css">-->
 </head>
 
 <body>
@@ -123,7 +115,7 @@
 
 
       <div class="study-section study-section--column">
-        <h3>Creation of the database</h3>
+        <h3 class="sub-header--center">Creation of the database</h3>
         <div class="study-section__content study-section__content--center">
           <p>After deciding on movies I wanted to showcase in my database, I built and populated the database MongoDB.
             I created a database schema diagram to sketch the structure of the database. I decided on two
@@ -135,7 +127,6 @@
       </div>
 
       <div class="study-section study-section--row">
-
         <div class="study-section__image study-section__image--left">
           <img class="shadowed-image"
                src="https://user-images.githubusercontent.com/99111208/161479118-6014200c-aa61-4424-ba93-948936617e51.png"
@@ -143,19 +134,19 @@
         </div>
 
         <div class="study-section__content study-section__content--right">
-          <h3><span class="study__underline-effect">Tools</span> that helped me build the database</h3>
+          <h3 class="sub-header--left">Tools that helped me build the database</h3>
           <ul class="tool-list">
             <li class="tool-list__item"><span class="icon"><img src="./img/mongodb_icon.png" width="50" height="50" role="presentation"/></span> Mongo Shell - to create the database with CRUD operations</li>
             <li class="tool-list__item"><span class="icon"><img class="rounded-icon" src="./img/studio3T_brandlogo.png" width="50" height="50" role="presentation"/></span>Studio3T - to facilitate in the creation of the database</li>
             <li class="tool-list__item"><span class="icon"><img src="./img/postman_icon.png" width="50" height="50" role="presentation"/></span> Postman - to test the correct implementation of the endpoints</li>
-            <li class="tool-list__item"><span class="icon"><img class="rounded-icon" src="./img/Mongoose_brandlogo.png" height="50" height="50" role="presentation"/></span> Mongoose - to define and build database models and connect MongoDB with the REST API</li>
+            <li class="tool-list__item"><span class="icon"><img class="rounded-icon" src="./img/Mongoose_brandlogo.png" width="50" height="50" role="presentation"/></span> Mongoose - to define and build database models and connect MongoDB with the REST API</li>
           </ul>
         </div>
       </div>
 
 
       <div class="study-section study-section--column">
-        <h3>Implementation of data security</h3>
+        <h3 class="sub-header--center">Implementation of data security</h3>
         <div class="study-section__content study-section__content--center">
           <p>I set up data validation in the backend in order to receive it in the frontend and display the errors to the user, when building the client-side. On the client-side, it was also necessary to store the JWT token for authenticated users and send it alongside each request to the server to make sure they can access the different views of the website. This was done using axios and local storage.</p>
         </div>
@@ -168,17 +159,17 @@
                alt="Screenshot Postman with POST endpoint for login">
         </div>
         <div class="study-section__content study-section__content--right">
-          <h3><span class="study__underline-effect">Tools</span> I used to implement data security</h3>
+          <h3 class="sub-header--left">Tools I used to implement data security</h3>
           <ul class="tool-list">
             <li class="tool-list__item"><span class="icon"><img class="rounded-icon" src="./img/passport_brandlogo.png" width="50" height="50" role="presentation"/></span>Passport - to implement basic HTTP authentication and generate JWT token</li>
             <li class="tool-list__item"><span class="icon"><img class="rounded-icon" src="./img/bcrypt_brandlogo.jpeg" width="50" height="50" role="presentation"/></span> Bcrypt - for Password
               hashing</li>
             <li class="tool-list__item"><span class="icon"><img class="rounded-icon" src="./img/express-validator_brandlogo.png" width="50" height="50" role="presentation"/></span> Express-Validator - for data input validation</li>
           </ul>
-          <h3>Other security measures</span></h3>
+          <h3 class="sub-header--left">Other security measures</h3>
           <ul class="tool-list">
-            <li class="tool-list__item">Adjust Environment variable to hide Connection URI</li>
-            <li class="tool-list__item">implement CORS, set to allow for all origins</li>
+            <li class="tool-list__item">Adjust environment variable to hide connection URI</li>
+            <li class="tool-list__item">Implement CORS, set to allow for all origins</li>
           </ul>
         </div>
       </div>
@@ -194,7 +185,7 @@
         </div>
       </div>
 
-      <h3>User stories</h3>
+      <h3 class="sub-header-center">User stories</h3>
       <div class="user-story__section">
         <img class="user-story__icon user-story__icon--left" src="./img/icon_male-user2.png" alt="icon male user" width="120" height="120"/>
         <p class="bubble bubble-right">"As a user, I want to be able to access information on movies, directors, and genres <br>so that I can learn more about movies I have watched or am interested in!"</p>
@@ -204,7 +195,7 @@
         <img class="user-story__icon user-story__icon--right" src="./img/icon_female-user.png" alt="icon female user" width="120" height="120"/>
       </div>
 
-      <h3>Interface views</h3>
+      <h3 class="sub-header-center">Interface views</h3>
       <div class="study-section study-section--column">
         <div class="study-section__content study-section__content--center">
           <p>
@@ -246,7 +237,7 @@
 
       </div>
 
-      <h3>State management with Redux</h3>
+      <h3 class="sub-header-center">State management with Redux</h3>
       <div class="study-section study-section--row">
 
         <div class="study-section__content study-section__content--left">
@@ -264,7 +255,7 @@
 
       </div>
 
-      <h3>Deployment to Netlify and Heroku</h3>
+      <h3 class="sub-header-center">Deployment to Netlify and Heroku</h3>
       <div class="study-section study-section--row">
 
         <div class="study-section__image study-section__image--left">
@@ -279,8 +270,6 @@
             My learning is that parcel and netlify lead to conflicts. Also, deployment on Heroku is more straightforward - I also deployed there, just to check, if it would work.
           </p>
         </div>
-
-
       </div>
 
 
@@ -290,39 +279,39 @@
           I have learned an immense amount in this project. It starts with the fact that it helps to be familiar with the basic design principles like separation of concerns, YAGNI etc., especially for such large projects. Otherwise, you quickly get bogged down.
         </p>
 
-        <h3>... from using middleware to aid in the development process</h3>
+        <h3 class="learnings__header">... from using middleware to aid in the development process</h3>
         <p>Even though not a requirement of the project, I installed an error handler to aid me in realizing errors during development. I also installed nodemon, in order to eliminate the step of having to restart node everytime I change the code. Thus making the development process a little more fluent.</p>
 
-        <h3>... from using React</h3>
+        <h3 class="learnings__header">... from using React</h3>
         <p>Since this was the first project I implemented using React, I - at first - did not feel as confident with the concepts of components, passing of props and state. That's why parallel to working on this Project I worked through an 11-hour-course on React on Scrimba, to better understand the basics. It helped me immensely and even gave me some nice ideas on custom CSS I wanted to implement - like a badge to display the movie genre on each movie poster.</p>
 
-        <h3>... from breaking changes</h3>
+        <h3 class="learnings__header">... from breaking changes</h3>
         <p>
           Something, that happened to me at every turn of this project, was that I wanted to implement a framework, library or middleware as suggested by CareerFoundry, but found that a certain version was deprecated, that the change was actually a major one (breaking change). For node.js the most recent version led to errors in deployment, for React and Redux it was the opposite, the older versions did lead to problems. In 2021 React 18 introduced a new root API, namely ReactDOM.createRoot. This means that one needs to replace render with createRoot. The same was true for Redux. At first, I wanted to implement Actions, Reducers and Store. My IDE told me, that createStore() was recently deprecated, that I could import Legacy_createStore, but it was advised to use configureStore() instead. Since this approach was not as well documented yet, I read and listened to many tutorials trying to find the best combination for the new methods.
         </p>
 
-        <h3>... from installing Homebrew</h3>
+        <h3 class="learnings__header">... from installing Homebrew</h3>
         <p>
           Installing MongoDB posed quite a task, because on a Mac it involved installing the package manager Homebrew. I found out that in order to successfully install Homebrew, you need macOS Mojave (10.14) (or higher), a 64-bit Intel CPU or Apple Silicon CPU (M1), CLT for Xcode and a Bourne-compatible shell for installation. Since I was working on an older version, homebrew kept throwing a lot of errors. I will probably cringe for quite a while when hearing "Homebrew", because installing it sent my CPU load through the roof and crippled my computer for one whole day. <br> What I learned? The only solution was doing a backup and using a MacBook from 2019 with a better machine, which could meet the above requirements.
            Also, avoid installing with Homebrew, use another database than MongoDB, if possible. And, do the installation overnight and not in the morning when expecting to have a productive day.</p>
 
-        <h3>... from building a database</h3>
+        <h3 class="learnings__header">... from building a database</h3>
         <p>Furthermore, it was intriguing to first build the database in a relational way and later with the final solution, the non-relational database MongoDB, just to experience the pros and cons. It inspired me to do another project building the backend of a children's coloring application with postgreSQL, just to get some more hands-on experience (<a href="./projects.html" class="link--inherit-sized">Coloring Pic API</a>).
         </p>
 
-        <h3>... from using Swagger as documentation tool</h3>
+        <h3 class="learnings__header">... from using Swagger as documentation tool</h3>
         <p>
         I already knew that each middleware comes with its pitfalls. But I decided to use Swagger, because I had seen it listed in job ads as the standard tool. In addition, I liked the appealing graphic result as well as the possibility to incorporate information about input examples and error messages. Using swagger for "automatic" documentation and even being able to test the endpoints with it, was very satisfying. But, boy, it is unforgiving concerning indentation and syntax errors. I learned to switch to the online editor and not dare to try writing the Yaml file without it.
         </p>
 
-        <h3>... from using Bootstrap</h3>
+        <h3 class="learnings__header">... from using Bootstrap</h3>
         <p>I know now why Bootstrap should not be used as a substitute for custom CSS. It is very difficult to customize and one has to be able to simply be content with the way some template looks (!which I am not able to) and to not try to tweak it with custom CSS juuuust a little (!which I did). It is better for quick mockups in my eyes.
         </p>
 
       </div>
 
       <h2>Credits</h2>
-      <div class="study-section__content study-section__content--center">
+      <div class="credits__content">
         <p>Role: Developer</p>
         <p>Tutor: Adam Pagels</p>
         <p>Mentor: Bianca Trif</p>

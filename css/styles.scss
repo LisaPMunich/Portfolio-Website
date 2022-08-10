@@ -3,12 +3,14 @@
 @import "base/reset";
 @import "base/typography";
 @import "components/buttons";
+@import "components/icons";
+@import "components/links";
+@import "components/slider";
 @import "components/speech-bubble";
 @import "components/tags";
-@import "components/icons";
-@import "layouts/navbar";
-@import "layouts/main";
 @import "layouts/footer";
+@import "layouts/main";
+@import "layouts/navbar";
 @import "pages/home";
 @import "pages/about";
 @import "pages/projects";

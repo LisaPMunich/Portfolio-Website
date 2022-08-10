@@ -4,7 +4,7 @@
 @import "../components/speech-bubble";
 
 
-.back-link{
+.back-link {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -35,11 +35,12 @@
         margin-left: 2rem;
         margin-right: 2rem;
 
-        h2{
+        h2 {
             margin-top: 40px;
             margin-bottom: 0;
         }
-        h3{
+
+        h3 {
             margin-top: 20px;
             margin-bottom: 0;
         }
@@ -49,6 +50,14 @@
 
 //==================
 
+.sub-header--left{
+    text-align: left;
+}
+
+.sub-header--center{
+    text-align: center;
+}
+
 .study-section {
     display: flex;
     align-items: flex-start;
@@ -56,6 +65,7 @@
     &--row {
         flex-direction: row;
     }
+
     &--column {
         flex-direction: column;
     }
@@ -66,14 +76,16 @@
     margin: 2rem;
     width: 50%;
 
-    h3{
+    h3.sub-header {
         margin-top: 10px;
+        text-align: left;
     }
 
     p {
         margin-top: 0;
         margin-bottom: 0;
     }
+
     &--right {
         margin-right: 0;
     }
@@ -123,6 +135,7 @@
         &--row {
             flex-direction: column;
         }
+
         &--column {
             flex-direction: column;
         }
@@ -132,8 +145,9 @@
         margin: 2rem;
         width: 100%;
 
-        h3{
+        h3.study-section__header  {
             margin-top: 10px;
+            text-align: left;
         }
 
         p {
@@ -173,10 +187,8 @@
 
 //====================
 
-
 .user-story__section {
     display: flex;
-
     flex-direction: row;
     margin: 16px 0;
     align-items: center;
@@ -187,10 +199,12 @@
     flex: 1;
     align-self: center;
     object-fit: contain;
-    &--left{
+
+    &--left {
         align-items: flex-start;
     }
-    &--right{
+
+    &--right {
         align-items: flex-end;
     }
 }
@@ -212,35 +226,38 @@
         flex: 1;
         align-self: center;
         object-fit: contain;
-        &--left{
+
+        &--left {
             align-items: center;
         }
-        &--right{
+
+        &--right {
             align-items: center;
         }
     }
 }
+
 //=====================
 
 /*kudos to W3school for this masonry-like layout with css flexbox*/
-    .study-section__image-masonry--row {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 4px;
-    }
+.study-section__image-masonry--row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
 
-    /* Create four equal columns that sits next to each other */
-    .study-section__image-masonry--column {
-        flex: 50%;
-        max-width: 50%;
-        padding: 0 4px;
-    }
+/* Create four equal columns that sits next to each other */
+.study-section__image-masonry--column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
 
-    .study-section__image-masonry--column img {
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-    }
+.study-section__image-masonry--column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
 
 //==================
 // MEDIA QUERY
@@ -274,4 +291,23 @@
     width: 100%;
 }
 
+.learnings__header {
+    margin-top: 25px !important;
+    text-align: center;
+}
 
+
+.credits__content{
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    p:first-child{
+        margin-top: 15px;
+    }
+
+    p:last-child{
+        margin-bottom: 30px;
+    }
+}
