@@ -1,5 +1,6 @@
 @import "../abstract/variables";
 @import "../base/typography";
+@import "../components/icons";
 
 /* SLIDER */
 
@@ -69,7 +70,6 @@
 .dots__dot--active {
     background-color: $neon-green;
     opacity: 1;
-
 }
 
 /* TESTIMONIALS */
@@ -88,15 +88,12 @@
     border-bottom-right-radius: 40%;
 }
 
-
 .testimonial__header {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
     text-align: center;
 }
-
-
 
 .testimonial__text {
     font-size: 1rem;
@@ -136,8 +133,3 @@
     stroke: $neon-green;
 }
 
-.icon {
-    width: 25px;
-    height: 25px;
-    fill: $dark-blue;
-}

@@ -35,6 +35,14 @@
     top: 15px;
 }
 
+// HOME PAGE - SLIDER
+
+.icon-quote {
+    width: 25px;
+    height: 25px;
+    padding-right: 3px;
+    fill: $dark-blue;
+}
 
 // FOOTER (EXCEPT HOME)
 
@@ -80,6 +88,7 @@
     border-radius: 8px;
     transform: scale(0.8);
 }
+
 
 //=========================
 // MEDIA QUERIES

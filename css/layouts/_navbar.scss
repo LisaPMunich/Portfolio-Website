@@ -53,7 +53,7 @@
         flex-basis: 1;
         flex-wrap: wrap;
         padding: 5px 20px;
-        margin-left: 3px;
+        margin-left: 5px;
         color: $nav-font-color;
         text-decoration: none;
         text-transform: uppercase;
@@ -67,8 +67,8 @@
 
 
     a:hover, a:focus {
-        color: $white;
-        background: $dark-blue;
+        color: $nav-font-color;
+        background: $white;
         transition: 0.5s;
         border-radius: 5px;
     }
