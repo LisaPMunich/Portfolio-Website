@@ -1,9 +1,15 @@
 @import "../abstract/variables";
 @import "../components/tags";
+@import "../base/external-fonts";
 
 
 .impressum-wrapper{
     padding: 20px;
+}
+
+.impressum__header{
+    margin-block-start: 40px;
+    margin-block-end: 20px;
 }
 
 .impressum__address, .impressum__contact-details{
@@ -20,7 +26,7 @@
     margin-top: 50px;
     color: $dark-blue;
     font-family: Nanum Gothic, sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: center;
 
     a{
