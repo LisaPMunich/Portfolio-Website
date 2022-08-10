@@ -33,10 +33,12 @@ For the **third version** in August - prior to finishing my CareerFoundry bootca
 ## Lighthouse Report - Performance Analysis
 
 ### Desktop
-![Screenshot 2022-08-09 at 19 36 50](https://user-images.githubusercontent.com/99111208/183721998-8acb5cc3-0599-48a3-b76e-cf329f83eb67.png)
+![Screenshot 2022-08-11 at 00 50 46](https://user-images.githubusercontent.com/99111208/184036010-0795797b-148c-4a86-915d-316a96acec26.png)
 
 ### Mobile
-![Screenshot 2022-08-09 at 19 40 16](https://user-images.githubusercontent.com/99111208/183722601-2b65fb81-00e6-4dcf-9450-5c2f4bfba9d7.png)
+![Screenshot 2022-08-11 at 00 55 48](https://user-images.githubusercontent.com/99111208/184037119-e5036076-f2d3-48bd-9407-50437ab1bf41.png)
+
+
 ## Roadmap
 
 - add Google analytics or some similar tool
