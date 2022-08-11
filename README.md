@@ -32,6 +32,8 @@ For the **third version** in August - prior to finishing my CareerFoundry bootca
 
 ## Lighthouse Report - Performance Analysis
 
+The analysis was conducted in an incognito window on 11th August 2022.
+
 ### Desktop
 ![Screenshot 2022-08-11 at 00 50 46](https://user-images.githubusercontent.com/99111208/184036010-0795797b-148c-4a86-915d-316a96acec26.png)
 
