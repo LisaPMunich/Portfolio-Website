@@ -125,7 +125,7 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-    background-color: #EDF5E1;
+    background-color: transparent;
     right:10px;
     padding: 30px;
     color: $neon-green;
@@ -133,3 +133,30 @@
     stroke: $neon-green;
 }
 
+//=================
+//MEDIA QUERIES
+//=================
+
+
+@media all and (max-width: 430px) {
+
+    .testimonial {
+        width: 80%;
+        position: relative;
+        padding: 2rem;
+        background-color: $light-green;
+        box-shadow: 0 0 10px $box-shadow;
+        line-height: 1.75;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        border-top-left-radius: 40%;
+        border-bottom-right-radius: 40%;
+    }
+
+    .testimonial__header {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+}
