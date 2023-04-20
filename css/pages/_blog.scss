@@ -1,0 +1,20 @@
+@import "../abstract/variables";
+@import "../components/tags";
+@import "../components/links";
+@import "../layouts/navbar";
+
+.blog-articles {
+    width: 100%;
+}
+
+.coming-soon-image{
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 0 0 10px $box-shadow;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+
+
+
+
