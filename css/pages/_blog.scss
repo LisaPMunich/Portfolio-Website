@@ -3,16 +3,24 @@
 @import "../components/links";
 @import "../layouts/navbar";
 
-.blog-articles {
-    width: 100%;
-}
+//.blog-articles {
+//    width: 100%;
+//}
 
-.coming-soon-image{
+.coming-soon-image {
     display: flex;
     margin: 0 auto;
+    max-width: 450px;
     box-shadow: 0 0 10px $box-shadow;
     border-top-left-radius: 40%;
     border-bottom-right-radius: 40%;
+    width: 100%; /* Make the image responsive */
+}
+
+@media all and (max-width: 500px) {
+    .coming-soon-image {
+        max-width: 280px;
+    }
 }
 
 
